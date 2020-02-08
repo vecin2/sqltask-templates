@@ -1,0 +1,126 @@
+2020-02-07 17:18:36,633 - ERROR - DPI-1047: 64-bit Oracle Client library cannot be loaded: "libclntsh.so: cannot open shared object file: No such file or directory". See https://oracle.github.io/odpi/doc/installation.html#linux for help
+Traceback (most recent call last):
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 28, in connect
+    cursor = self.do_connect()
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 46, in do_connect
+    return cx_Oracle.connect(self.user,self.password,dsn_tns)
+cx_Oracle.DatabaseError: DPI-1047: 64-bit Oracle Client library cannot be loaded: "libclntsh.so: cannot open shared object file: No such file or directory". See https://oracle.github.io/odpi/doc/installation.html#linux for help
+2020-02-07 17:18:36,638 - ERROR - DPI-1047: 64-bit Oracle Client library cannot be loaded: "libclntsh.so: cannot open shared object file: No such file or directory". See https://oracle.github.io/odpi/doc/installation.html#linux for help
+Traceback (most recent call last):
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 28, in connect
+    cursor = self.do_connect()
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 46, in do_connect
+    return cx_Oracle.connect(self.user,self.password,dsn_tns)
+cx_Oracle.DatabaseError: DPI-1047: 64-bit Oracle Client library cannot be loaded: "libclntsh.so: cannot open shared object file: No such file or directory". See https://oracle.github.io/odpi/doc/installation.html#linux for help
+2020-02-07 17:18:36,641 - ERROR - DPI-1047: 64-bit Oracle Client library cannot be loaded: "libclntsh.so: cannot open shared object file: No such file or directory". See https://oracle.github.io/odpi/doc/installation.html#linux for help
+Traceback (most recent call last):
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 28, in connect
+    cursor = self.do_connect()
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 46, in do_connect
+    return cx_Oracle.connect(self.user,self.password,dsn_tns)
+cx_Oracle.DatabaseError: DPI-1047: 64-bit Oracle Client library cannot be loaded: "libclntsh.so: cannot open shared object file: No such file or directory". See https://oracle.github.io/odpi/doc/installation.html#linux for help
+2020-02-07 17:25:19,778 - ERROR - DPI-1047: 64-bit Oracle Client library cannot be loaded: "libclntsh.so: cannot open shared object file: No such file or directory". See https://oracle.github.io/odpi/doc/installation.html#linux for help
+Traceback (most recent call last):
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 28, in connect
+    cursor = self.do_connect()
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 46, in do_connect
+    return cx_Oracle.connect(self.user,self.password,dsn_tns)
+cx_Oracle.DatabaseError: DPI-1047: 64-bit Oracle Client library cannot be loaded: "libclntsh.so: cannot open shared object file: No such file or directory". See https://oracle.github.io/odpi/doc/installation.html#linux for help
+2020-02-07 17:25:19,787 - ERROR - DPI-1047: 64-bit Oracle Client library cannot be loaded: "libclntsh.so: cannot open shared object file: No such file or directory". See https://oracle.github.io/odpi/doc/installation.html#linux for help
+Traceback (most recent call last):
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 28, in connect
+    cursor = self.do_connect()
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 46, in do_connect
+    return cx_Oracle.connect(self.user,self.password,dsn_tns)
+cx_Oracle.DatabaseError: DPI-1047: 64-bit Oracle Client library cannot be loaded: "libclntsh.so: cannot open shared object file: No such file or directory". See https://oracle.github.io/odpi/doc/installation.html#linux for help
+2020-02-07 17:25:19,794 - ERROR - DPI-1047: 64-bit Oracle Client library cannot be loaded: "libclntsh.so: cannot open shared object file: No such file or directory". See https://oracle.github.io/odpi/doc/installation.html#linux for help
+Traceback (most recent call last):
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 28, in connect
+    cursor = self.do_connect()
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 46, in do_connect
+    return cx_Oracle.connect(self.user,self.password,dsn_tns)
+cx_Oracle.DatabaseError: DPI-1047: 64-bit Oracle Client library cannot be loaded: "libclntsh.so: cannot open shared object file: No such file or directory". See https://oracle.github.io/odpi/doc/installation.html#linux for help
+2020-02-07 17:42:56,627 - ERROR - DPI-1047: Cannot locate a 64-bit Oracle Client library: "libclntsh.so: cannot open shared object file: No such file or directory". See https://oracle.github.io/odpi/doc/installation.html#linux for help
+Traceback (most recent call last):
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 28, in connect
+    cursor = self.do_connect()
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 46, in do_connect
+    return cx_Oracle.connect(self.user,self.password,dsn_tns)
+cx_Oracle.DatabaseError: DPI-1047: Cannot locate a 64-bit Oracle Client library: "libclntsh.so: cannot open shared object file: No such file or directory". See https://oracle.github.io/odpi/doc/installation.html#linux for help
+2020-02-07 17:42:56,634 - ERROR - DPI-1047: Cannot locate a 64-bit Oracle Client library: "libclntsh.so: cannot open shared object file: No such file or directory". See https://oracle.github.io/odpi/doc/installation.html#linux for help
+Traceback (most recent call last):
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 28, in connect
+    cursor = self.do_connect()
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 46, in do_connect
+    return cx_Oracle.connect(self.user,self.password,dsn_tns)
+cx_Oracle.DatabaseError: DPI-1047: Cannot locate a 64-bit Oracle Client library: "libclntsh.so: cannot open shared object file: No such file or directory". See https://oracle.github.io/odpi/doc/installation.html#linux for help
+2020-02-07 17:42:56,640 - ERROR - DPI-1047: Cannot locate a 64-bit Oracle Client library: "libclntsh.so: cannot open shared object file: No such file or directory". See https://oracle.github.io/odpi/doc/installation.html#linux for help
+Traceback (most recent call last):
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 28, in connect
+    cursor = self.do_connect()
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 46, in do_connect
+    return cx_Oracle.connect(self.user,self.password,dsn_tns)
+cx_Oracle.DatabaseError: DPI-1047: Cannot locate a 64-bit Oracle Client library: "libclntsh.so: cannot open shared object file: No such file or directory". See https://oracle.github.io/odpi/doc/installation.html#linux for help
+2020-02-07 17:46:56,460 - ERROR - DPI-1047: Cannot locate a 64-bit Oracle Client library: "libclntsh.so: cannot open shared object file: No such file or directory". See https://oracle.github.io/odpi/doc/installation.html#linux for help
+Traceback (most recent call last):
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 28, in connect
+    cursor = self.do_connect()
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 46, in do_connect
+    return cx_Oracle.connect(self.user,self.password,dsn_tns)
+cx_Oracle.DatabaseError: DPI-1047: Cannot locate a 64-bit Oracle Client library: "libclntsh.so: cannot open shared object file: No such file or directory". See https://oracle.github.io/odpi/doc/installation.html#linux for help
+2020-02-07 17:46:56,468 - ERROR - DPI-1047: Cannot locate a 64-bit Oracle Client library: "libclntsh.so: cannot open shared object file: No such file or directory". See https://oracle.github.io/odpi/doc/installation.html#linux for help
+Traceback (most recent call last):
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 28, in connect
+    cursor = self.do_connect()
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 46, in do_connect
+    return cx_Oracle.connect(self.user,self.password,dsn_tns)
+cx_Oracle.DatabaseError: DPI-1047: Cannot locate a 64-bit Oracle Client library: "libclntsh.so: cannot open shared object file: No such file or directory". See https://oracle.github.io/odpi/doc/installation.html#linux for help
+2020-02-07 17:46:56,473 - ERROR - DPI-1047: Cannot locate a 64-bit Oracle Client library: "libclntsh.so: cannot open shared object file: No such file or directory". See https://oracle.github.io/odpi/doc/installation.html#linux for help
+Traceback (most recent call last):
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 28, in connect
+    cursor = self.do_connect()
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 46, in do_connect
+    return cx_Oracle.connect(self.user,self.password,dsn_tns)
+cx_Oracle.DatabaseError: DPI-1047: Cannot locate a 64-bit Oracle Client library: "libclntsh.so: cannot open shared object file: No such file or directory". See https://oracle.github.io/odpi/doc/installation.html#linux for help
+2020-02-07 18:04:07,377 - ERROR - ORA-12505: TNS:listener does not currently know of SID given in connect descriptor
+Traceback (most recent call last):
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 28, in connect
+    cursor = self.do_connect()
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 46, in do_connect
+    return cx_Oracle.connect(self.user,self.password,dsn_tns)
+cx_Oracle.DatabaseError: ORA-12505: TNS:listener does not currently know of SID given in connect descriptor
+2020-02-07 18:04:07,425 - ERROR - ORA-12505: TNS:listener does not currently know of SID given in connect descriptor
+Traceback (most recent call last):
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 28, in connect
+    cursor = self.do_connect()
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 46, in do_connect
+    return cx_Oracle.connect(self.user,self.password,dsn_tns)
+cx_Oracle.DatabaseError: ORA-12505: TNS:listener does not currently know of SID given in connect descriptor
+2020-02-07 18:04:07,455 - ERROR - ORA-12505: TNS:listener does not currently know of SID given in connect descriptor
+Traceback (most recent call last):
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 28, in connect
+    cursor = self.do_connect()
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 46, in do_connect
+    return cx_Oracle.connect(self.user,self.password,dsn_tns)
+cx_Oracle.DatabaseError: ORA-12505: TNS:listener does not currently know of SID given in connect descriptor
+2020-02-07 20:47:33,960 - ERROR - ORA-12505: TNS:listener does not currently know of SID given in connect descriptor
+Traceback (most recent call last):
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 28, in connect
+    cursor = self.do_connect()
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 46, in do_connect
+    return cx_Oracle.connect(self.user,self.password,dsn_tns)
+cx_Oracle.DatabaseError: ORA-12505: TNS:listener does not currently know of SID given in connect descriptor
+2020-02-07 20:47:34,011 - ERROR - ORA-12505: TNS:listener does not currently know of SID given in connect descriptor
+Traceback (most recent call last):
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 28, in connect
+    cursor = self.do_connect()
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 46, in do_connect
+    return cx_Oracle.connect(self.user,self.password,dsn_tns)
+cx_Oracle.DatabaseError: ORA-12505: TNS:listener does not currently know of SID given in connect descriptor
+2020-02-07 20:47:34,163 - ERROR - ORA-12505: TNS:listener does not currently know of SID given in connect descriptor
+Traceback (most recent call last):
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 28, in connect
+    cursor = self.do_connect()
+  File "/home/dgarcia/dev/python/em_automation/sql_gen/database/database.py", line 46, in do_connect
+    return cx_Oracle.connect(self.user,self.password,dsn_tns)
+cx_Oracle.DatabaseError: ORA-12505: TNS:listener does not currently know of SID given in connect descriptor

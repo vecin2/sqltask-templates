@@ -1,0 +1,3 @@
+_locale : en-US
+_entity_category: Pacificorp #normally will be SystemGeneral
+_prjprefix: PC #useful to compute process paths or entities relative ids

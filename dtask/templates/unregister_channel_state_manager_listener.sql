@@ -1,0 +1,5 @@
+DELETE FROM EVA_DYNAMIC_VERB_LIST 
+WHERE ID = @EDVL.{{edvl_id | suggest(_keynames.EDVL)}};
+
+DELETE FROM CCADMIN_IDMAP 
+WHERE KEYSET = 'EDVL' AND KEYNAME='{{edvl_id}}';
