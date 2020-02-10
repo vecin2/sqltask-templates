@@ -9,4 +9,5 @@ build/
 *.egg-info/
 **/*.egg-info/
 *.log
-*.log.*[0-9]*
+*linux.log.*[0-9]*
+**/.tmp/
