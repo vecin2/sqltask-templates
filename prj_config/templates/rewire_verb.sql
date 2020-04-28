@@ -28,6 +28,15 @@
 
 {# Compute variables for process_descriptor_ref#}
  {% set process_descriptor_ref_id = process_descriptor_id %}
+ {% set default_config_id = old_pd['PDR_CONFIG_ID'] %}
+{% if default_config_id != 'NULL' %}
+  {% set pdr_config_id= config_id | default(default_config_id)%}
+  {% set default_config_type_id = old_pd['PDR_CONFIG_TYPE_ID'] %}
+  {% if default_config_type_id != 'NULL' %}
+		{% set default_config_type_keyname = "@ET."+_keynames.keyname("ET",default_config_type_id) %}
+		{% set pdr_config_type_id= config_type_id | default(default_config_type_keyname) |suggest(_keynames.FULL_ET) %}
+	{% endif %}
+{% endif %}
 {% include 'hidden_templates/add_process_descriptor_ref.sql' %}
 
 

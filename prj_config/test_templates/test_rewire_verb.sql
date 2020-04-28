@@ -1,4 +1,4 @@
--- {"entity_def_id":"Customer","verb_name":"identifyCustomer","config_id":"NULL","type_id":"Verb","repository_path":"PRJCoreEntities.Implementation.Customer.Verbs.IdentifyCustomerWrapper","_locale":"en-US","pro_desc_config_id":"NULL"}
+-- {"entity_def_id":"Customer","verb_name":"identifyCustomer","config_id":"NULL","type_id":"Verb","repository_path":"PRJCoreEntities.Implementation.Customer.Verbs.IdentifyCustomerWrapper","_locale":"en-US","pdr_config_id":"NULL"}
 INSERT INTO EVA_PROCESS_DESCRIPTOR (ID, ENV_ID, NAME, REPOSITORY_PATH, CONFIG_PROCESS_ID, IS_DELETED, TYPE)
 VALUES (
 	 @PD.PRJCustomerIdentifycustomer, --id
@@ -32,12 +32,13 @@ INSERT INTO LOCALISED_FIELD (OBJECT_TYPE, OBJECT_INSTANCE, OBJECT_VERSION, FIELD
 'N'
 );
 
-INSERT INTO EVA_PROCESS_DESC_REFERENCE (ID, PROCESS_DESCRIPTOR_ID, PROCESS_DESCRIPTOR_ENV_ID, CONFIG_ID, IS_SHARED)
+INSERT INTO EVA_PROCESS_DESC_REFERENCE (ID, PROCESS_DESCRIPTOR_ID, PROCESS_DESCRIPTOR_ENV_ID, CONFIG_ID,CONFIG_TYPE_ID, IS_SHARED)
 VALUES (
 	@PDR.PRJCustomerIdentifycustomer, --id
 	@PD.PRJCustomerIdentifycustomer, --process_descriptor_id
 	@ENV.Dflt, --process_descriptor_env_id
 	NULL, --config_id
+	NULL, --config_type_id
 	'N' --is_shared
 );
 

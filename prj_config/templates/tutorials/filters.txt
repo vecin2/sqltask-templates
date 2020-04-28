@@ -58,6 +58,7 @@ The office {{ office_no | description(office_no_desc)}} is located at the end of
 ** Keynames **
 Keynames are supported within filters. The following will suggest the list of ED keynames:
 {{ verb | suggest(_keynames.ED) }}
+{% set default_type_id = _keynames.keyname("PD",2003) %}
 
 ** Function within Filters **
 Functions are currently NOT supported within filters!!!! 

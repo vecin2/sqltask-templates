@@ -11,7 +11,7 @@ Then we update the OTB entity to point to our extended object and to inherit fro
 {% set entity_description = extended_entity['DESCRIPTION'] +" Base Class" %}
 {% set logical_object_path = extended_entity['LOGICAL_OBJ_PATH'] %}
 {% set interface_path = extended_entity['INTERFACE_PATH'] %}
-{% set super_entity_definition =extended_entity['SUPER_ENTITY_DEFINITION'] %}
+{% set super_entity_definition = _keynames.full_keyname("ED",extended_entity['SUPER_ENTITY_DEFINITION']) %}
 {% set is_basic = extended_entity['IS_BASIC'] %}
 {% set supports_readonly = extended_entity['SUPPORTS_READONLY'] %}
 {% set is_expandable = extended_entity['IS_EXPANDABLE'] %}

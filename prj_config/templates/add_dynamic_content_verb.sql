@@ -19,7 +19,8 @@ they put the  res of the letter to lower case, but we want to leave them as they
 {% include 'add_process_descriptor.sql' %}
 
 {% set process_descriptor_ref_id = __verb_id %}
-{% set pro_desc_config_id = dynamic_entity_keyname | suggest(_keynames.FULL_ED) %}
+{% set pdr_config_id = dynamic_entity_keyname | suggest(_keynames.FULL_ED) %}
+{% set pdr_config_type_id = 'NULL' %}
 {% include 'hidden_templates/add_process_descriptor_ref.sql' %}
 
 

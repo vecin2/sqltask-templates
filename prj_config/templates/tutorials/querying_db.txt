@@ -3,7 +3,7 @@ This template shows the different APIs to query database
 **1. USING '_db'**
 The db class allows to fetch the agent desktop db from a predefined set of queries defined in the "queries.sql" file.
 
-It has three main operations: find, list and fetch
+It has two main operations: find and fetch
 *_db.find*
 It returns one row as dictionary. If more that one row is found it throws an exception. For example:
 	{{ '{%' }} set find_ed= _db.find.ed_by_keyname('customer') {{ '%}' }}
@@ -24,6 +24,13 @@ Returns:
 
 And you can access a column like this:
 	fetch_verb.column('DISPLAY_NAME') == {{ fetch_verb.column('DISPLAY_NAME') }}
+
+Or you can access a subset like:
+	subset =fetch.where(DISPLAY_NAME='Search')
+	subset[0]['DISPLAY_NAME']
+Or find a row:
+	row =fetch.find(DISPLAY_NAME='Search')
+	row['DISPLAY_NAME']
 
 **2. USING '_database'**
 _database allows to fetch the agent desktop db passing hardcoded SQL

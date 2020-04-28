@@ -8,7 +8,7 @@ INSERT INTO CE_PERSON (ID, FIRST_NAME, FIRST_NAME_UPPER, LAST_NAME, LAST_NAME_UP
 INSERT INTO CE_AGENT (ID, USER_ID, TENANT_ID, ORG_REALM_ID) VALUES (@PERSON.{{username}}, @USER.{{username}}, 'default', 'organisat');
 
 INSERT INTO AGENT (USERNAME,PASSWORD,FULLNAME,EXPIRES,PERSON_ID,CONNECTON,DISABLED,GRACE,CREATED,ALLOWCONCURRENT,CONSISTENTIPONLY,LOGINFAILURES,LASTLOGGEDIN,SALT,ENCRYPTION_CLASSNAME,EXTERNALLY_AUTHENTICATED,TENANT_ID) 
-VALUES ('{{username}}','0ef489f','{{name}} {{surname}}',TO_DATE('12/15/2075','MM/DD/YYYY'),@USER.{{username}},1,'no',0,TO_DATE('12/15/2015','MM/DD/YYYY'),1,'no',0,CURRENT_DATE,'wkhvmgQLLhY=','com.gtnet.common.security.algorithms.SHA256','no','default');
+VALUES ('{{username}}','0ef489f','{{name}} {{surname}}',TO_DATE('12/15/2075','MM/DD/YYYY'),@USER.{{username}},1,'no',0,CURRENT_DATE,1,'no',0,CURRENT_DATE,'wkhvmgQLLhY=','com.gtnet.common.security.algorithms.SHA256','no','default');
 
 {% set username_to_copy_from = "admin" %}
 {% include 'update_agent_password.sql' %}

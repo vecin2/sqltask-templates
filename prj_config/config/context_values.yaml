@@ -1,3 +1,4 @@
-_locale : en-US
+_locale : en-US # this is used to suggest a default values
+locale: en-US # if this set templates wont prompt for locale
 _entity_category: Pacificorp #normally will be SystemGeneral
 _prjprefix: PC #useful to compute process paths or entities relative ids

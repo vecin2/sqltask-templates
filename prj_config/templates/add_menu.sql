@@ -15,6 +15,7 @@ VALUES(
 
 {% set entity_def_id = "Menu" %}
 {%set process_desc_id= "DefaultRunPanel"%}
-{%set pro_desc_config_id = "@MN."+menu_id%}
+{%set pdr_config_id = "@MN."+menu_id%}
+{%set pdr_config_type_id = "NULL"%}
 {%set verb_name = __menu_name %}
 {% include 'add_verb_to_entity.sql' %}
