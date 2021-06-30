@@ -1,6 +1,7 @@
+{% set template_info = "A menu is a verb within the OTB MenuED. Normally this are static verbs." %}
 {% set default_image_path = '/CorePageSetEditor/Implementation/ScriptingMenu/UI/Images/sciboodleManageScriptingPageSetsUp64x64' %}
 {% set menu_ids = _keynames.MN %}
-{% set __menu_name = menu_name | description("menu_name (e.g. manageReports)") %}
+{% set __menu_name = menu_name | description("menu_name (e.g. manageReports)") | print(template_info) %}
 {% set menu_id = __menu_name+"Menu" %}
 INSERT INTO FD_MENU (ID, ENV_ID, NAME, IMAGE_PATH, PARENT_ID, PARENT_ENV_ID, IS_DELETED)
 VALUES(

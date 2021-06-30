@@ -12,7 +12,12 @@
 			  	  	           | default(default_config_process_id)
 						   | suggest(_keynames.FULL_PD) %}
 
+{% if old_pd['PD_TYPE'] != 'NULL'%}
  {% set default_type = _keynames.keyname("PDT",old_pd['PD_TYPE']) %}
+{% else %}
+ {% set default_type = "Verb" %}
+{% endif %}
+
  {% set process_descriptor_type = __process_descriptor_type | description("process_descriptor_type")
 							    | default(default_type)
 							    | suggest(_keynames.PDT) %}

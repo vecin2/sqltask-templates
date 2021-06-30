@@ -1,4 +1,4 @@
---{"entity_def_id":"Customer","verb_name":"inlineSearch","menu":"OrganisationMenu","menu_item_name":"","menu_item_display_name":"Inline Search","menu_item_description":"Inline Search Desc","image_path":"","image_path_roll_over":"","locale":"en-US"}
+--{"entity_def_id":"Customer","verb_name":"inlineSearch","menu":"OrganisationMenu","menu_item_display_name":"Inline Search","menu_item_description":"Inline Search Desc","image_path":"","image_path_roll_over":"","locale":"en-US"}
 INSERT INTO FD_MENU_ITEM (ID, ENV_ID, MENU_ID, MENU_ENV_ID, NAME, IMAGE_PATH, IMAGE_PATH_ROLLOVER, VERB_NAME, VERB_ENTITY_DEF_TYPE_ID, VERB_ENTITY_DEF_TYPE_ENV_ID, IS_DELETED) 
 VALUES (
 	@MNI.OrganisationMenuinlineSearch, --ID

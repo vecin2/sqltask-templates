@@ -15,6 +15,7 @@ VALUES(
 --This is the verb add to the current entity
 {%set process_desc_id= "entityMenu"%}
 {% set process_desc_ref_id = menu_name %}
+{%set pdr_config_type_id = "@ET.Menu"%}
 {%set pdr_config_id = "@MN."+menu_id%}
 {%set verb_name = __menu_name %}
 {% include 'add_verb_to_entity.sql' %}

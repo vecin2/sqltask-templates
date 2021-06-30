@@ -27,9 +27,9 @@ and ENTITY_DEF_TYPE_ID= @ET.{{verb_to_remove["ET_KEYNAME"]}};
 --updating sequence numbers
 {% for item in to_update %}
 UPDATE EVA_CONTEXT_VERB_ENTRY
-(SET SEQUENCE_NUMBER) = ({{ item.SEQUENCE_NUMBER - 1 }})
+SET (SEQUENCE_NUMBER) = ({{ item.SEQUENCE_NUMBER - 1 }})
 where CONFIG_ID = @CC.{{__perspective_id}}
 and ENTITY_DEF_TYPE_ID = @ET.{{item.ET_KEYNAME}}
-and VERB = '{{item.VERB}}'
+and VERB = '{{item.VERB}}';
 {% endfor %}
 {% endif %}

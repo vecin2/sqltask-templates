@@ -1,11 +1,11 @@
 --[]
-{% set menu_item_explanation = "A menu item is points to a verb within an entity definition. We need to define as well the menu where this item will be displayed " %}
+{% set menu_item_explanation = "A menu item points to a verb within an entity definition. We need to define as well the menu where this item will be displayed " %}
 {% set __entity_def_id = entity_def_id | suggest(_keynames.ED) | print(menu_item_explanation)%}
 {% set verb_names = _db.fetch.verbs_by_ed(__entity_def_id).column('NAME') %}
 {% set __verb_name = verb_name | suggest(verb_names)%}
 {% set __menu = menu | suggest(_keynames.MN) %}
 {% set default_menu_item_name = __menu+ __verb_name%}
-{% set __menu_item_name = menu_item_name | default(default_menu_item_name)%}
+{% set __menu_item_name = default_menu_item_name %}
 {% set default_menu_item_display_name = __verb_name | split_uppercase() %}
 {% set __menu_item_display_name = menu_item_display_name | default(default_menu_item_display_name) %}
 {% set __menu_item_description = menu_item_description | default(default_menu_item_display_name)%}
