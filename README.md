@@ -9,3 +9,11 @@ Different project could have different locales which might make some tests faile
 grep -rl en-US . | xargs sed -i 's/en-US/en-GB/g'
 
 Then you can run the tests
+
+# Pre Loaded Data
+
+Some test scripts need some data to be present in order to work:
+
+Please execute `sqltask run-sql --template <<template-name>>` where template name and arguments are the following:
+
+- test_add_team_position: add_team.sql {"team":"ProductSupport","Home":NULL}
