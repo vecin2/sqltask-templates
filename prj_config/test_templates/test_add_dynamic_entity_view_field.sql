@@ -1,4 +1,4 @@
---["KnowledgeArticle","KnowledgeArticleCreate","KnowledgeArticlePublic","Y","3","Public Information 2","en-US","KnowledgeArticleCreatePublic2","process","FieldEditorRichText","Y"]
+--["KnowledgeArticle","KnowledgeArticleCreate","KnowledgeArticlePublic","Y","3","Public Information 2","en-GB","KnowledgeArticleCreatePublic2","process","FieldEditorRichText","Y"]
 INSERT INTO EVA_DYNAMIC_ENTITY_VIEW_GROUP (ID,VIEW_ID,GROUP_NAME,RELEASE_ID)
 VALUES (@EDEVG.KnowledgeArticleCreateGroupPublicInformation2,@DEV.KnowledgeArticleCreate,'Public Information 2',@RELEASE.ID);
 
@@ -7,7 +7,7 @@ INSERT INTO LOCALISED_FIELD (OBJECT_TYPE,OBJECT_INSTANCE,OBJECT_VERSION,FIELD_NA
 	'KnowledgeArticleED',
 	@ED.KnowledgeArticle,
 	'views.Create.groups.PublicInformation2.displayGroupName',
-	'en-US',
+	'en-GB',
 	'default',
 	'Public Information 2',
 	null,

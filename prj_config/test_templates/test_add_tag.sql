@@ -33,7 +33,7 @@ INSERT INTO eva_tag_loc (ID,ENV_ID,RELEASE_ID,LOCALE,DESCRIPTION,ICON_URI,REPORT
 VALUES (@TAG.pepe3,--id
 	   @ENV.Dflt,--env_id
 	   @RELEASE.ID,--release_id
-	   'en-US',--locale
+	   'en-GB',--locale
 	   'pepe3',--description
 	   null,--icon_uri
 	   'pepe3' --reporting_label
@@ -51,7 +51,7 @@ INSERT INTO EVA_TAG_DISPLAY_NAME_LOC (ID,ENV_ID,RELEASE_ID,LOCALE,DISPLAY_NAME,D
 VALUES (@TAG.pepe3,--id
 	   @ENV.Dflt,--env_id
 	   @RELEASE.ID,--release_id
-	   'en-US',--locale
+	   'en-GB',--locale
 	   'pepe3',--display_name
 	   1, --display_name_type_id
 	   @ENV.Dflt,--display_name_type_env_id

@@ -1,4 +1,4 @@
---["Home","Customer","inlineCreate","Y"]
+--["Home","Customer","inlineCreate"]
 UPDATE EVA_CONTEXT_VERB_ENTRY
 SET (SEQUENCE_NUMBER) = (1)
 where CONFIG_ID = @CC.Home;

@@ -1,4 +1,4 @@
---{"entity_name":"AgreementED","entity_display_name":"Agreement","entity_description":"Agreement Description","_locale":"en-US","summary":"Article2 [title]"}
+--{"entity_name":"AgreementED","entity_display_name":"Agreement","entity_description":"Agreement Description","_locale":"en-GB","summary":"Article2 [title]"}
 INSERT INTO EVA_ENTITY_DEFINITION (ID, ENV_ID, NAME, UUID, TYPE_UUID, TYPE_ID, TYPE_ENV_ID, LOGICAL_OBJ_PATH, INTERFACE_PATH, SUPER_ENTITY_DEFINITION, SUPER_ENTITY_DEFINITION_ENV_ID, IS_DELETED, IS_BASIC, SUPPORTS_READONLY,IS_EXPANDABLE, ICON_PATH, INSTANCE_ICON_PATH) VALUES (
 @ED.Agreement, -- ID
 @ENV.Dflt, -- ENV_ID
@@ -31,7 +31,7 @@ INSERT INTO LOCALISED_FIELD (OBJECT_TYPE, OBJECT_INSTANCE, OBJECT_VERSION, FIELD
 'AgreementED', -- OBJECT_INSTANCE
 @ED.Agreement, -- OBJECT_VERSION
 'displayName', -- FIELD_NAME
-'en-US', -- LOCALE
+'en-GB', -- LOCALE
 'default', -- LOOKUP_LOCALE
 'Agreement', --TEXT
 'N' --IS_DELETED
@@ -42,7 +42,7 @@ INSERT INTO LOCALISED_FIELD (OBJECT_TYPE, OBJECT_INSTANCE, OBJECT_VERSION, FIELD
 'AgreementED', -- OBJECT_INSTANCE
 @ED.Agreement, -- OBJECT_VERSION
 'description', -- FIELD_NAME
-'en-US', -- LOCALE
+'en-GB', -- LOCALE
 'default', -- LOOKUP_LOCALE
 'Agreement Description', --TEXT
 'N' --IS_DELETED
@@ -53,7 +53,7 @@ INSERT INTO LOCALISED_FIELD (OBJECT_TYPE, OBJECT_INSTANCE, OBJECT_VERSION, FIELD
 'AgreementED', -- OBJECT_INSTANCE
 @ED.Agreement, -- OBJECT_VERSION
 'summaryExpression', -- FIELD_NAME
-'en-US', -- LOCALE
+'en-GB', -- LOCALE
 'default', -- LOOKUP_LOCALE
 'Article2 [title]', --TEXT
 'N' --IS_DELETED

@@ -1,4 +1,4 @@
---{"menu_name":"manageTools","image_path":"","parent_menu_id":"","verb_display_name":"Manage Tools","verb_description":"Manage Tools Description","process_desc_ref_id":"","is_instance":"N","is_user_visible":"Y","record_for_wrapup":"N","locale":"en-US"}
+--{"menu_name":"manageTools","image_path":"","parent_menu_id":"","verb_display_name":"Manage Tools","verb_description":"Manage Tools Description","process_desc_ref_id":"","is_instance":"N","is_user_visible":"Y","record_for_wrapup":"N","locale":"en-GB"}
 INSERT INTO FD_MENU (ID, ENV_ID, NAME, IMAGE_PATH, PARENT_ID, PARENT_ENV_ID, IS_DELETED)
 VALUES(
 	@MN.manageToolsMenu, --ID
@@ -36,7 +36,7 @@ INSERT INTO LOCALISED_FIELD (OBJECT_TYPE, OBJECT_INSTANCE, OBJECT_VERSION, FIELD
 'MenuED__manageTools',-- OBJECT_INSTANCE
 @V.MenuManageTools,-- OBJECT_VERSION
 'displayName',-- FIELD_NAME
-'en-US',-- LOCALE
+'en-GB',-- LOCALE
 'default', -- LOOKUP_LOCALE
 'Manage Tools', -- TEXT
 'N'
@@ -47,7 +47,7 @@ INSERT INTO LOCALISED_FIELD (OBJECT_TYPE, OBJECT_INSTANCE, OBJECT_VERSION, FIELD
 'MenuED__manageTools',-- OBJECT_INSTANCE
 @V.MenuManageTools,-- OBJECT_VERSION
 'description', -- FIELD_NAME
-'en-US',-- LOCALE
+'en-GB',-- LOCALE
 'default', -- LOOKUP_LOCALE
 'Manage Tools Description', -- TEXT
 'N'

@@ -1,4 +1,4 @@
---["createInfo2","Info","Create Info 2","DynamicContentCaseCreateInfo2","en-US","@ED.KnowledgeArticle"]
+--["createInfo2","Info","Create Info 2","DynamicContentCaseCreateInfo2","en-GB","@ED.KnowledgeArticle"]
 
 INSERT INTO EVA_PROCESS_DESCRIPTOR (ID, ENV_ID, NAME, REPOSITORY_PATH, CONFIG_PROCESS_ID, IS_DELETED,TYPE) VALUES (
 @PD.DynamicContentCaseCreateInfo2, -- ID
@@ -15,7 +15,7 @@ INSERT INTO LOCALISED_FIELD (OBJECT_TYPE, OBJECT_INSTANCE, OBJECT_VERSION, FIELD
 'DynamicContentCaseCreateInfo2__AddKnowContentCase/Implementation/DynamicContentCase/Verbs/Create', -- OBJECT_INSTANCE
 @PD.DynamicContentCaseCreateInfo2, -- OBJECT_VERSION
 'displayName', -- FIELD_NAME
-'en-US', -- LOCALE
+'en-GB', -- LOCALE
 'default', -- LOOKUP_LOCALE
 'DynamicContentCaseCreateInfo2', -- TEXT
 'N'
@@ -26,7 +26,7 @@ INSERT INTO LOCALISED_FIELD (OBJECT_TYPE, OBJECT_INSTANCE, OBJECT_VERSION, FIELD
 'DynamicContentCaseCreateInfo2__AddKnowContentCase/Implementation/DynamicContentCase/Verbs/Create', -- OBJECT_INSTANCE
 @PD.DynamicContentCaseCreateInfo2, -- OBJECT_VERSION
 'description', -- FIELD_NAME
-'en-US', -- LOCALE
+'en-GB', -- LOCALE
 'default', -- LOOKUP_LOCALE
 'DynamicContentCaseCreateInfo2', -- TEXT
 'N'
@@ -58,7 +58,7 @@ INSERT INTO LOCALISED_FIELD (OBJECT_TYPE, OBJECT_INSTANCE, OBJECT_VERSION, FIELD
 'DynamicContentCaseED__createInfo2',-- OBJECT_INSTANCE
 @V.DynamicContentCaseCreateInfo2,-- OBJECT_VERSION
 'displayName',-- FIELD_NAME
-'en-US',-- LOCALE
+'en-GB',-- LOCALE
 'default', -- LOOKUP_LOCALE
 'Info', -- TEXT
 'N'
@@ -69,7 +69,7 @@ INSERT INTO LOCALISED_FIELD (OBJECT_TYPE, OBJECT_INSTANCE, OBJECT_VERSION, FIELD
 'DynamicContentCaseED__createInfo2',-- OBJECT_INSTANCE
 @V.DynamicContentCaseCreateInfo2,-- OBJECT_VERSION
 'description', -- FIELD_NAME
-'en-US',-- LOCALE
+'en-GB',-- LOCALE
 'default', -- LOOKUP_LOCALE
 'Create Info 2', -- TEXT
 'N'

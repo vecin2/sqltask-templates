@@ -1,4 +1,4 @@
--- {"entity_def_id":"Customer","verb_name":"identifyCustomer","config_id":"NULL","type_id":"Verb","repository_path":"PRJCoreEntities.Implementation.Customer.Verbs.IdentifyCustomerWrapper","_locale":"en-US","pdr_config_id":"NULL"}
+-- {"entity_def_id":"Customer","verb_name":"identifyCustomer","config_id":"NULL","type_id":"Verb","repository_path":"PRJCoreEntities.Implementation.Customer.Verbs.IdentifyCustomerWrapper","_locale":"en-GB","pdr_config_id":"NULL"}
 INSERT INTO EVA_PROCESS_DESCRIPTOR (ID, ENV_ID, NAME, REPOSITORY_PATH, CONFIG_PROCESS_ID, IS_DELETED, TYPE)
 VALUES (
 	 @PD.PRJCustomerIdentifycustomer, --id
@@ -15,7 +15,7 @@ INSERT INTO LOCALISED_FIELD (OBJECT_TYPE, OBJECT_INSTANCE, OBJECT_VERSION, FIELD
 'PRJCustomerIdentifycustomer__PRJCoreEntities/Implementation/Customer/Verbs/IdentifyCustomerWrapper', -- OBJECT_INSTANCE
 @PD.PRJCustomerIdentifycustomer, -- OBJECT_VERSION
 'displayName', -- FIELD_NAME
-'en-US', -- LOCALE
+'en-GB', -- LOCALE
 'default', -- LOOKUP_LOCALE
 'PRJCustomerIdentifycustomer', -- TEXT
 'N'
@@ -26,7 +26,7 @@ INSERT INTO LOCALISED_FIELD (OBJECT_TYPE, OBJECT_INSTANCE, OBJECT_VERSION, FIELD
 'PRJCustomerIdentifycustomer__PRJCoreEntities/Implementation/Customer/Verbs/IdentifyCustomerWrapper', -- OBJECT_INSTANCE
 @PD.PRJCustomerIdentifycustomer, -- OBJECT_VERSION
 'description', -- FIELD_NAME
-'en-US', -- LOCALE
+'en-GB', -- LOCALE
 'default', -- LOOKUP_LOCALE
 'PRJCustomerIdentifycustomer', -- TEXT
 'N'

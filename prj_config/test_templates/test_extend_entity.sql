@@ -1,4 +1,4 @@
---{"base_entity_id":"VirtualEnvironment","child_object_path":"","child_inteface_path":"","locale":"en-US"}
+--{"base_entity_id":"VirtualEnvironment","child_object_path":"","child_inteface_path":"","locale":"en-GB"}
 INSERT INTO EVA_ENTITY_DEFINITION (ID, ENV_ID, NAME, UUID, TYPE_UUID, TYPE_ID, TYPE_ENV_ID, LOGICAL_OBJ_PATH, INTERFACE_PATH, SUPER_ENTITY_DEFINITION, SUPER_ENTITY_DEFINITION_ENV_ID, IS_DELETED, IS_BASIC, SUPPORTS_READONLY,IS_EXPANDABLE,ICON_PATH, INSTANCE_ICON_PATH) VALUES (
 @ED.BaseVirtualEnvironment, -- ID
 @ENV.Dflt, -- ENV_ID
@@ -30,7 +30,7 @@ INSERT INTO LOCALISED_FIELD (OBJECT_TYPE, OBJECT_INSTANCE, OBJECT_VERSION, FIELD
 'BaseVirtualEnvironmentED', -- OBJECT_INSTANCE
 @ED.BaseVirtualEnvironment, -- OBJECT_VERSION
 'displayName', -- FIELD_NAME
-'en-US', -- LOCALE
+'en-GB', -- LOCALE
 'default', -- LOOKUP_LOCALE
 'Virtual Environment Base Class', --TEXT
 'N' --IS_DELETED
@@ -40,7 +40,7 @@ INSERT INTO LOCALISED_FIELD (OBJECT_TYPE, OBJECT_INSTANCE, OBJECT_VERSION, FIELD
 'BaseVirtualEnvironmentED', -- OBJECT_INSTANCE
 @ED.BaseVirtualEnvironment, -- OBJECT_VERSION
 'description', -- FIELD_NAME
-'en-US', -- LOCALE
+'en-GB', -- LOCALE
 'default', -- LOOKUP_LOCALE
 'System can contain a number of virtual environments. Base Class', --TEXT
 'N' --IS_DELETED

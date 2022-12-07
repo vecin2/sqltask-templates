@@ -1,4 +1,4 @@
---{"display_name":"My New Entitlement","is_workflow":"","is_content":"","locale":"en-US"}
+--{"display_name":"My New Entitlement","is_workflow":"","is_content":"","locale":"en-GB"}
 INSERT INTO EVA_ENTITLEMENT (ID,ENV_ID,IS_DELETED,IS_WORKFLOW_ENTITLEMENT,RELEASE_ID,RESOLUTION_PROCESS,IS_CONTENT_ENTITLEMENT,SYSTEM_NAME,TENANT_ID,IS_PRIVILEGE_ENTITLEMENT,SCOPE_EXPAND_DIRECTION,IS_CONTEXT_ENTITLEMENT)
 VALUES (
     @ENTLMNT.MyNewEntitlement,--ID
@@ -20,7 +20,7 @@ INSERT INTO LOCALISED_FIELD (OBJECT_TYPE, OBJECT_INSTANCE, OBJECT_VERSION, FIELD
     'MyNewEntitlement', -- OBJECT_INSTANCE
     @ENTLMNT.MyNewEntitlement, -- OBJECT_VERSION
     'displayName', -- FIELD_NAME
-    'en-US', -- LOCALE
+    'en-GB', -- LOCALE
     'default', -- LOOKUP_LOCALE
     'My New Entitlement', --TEXT
     'N' --IS_DELETED

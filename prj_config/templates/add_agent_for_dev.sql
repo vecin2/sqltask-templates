@@ -1,8 +1,11 @@
 --creates an agent with the same password as 'admin' user
-INSERT INTO FU_USER (ID, USERNAME, LOCALE_ID, LOCALE_ENV_ID, IS_DELETED, VIRTUAL_ENVIRONMENT_ID, VIRTUAL_ENVIRONMENT_ENV_ID, TENANT_ID, CONTENT_LOCALE) VALUES (@USER.{{username | print("Password will be copied from user 'admin'")}}, '{{username}}', @LOC.en_US, 666, 'N', 1, 666, 'default', '{{_locale}}');
+{%set locale_id = _db.find.locale_by_name(_locale)['ID'] %}
+INSERT INTO FU_USER (ID, USERNAME, LOCALE_ID, LOCALE_ENV_ID, IS_DELETED, VIRTUAL_ENVIRONMENT_ID, VIRTUAL_ENVIRONMENT_ENV_ID, TENANT_ID, CONTENT_LOCALE) VALUES (@USER.{{username | print("Password will be copied from user 'admin'")}}, '{{username}}', {{locale_id}}, 666, 'N', 1, 666, 'default', '{{_locale}}');
 
 {% include 'add_profile_to_agent.sql' %}
 
+{% set name = agent_firstname | default(username) %}
+{% set surname = agent_lastname | default(username) %}
 INSERT INTO CE_PERSON (ID, FIRST_NAME, FIRST_NAME_UPPER, LAST_NAME, LAST_NAME_UPPER, GENDER_ID, GENDER_ENV_ID, TITLE_ID, TITLE_ENV_ID, IS_DELETED, TENANT_ID, DO_NOT_DELETE) VALUES (@PERSON.{{username}}, '{{name}}', '{{name | upper()}}', '{{surname}}', '{{surname | upper()}}', 0, 666, 0, 666, 'N', 'default', 'N');
 
 INSERT INTO CE_AGENT (ID, USER_ID, TENANT_ID, ORG_REALM_ID) VALUES (@PERSON.{{username}}, @USER.{{username}}, 'default', 'organisat');

@@ -16,7 +16,7 @@ INSERT INTO LOCALISED_FIELD (OBJECT_TYPE, OBJECT_INSTANCE, OBJECT_VERSION, FIELD
 'Categories->System->Finance', -- OBJECT_INSTANCE
 @EC.Finance, -- OBJECT_VERSION
 'displayName', -- FIELD_NAME
-'en-US', -- LOCALE
+'en-GB', -- LOCALE
 'default', -- LOOKUP_LOCALE
 'Finance', --TEXT
 'N' --IS_DELETED
@@ -27,7 +27,7 @@ INSERT INTO LOCALISED_FIELD (OBJECT_TYPE, OBJECT_INSTANCE, OBJECT_VERSION, FIELD
 'Categories->System->Finance', -- OBJECT_INSTANCE
 @EC.Finance, -- OBJECT_VERSION
 'description', -- FIELD_NAME
-'en-US', -- LOCALE
+'en-GB', -- LOCALE
 'default', -- LOOKUP_LOCALE
 'Finance', --TEXT
 'N' --IS_DELETED

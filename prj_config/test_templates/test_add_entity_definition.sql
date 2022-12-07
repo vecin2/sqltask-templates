@@ -35,7 +35,7 @@ INSERT INTO LOCALISED_FIELD (OBJECT_TYPE, OBJECT_INSTANCE, OBJECT_VERSION, FIELD
 'Categories->System->Pacificorp5', -- OBJECT_INSTANCE
 @EC.Pacificorp5, -- OBJECT_VERSION
 'displayName', -- FIELD_NAME
-'en-US', -- LOCALE
+'en-GB', -- LOCALE
 'default', -- LOOKUP_LOCALE
 'Pacificorp5', --TEXT
 'N' --IS_DELETED
@@ -46,7 +46,7 @@ INSERT INTO LOCALISED_FIELD (OBJECT_TYPE, OBJECT_INSTANCE, OBJECT_VERSION, FIELD
 'Categories->System->Pacificorp5', -- OBJECT_INSTANCE
 @EC.Pacificorp5, -- OBJECT_VERSION
 'description', -- FIELD_NAME
-'en-US', -- LOCALE
+'en-GB', -- LOCALE
 'default', -- LOOKUP_LOCALE
 'Pacificorp5', --TEXT
 'N' --IS_DELETED
@@ -64,7 +64,7 @@ INSERT INTO LOCALISED_FIELD (OBJECT_TYPE, OBJECT_INSTANCE, OBJECT_VERSION, FIELD
 'AgreementED', -- OBJECT_INSTANCE
 @ED.Agreement, -- OBJECT_VERSION
 'displayName', -- FIELD_NAME
-'en-US', -- LOCALE
+'en-GB', -- LOCALE
 'default', -- LOOKUP_LOCALE
 'Agreement', --TEXT
 'N' --IS_DELETED
@@ -75,7 +75,7 @@ INSERT INTO LOCALISED_FIELD (OBJECT_TYPE, OBJECT_INSTANCE, OBJECT_VERSION, FIELD
 'AgreementED', -- OBJECT_INSTANCE
 @ED.Agreement, -- OBJECT_VERSION
 'description', -- FIELD_NAME
-'en-US', -- LOCALE
+'en-GB', -- LOCALE
 'default', -- LOOKUP_LOCALE
 'Agreement Description', --TEXT
 'N' --IS_DELETED

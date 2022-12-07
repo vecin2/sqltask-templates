@@ -23,7 +23,7 @@ INSERT INTO LOCALISED_FIELD (OBJECT_TYPE, OBJECT_INSTANCE, OBJECT_VERSION, FIELD
 'KnowledgeArticleED', -- OBJECT_INSTANCE
 @ED.KnowledgeArticle, -- OBJECT_VERSION
 'views.Create2.displayName', -- FIELD_NAME
-'en-US', -- LOCALE
+'en-GB', -- LOCALE
 'default', -- LOOKUP_LOCALE
 'KnowledgeArticleCreate2', --TEXT
 'N' --IS_DELETED
