@@ -53,7 +53,7 @@ INSERT INTO EVA_VERB (ID, NAME, PROCESS_DESC_REF_ID, ENTITY_DEF_ID, ENTITY_DEF_E
 {% include 'add_localised_field.sql' %}
 
 
-{% set perspective_id = "KMAuthoringHome" %}
+{% set context_config_id = "KMAuthoringHome" %}
 {% set entity_type = "DynamicContentCase" %}
 {% set is_alphabetical_order = "Y" %}
 {% include 'add_activity_to_perspective.sql' %}

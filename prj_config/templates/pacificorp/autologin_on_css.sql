@@ -5,4 +5,4 @@
 {% set __repository_path = "PCFrameworkDesktop.Implementation.Desktop.Test.Utils.Processes.AutoCSSLogin" %}
 {% set __repository_path = "PCFrameworkDesktop.Implementation.Desktop.Test.Utils.Processes.AutoCSSLogin" %}
 {%set pdr_config_id = "NULL"%}
-{% include 'rewire_verb.sql' %}
+{% include 'extend_verb_with_config.sql' %}

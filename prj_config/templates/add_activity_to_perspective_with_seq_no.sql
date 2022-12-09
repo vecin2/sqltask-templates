@@ -1,8 +1,8 @@
-{% set __perspective_id = perspective_id | suggest(_keynames.CC) %}
+{% set __context_config_id = perspective_id | suggest(_keynames.CC) %}
 {% set __entity_type = entity_type | suggest(_keynames.ET) %}
 {% set verb_names = _db.fetch.v_names_by_et(__entity_type).column('NAME') %}
 {% set __verb_name = verb_name | suggest(verb_names)%}
-{% set perspective_verbs = _db.fetch.v_by_pers_keyname(__perspective_id) %}
+{% set perspective_verbs = _db.fetch.v_by_pers_keyname(__context_config_id) %}
 {%set seq_no_desc ="All the activities sequence numbers are 1 by default which will display them in alphabetical order. Please notice that changing the Context within 'Manage Context' admin screen overrides sequence numbers"+
 				   " and set them matching the screen order.\n"
 				   "\nShould we display the activities in alphabetical order?(Y/N)?"%}
@@ -12,7 +12,7 @@
 --update all sequence_numbers to 1 so they display in alphabetical order
 UPDATE EVA_CONTEXT_VERB_ENTRY
 SET (SEQUENCE_NUMBER) = (1)
-where CONFIG_ID = @CC.{{__perspective_id}};
+where CONFIG_ID = @CC.{{__context_config_id}};
 {% else %}
 	{% set seq_no_desc =perspective_verbs.to_str()+"\n"+"In which sequence number should this activity be displayed? (this will increase the higher sequence numbers)"%}
 	{% set __sequence_number =sequence_number | description(seq_no_desc) %}
@@ -22,7 +22,7 @@ where CONFIG_ID = @CC.{{__perspective_id}};
 
 UPDATE EVA_CONTEXT_VERB_ENTRY
 SET (SEQUENCE_NUMBER) = ({{ item.SEQUENCE_NUMBER + 1 }})
-where CONFIG_ID = @CC.{{__perspective_id}}
+where CONFIG_ID = @CC.{{__context_config_id}}
 and ENTITY_DEF_TYPE_ID = @ET.{{item.ET_KEYNAME}}
 and VERB = '{{item.VERB}}';
 

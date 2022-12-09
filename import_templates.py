@@ -43,9 +43,17 @@ parser.add_argument("--src")
 parser.add_argument("--dst")
 args = parser.parse_args()
 
-if not args.src or not args.dst:
+if not args.dst:
     print(
         "usage: python import_templates.py --src $EM_CORE_HOME/project/sqltask --dst prj_config/"
     )
+    print(
+        "usage (takes src=EM_CORE_HOME/project/sqltask):"
+        "python import_templates.py --dst prj_config/"
+    )
 else:
-    Importer(Path(args.src), Path(args.dst)).run()
+    if not args.src:
+        src = Path(os.getenv("EM_CORE_HOME")) / "project" / "sqltask"
+    else:
+        src = Path(args.src)
+    Importer(src, Path(args.dst)).run()
