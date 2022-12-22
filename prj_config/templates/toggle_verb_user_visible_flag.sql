@@ -1,4 +1,6 @@
-{% set _verb_keyname = verb_keyname | suggest(_keynames.V)%}
+{%set _entity_keyname = entity_keyname | suggest(_keynames.ED) %}
+{% set entity_verb_keynames = _db.fetch.v_names_by_ed(_entity_keyname).column('KEYNAME') %}
+{% set _verb_keyname = verb_keyname | suggest(entity_verb_keynames)%}
 {%set verb = _db.find.v_by_keyname(_verb_keyname)%}
 
 {% if verb['IS_USER_VISIBLE'] == 'Y' %} 
