@@ -2,13 +2,18 @@
 To extend entity we create a new "Base" entity pointing to the OTB  object and interface.
 Then we update the OTB entity to point to our extended object and to inherit from the new "Base" entity
 #}
-{% set tmp = extended_entity_id | description("Entity keyname you would like to extend(e.g Contact)") | suggest(_keynames.ED) %}
+{% set _extended_entity_id = extended_entity_id | description("Entity keyname you would like to extend(e.g Contact)") | suggest(_keynames.ED) %}
 
 {# We create a new "base" entity using the values from the extended entity#}
-{% set extended_entity = _db.find.ed_by_keyname_n_locale(keyname=extended_entity_id,locale=_locale) %}
+{% set extended_entity = _db.find.ed_by_keyname_n_locale(keyname=_extended_entity_id,locale=_locale) %}
 {% set entity_name = "Base"+extended_entity["NAME"] %}
 {% set entity_display_name = extended_entity['DISPLAY_NAME'] +" Base Class" %}
-{% set entity_description = extended_entity['DESCRIPTION'] +" Base Class" %}
+{% set entity_description = extended_entity['DESCRIPTION']%}
+{%if entity_description !='NULL' %}
+{% set entity_description = entity_description  +" Base Class" %}
+{%else%}
+{% set entity_description = entity_display_name  +" Base Class" %}
+{%endif%}
 {% set logical_object_path = extended_entity['LOGICAL_OBJ_PATH'] %}
 {% set interface_path = extended_entity['INTERFACE_PATH'] %}
 {% set super_entity_definition = _keynames.full_keyname("ED",extended_entity['SUPER_ENTITY_DEFINITION']) %}
@@ -28,4 +33,4 @@ Then we update the OTB entity to point to our extended object and to inherit fro
   {% set entity_id = entity_name %}
 {%endif%}
 UPDATE EVA_ENTITY_DEFINITION
-SET (LOGICAL_OBJ_PATH, INTERFACE_PATH, SUPER_ENTITY_DEFINITION, SUPER_ENTITY_DEFINITION_ENV_ID) = ('{{__child_object_path}}', '{{__child_interface_path}}', @ED.{{entity_id}}, @ENV.Dflt) WHERE ID = @ED.{{extended_entity_id}} AND ENV_ID = @ENV.Dflt AND RELEASE_ID = @RELEASE.ID;
+SET (LOGICAL_OBJ_PATH, INTERFACE_PATH, SUPER_ENTITY_DEFINITION, SUPER_ENTITY_DEFINITION_ENV_ID) = ('{{__child_object_path}}', '{{__child_interface_path}}', @ED.{{entity_id}}, @ENV.Dflt) WHERE ID = @ED.{{_extended_entity_id}} AND ENV_ID = @ENV.Dflt AND RELEASE_ID = @RELEASE.ID;
