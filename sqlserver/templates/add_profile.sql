@@ -1,4 +1,7 @@
-{#Hii#}
+{#
+[short_description]
+Adds a profile to an existing agent
+#}
 {% set profile_name = __profile_name | description("profile_name (e.g. Business Admin Profile)") %}
 {% set profile_keyname = profile_name.replace(" ","") %}
 INSERT INTO FD_PROFILE_TYPE (ID,ENV_ID,DESKTOP_PROCESS,IS_DELETED,NAME,SYSTEM_NAME,RELEASE_ID,TENANT_ID) 

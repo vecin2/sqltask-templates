@@ -103,7 +103,7 @@ class EntitySection(RenderableNode):
 
 class BreakLineNode(object):
     def render(self, save_location):
-        return "\\" + "\n"
+        return "<br>" + "\n"
 
 
 class TemplateSection(RenderableNode):
@@ -111,13 +111,14 @@ class TemplateSection(RenderableNode):
         super().__init__()
         self.template = template
         self.template_link = MarkdownRelativeLink(
-            self.template.name(), self.template.relative_path_to_lib()
+            self.template.name(), self.template.relpath()
         )
         testpath = self.template.testpath()
         self.test_link = MarkdownRelativeLink(testpath.name, testpath)
 
     def append_to(self, renderableNode):
         renderableNode.append(HeaderNode(self.template.name(), level=3))
+        renderableNode.append(TextNode(self.template.short_description()))
         renderableNode.append(TextNode("Template: "))
         renderableNode.append(self.template_link).append(BreakLineNode())
         renderableNode.append(TextNode("Test: "))
