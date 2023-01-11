@@ -7,10 +7,7 @@
  {# Request add_process_desc_variables using old pd #}
  {% set default_config_process_id = _keynames.full_keyname("PD",old_pd['CONFIG_PROCESS_ID']) %}
  {% set old_process_desc ="Verb is currently point to this process descriptor:\n"+old_pd  | string %}
- {% set config_process_id =__config_process_id     | print(old_process_desc)
-						   | description("config_process_id, default fetched from current value")
-			  	  	           | default(default_config_process_id)
-						   | suggest(_keynames.FULL_PD) %}
+ {% set config_process_id =default_config_process_id%}
 
 {% if old_pd['PD_TYPE'] != 'NULL'%}
  {% set default_type = _keynames.keyname("PDT",old_pd['PD_TYPE']) %}
@@ -18,9 +15,7 @@
  {% set default_type = "Verb" %}
 {% endif %}
 
- {% set process_descriptor_type = __process_descriptor_type | description("process_descriptor_type")
-							    | default(default_type)
-							    | suggest(_keynames.PDT) %}
+ {% set process_descriptor_type = default_type %}
 
  {% set default_repo_path =      _prjprefix+old_pd['REPOSITORY_PATH'] %}
  {% set repository_path=          __repository_path | description("repository_path")
@@ -33,15 +28,13 @@
 
 {# Compute variables for process_descriptor_ref#}
  {% set process_descriptor_ref_id = process_descriptor_id %}
- {% set default_config_id = old_pd['PDR_CONFIG_ID'] %}
-{% if default_config_id != 'NULL' %}
-  {% set pdr_config_id= config_id | default(default_config_id)%}
-  {% set default_config_type_id = old_pd['PDR_CONFIG_TYPE_ID'] %}
-  {% if default_config_type_id != 'NULL' %}
-		{% set default_config_type_keyname = "@ET."+_keynames.keyname("ET",default_config_type_id) %}
-		{% set pdr_config_type_id= config_type_id | default(default_config_type_keyname) |suggest(_keynames.FULL_ET) %}
-	{% endif %}
-{% endif %}
+ {% set pdr_config_id= old_pd['PDR_CONFIG_ID'] %}
+ {% set default_config_type_id = old_pd['PDR_CONFIG_TYPE_ID'] %}
+ {% set pdr_config_type_id= 'NULL'%}
+ {% if default_config_type_id != 'NULL' %}
+	 {% set config_type_keyname = "@ET."+_keynames.keyname("ET",default_config_type_id) %}
+	 {% set pdr_config_type_id= config_type_keyname%}
+ {% endif %}
 {% include 'hidden_templates/add_process_descriptor_ref.sql' %}
 
 
