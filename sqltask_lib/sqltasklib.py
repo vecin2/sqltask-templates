@@ -15,6 +15,12 @@ class TemplateInfo(object):
     def long_description(self):
         return self._get_ini_parser().get("long_description")
 
+    def related_tasks(self):
+        return self._get_ini_parser().get("related_tasks")
+
+    def related_views(self):
+        return self._get_ini_parser().get("related_views")
+
     def _get_ini_parser(self):
         if not self._ini_parser:
             self._ini_parser = IniParser(self.text)
@@ -37,6 +43,9 @@ class Template(object):
 
     def name(self):
         return self.relative_path.stem
+
+    def display_name(self):
+        return self.relative_path.stem.title().replace("_", " ")
 
     def filename(self):
         return self.relative_path.name
@@ -68,6 +77,24 @@ class Template(object):
             ):
                 images.append(entry)
         return images
+
+    def related_tasks(self):
+        return self._get_templates_from_string(self.info().related_tasks())
+
+    def related_views(self):
+        return self._get_templates_from_string(self.info().related_views())
+
+    def _get_templates_from_string(self, templates):
+        result = []
+        template_names = templates.split(",")
+        for template_name in template_names:
+            if template_name:
+                template = self._get_template_from_relative_path(template_name)
+                result.append(template)
+        return result
+
+    def _get_template_from_relative_path(self, relative_path):
+        return Template(self.library_root, self.relative_path.parent / relative_path)
 
     def oneline_description(self):
         return self.info().oneline_description()

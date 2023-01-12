@@ -1,6 +1,7 @@
 {#
-[short_description]
+[oneline_description]
 Adds a URL and makes it available to be used in rules editor
+
 
 [long_description]
 A use case is setting up an inbound rule, within the Rules Editor, which calls a URL when something happens.

@@ -1,3 +1,7 @@
+{#
+[related_tasks]
+remove_activity_from_perspective.sql,toggle_verb_user_visible_flag.sql,set_entity_default_instance_verb.sql
+#}
 {% set __context_config_id = context_config_id | suggest(_keynames.CC) %}
 {% set __entity_type = entity_type | suggest(_keynames.ET) %}
 {% set verb_names = _db.fetch.v_names_by_et(__entity_type).column('NAME') %}

@@ -88,13 +88,26 @@ class TemplateSection(object):
         return result
 
     def append_to(self, mdFile):
-        mdFile.new_header(level=2, title=self.template.filename())
-        mdFile.new_line(
-            "Template: " + self.template_link.render(Path(mdFile.file_name))
-        )
-        mdFile.new_line("Test: " + self.test_link.render(Path(mdFile.file_name)))
+        mdFile.new_header(level=2, title=self.template.display_name())
+        self.append_related_content(mdFile)
         mdFile.new_paragraph(self.template.oneline_description())
         mdFile.new_paragraph(self.template.long_description())
         for image in self.images():
             image.append_to(mdFile)
             # mdFile.new_paragraph(image.render(Path(mdFile.file_name)))
+
+    def append_related_content(self, mdFile):
+        mdFile.new_line(
+            "*Template:* " + self.template_link.render(Path(mdFile.file_name))
+        )
+        mdFile.new_line("*Test:* " + self.test_link.render(Path(mdFile.file_name)))
+        self.append_anchors(mdFile, "Tasks", self.template.related_tasks())
+        self.append_anchors(mdFile, "Views", self.template.related_views())
+
+    def append_anchors(self, mdFile, content_name, templates):
+        anchors = []
+        for task in templates:
+            anchors.append(mdFile.header.header_anchor(task.display_name()))
+
+        if anchors:
+            mdFile.new_line(f"*{content_name}:* " + ", ".join(anchors))
