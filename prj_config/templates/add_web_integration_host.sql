@@ -1,5 +1,5 @@
 {#
-[short_description]
+[oneline_description]
 Adds a host which can then be used when building a URL within Rules
 #}
 {%set _hostname = hostname | print("Enter a valid hostname,for example localhost") %}

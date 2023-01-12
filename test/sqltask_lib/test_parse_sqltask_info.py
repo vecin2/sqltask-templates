@@ -13,9 +13,9 @@ def test_parse_one_section_body():
 
 
 def test_parse_multiple_section_bodies():
-    text = "[long_description]\nthis is long\ndescription\n[short_description]\nthis is oneliner"
+    text = "[long_description]\nthis is long\ndescription\n[oneline_description]\nthis is oneliner"
     assert "this is long\ndescription\n" == parse_section_body("long_description", text)
-    assert "this is oneliner" == parse_section_body("short_description", text)
+    assert "this is oneliner" == parse_section_body("oneline_description", text)
 
 
 def test_parse_non_existent_section_returns_empty():

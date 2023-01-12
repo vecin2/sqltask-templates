@@ -9,8 +9,11 @@ class TemplateInfo(object):
         self.text = text
         self._ini_parser = None
 
-    def short_description(self):
-        return self._get_ini_parser().get("short_description")
+    def oneline_description(self):
+        return self._get_ini_parser().get("oneline_description")
+
+    def long_description(self):
+        return self._get_ini_parser().get("long_description")
 
     def _get_ini_parser(self):
         if not self._ini_parser:
@@ -33,6 +36,9 @@ class Template(object):
         return self._info
 
     def name(self):
+        return self.relative_path.stem
+
+    def filename(self):
         return self.relative_path.name
 
     def relpath(self):
@@ -52,8 +58,22 @@ class Template(object):
         parts[-1] = "test_" + parts[-1]  # replace filename
         return Path(*parts)
 
-    def short_description(self):
-        return self.info().short_description()
+    def images(self):
+        images = []
+        for entry in self.abspath().parent.iterdir():
+            if (
+                entry.is_file()
+                and entry.name.startswith(self.relative_path.stem)
+                and (entry.suffix.lower() == ".jpg" or entry.suffix.lower() == ".png")
+            ):
+                images.append(entry)
+        return images
+
+    def oneline_description(self):
+        return self.info().oneline_description()
+
+    def long_description(self):
+        return self.info().long_description()
 
     def _reader(self):
         if not self.reader:
@@ -75,7 +95,8 @@ class SQLTaskLib(object):
             for filename in files:
                 absolute_filepath = Path(current_folder + "/" + filename)
                 relative_path = absolute_filepath.relative_to(self.rootpath)
-                templates.append(Template(self.rootpath, relative_path))
+                if relative_path.suffix == ".sql":
+                    templates.append(Template(self.rootpath, relative_path))
         return templates
 
     def save_template_content(self, template_path, content):

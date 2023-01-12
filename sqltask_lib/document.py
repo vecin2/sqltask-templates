@@ -1,3 +1,6 @@
+from pathlib import Path
+
+
 class StringBuilder(object):
     def __init__(self):
         self.segments = []
@@ -13,54 +16,6 @@ class StringBuilder(object):
 
     def build(self):
         return "".join(self.segments)
-
-
-class RenderableNode(object):
-    def __init__(self, renderableNode=None):
-        self.sb = StringBuilder()
-        self.nodes = []
-        if renderableNode:
-            self.nodes.append(renderableNode)
-
-    def append(self, node):
-        self.nodes.append(node)
-        return self
-
-    def render(self, save_location):
-        for node in self.nodes:
-            self.sb.append(node.render(save_location))
-        return self.sb.build()
-
-
-class TextNode(object):
-    def __init__(self, text):
-        self.text = text
-
-    def render(self, save_location):
-        return self.text
-
-
-class HeaderNode(object):
-    def __init__(self, text, level):
-        self.text = text
-        self.level = level
-
-    def render(self, save_location):
-        return (self.level * "#") + " " + self.text + "\n"
-
-
-class MarkdownDoc(RenderableNode):
-    def __init__(self, title):
-        super().__init__()
-        self.with_title(title)
-        self.text = ""
-
-    def with_title(self, title):
-        self.nodes.append(HeaderNode(title, level=1))
-        return self
-
-    def save(self, path):
-        path.write_text(self.render(path))
 
 
 class MarkdownRelativeLink(object):
@@ -79,56 +34,67 @@ class MarkdownRelativeLink(object):
         return result / self.url_to
 
 
-class LineNode(RenderableNode):
-    def __init__(self, renderableNode):
-        super().__init__(renderableNode)
-
+class InlineImage(MarkdownRelativeLink):
     def render(self, save_location):
-        result = super().render(save_location)
-        if result:
-            return result + "\\" + "\n"
-        return result
+        return "!" + super().render(save_location)
+
+    def append_to(self, mdFile):
+        mdFile.new_line(
+            mdFile.new_inline_image(
+                text=self.name, path=str(self._get_url(Path(mdFile.file_name)))
+            )
+        )
+        mdFile.new_line("Image: " + self.name, bold_italics_code="b")
+        mdFile.new_line("")
 
 
-class EntitySection(RenderableNode):
+class EntitySection(object):
     def __init__(self, title):
-        self.nodes = []
-        self.with_title(title)
+        self.templates = []
+        self.title = title
         self.sb = StringBuilder()
 
-    def with_title(self, title):
-        self.nodes.append(HeaderNode(title, level=2))
-        return self
+    def append_to(self, mdFile):
+        mdFile.new_header(level=1, title=self.title)
+        for template in self.templates:
+            template.append_to(mdFile)
+
+    def append(self, template):
+        self.templates.append(template)
 
 
-class BreakLineNode(object):
-    def render(self, save_location):
-        return "<br>" + "\n"
-
-
-class TemplateSection(RenderableNode):
+class TemplateSection(object):
     def __init__(self, template):
-        super().__init__()
         self.template = template
-        self.template_link = MarkdownRelativeLink(
-            self.template.name(), self.template.relpath()
-        )
+
+    @property
+    def template_link(self):
+        return MarkdownRelativeLink(self.template.filename(), self.template.relpath())
+
+    @property
+    def test_link(self):
         testpath = self.template.testpath()
-        self.test_link = MarkdownRelativeLink(testpath.name, testpath)
+        return MarkdownRelativeLink(testpath.name, testpath)
 
-    def append_to(self, renderableNode):
-        renderableNode.append(HeaderNode(self.template.name(), level=3))
-        renderableNode.append(TextNode(self.template.short_description()))
-        renderableNode.append(TextNode("Template: "))
-        renderableNode.append(self.template_link).append(BreakLineNode())
-        renderableNode.append(TextNode("Test: "))
-        renderableNode.append(self.test_link).append(BreakLineNode())
+    def images(self):
+        result = []
+        for image in self.template.images():
+            image_name = image.stem.replace(self.template.name(), "")
+            result.append(
+                InlineImage(
+                    image_name, image.relative_to(self.template.library_root.parent)
+                )
+            )
+        return result
 
-
-class MarkdownTemplate(RenderableNode):
-    def __init__(self, template):
-        super().__init__()
-        link = MarkdownRelativeLink(template.name(), template.relative_path_to_lib())
-        self.nodes.append(LineNode(link))
-
-        self.template = template
+    def append_to(self, mdFile):
+        mdFile.new_header(level=2, title=self.template.filename())
+        mdFile.new_line(
+            "Template: " + self.template_link.render(Path(mdFile.file_name))
+        )
+        mdFile.new_line("Test: " + self.test_link.render(Path(mdFile.file_name)))
+        mdFile.new_paragraph(self.template.oneline_description())
+        mdFile.new_paragraph(self.template.long_description())
+        for image in self.images():
+            image.append_to(mdFile)
+            # mdFile.new_paragraph(image.render(Path(mdFile.file_name)))

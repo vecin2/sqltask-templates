@@ -1,5 +1,5 @@
 {#
-[short_description]
+[online_description]
 Adds a profile to an existing agent
 #}
 {% set profile_name = __profile_name | description("profile_name (e.g. Business Admin Profile)") %}
