@@ -1,4 +1,5 @@
 import os
+from collections import defaultdict
 from pathlib import Path
 
 from sqltask_lib.parser import IniParser, JinjaCommentParser
@@ -113,18 +114,41 @@ class SQLTaskLib(object):
         self.rootpath = rootpath
         self.templates_path = rootpath / "templates"
 
-    def listall(self):
-        templates = []
-        exclude_set = set(["tutorials"])
+    def list_tasks(self):
+        return self.sections()["views"]
+
+    def sections(self):
+        self.print_folders()
+        sections = defaultdict(list)
+        # walk top level folder
+        # for dir in next(os.walk(self.templates_path))[1]:
         for current_folder, dirs, files in os.walk(self.templates_path):
-            # it removes subdirs inline so they are not processed by walk
-            dirs[:] = [d for d in dirs if d not in exclude_set]
+            for dir in dirs:
+                key = dir
+                abs_dir = Path(current_folder + "/" + dir)
+                sections[key].extend(self.walk_dir(abs_dir))
+        return sections
+
+    def walk_dir(self, dir):
+        templates = []
+        for current_folder, dirs, files in os.walk(dir):
             for filename in files:
                 absolute_filepath = Path(current_folder + "/" + filename)
-                relative_path = absolute_filepath.relative_to(self.rootpath)
-                if relative_path.suffix == ".sql":
-                    templates.append(Template(self.rootpath, relative_path))
+                self._append_template(templates, absolute_filepath)
         return templates
+
+    def print_folders(self):
+        for current_folder, dirs, files in os.walk(self.templates_path):
+            for d in dirs:
+                print(d)
+
+    def _append_template(self, templates, filepath):
+        if filepath.suffix == ".sql" or filepath.suffix == ".groovy":
+            templates.append(self._create_template(filepath))
+
+    def _create_template(self, filepath):
+        relative_path = filepath.relative_to(self.rootpath)
+        return Template(self.rootpath, relative_path)
 
     def save_template_content(self, template_path, content):
         (self.templates_path / template_path).write_text(content)
