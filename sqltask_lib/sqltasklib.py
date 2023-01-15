@@ -114,50 +114,32 @@ class SQLTaskLib(object):
         self.rootpath = rootpath
         self.templates_path = rootpath / "templates"
 
-    def list_tasks(self):
-        return self.sections()["views"]
-
     def sections(self):
-        self.print_folders()
         sections = defaultdict(list)
-        # walk top level folder
-        # for dir in next(os.walk(self.templates_path))[1]:
+        print("Scanning folders to generate documentation:")
         for current_folder, dirs, files in os.walk(self.templates_path):
-            for dir in dirs:
-                key = dir
-                abs_dir = Path(current_folder + "/" + dir)
-                sections[key].extend(self.walk_dir(abs_dir))
-        return sections
+            print(current_folder)
+            key = self._map_folder_to_section_name(Path(current_folder).name)
 
-    def walk_dir(self, dir):
-        templates = []
-        for current_folder, dirs, files in os.walk(dir):
             for filename in files:
                 absolute_filepath = Path(current_folder + "/" + filename)
-                self._append_template(templates, absolute_filepath)
-        return templates
+                self._append_template(sections[key], absolute_filepath)
+        return sections
 
-    def print_folders(self):
-        for current_folder, dirs, files in os.walk(self.templates_path):
-            for d in dirs:
-                print(d)
+    def _map_folder_to_section_name(self, folder_name):
+        if "templates" == folder_name:
+            return "scripts"
+        else:
+            return folder_name
 
     def _append_template(self, templates, filepath):
-        if filepath.suffix == ".sql" or filepath.suffix == ".groovy":
+        if (
+            filepath.suffix == ".sql"
+            or filepath.suffix == ".groovy"
+            or filepath.suffix == ".txt"
+        ):
             templates.append(self._create_template(filepath))
 
     def _create_template(self, filepath):
         relative_path = filepath.relative_to(self.rootpath)
         return Template(self.rootpath, relative_path)
-
-    def save_template_content(self, template_path, content):
-        (self.templates_path / template_path).write_text(content)
-
-    def load_template(self, template_path):
-        return Template(self.rootpath, template_path)
-
-    # return [
-    #     EntitySection("Agent"),
-    #     EntitySection("Entity Definition"),
-    #     EntitySection("Uncategorized"),
-    # ]

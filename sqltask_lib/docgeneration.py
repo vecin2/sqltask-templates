@@ -10,11 +10,21 @@ class DocGenerator(object):
 
     def generate(self, path):
         mdFile = MdUtils(file_name=str(path), title="SQLTask Library")
-
-        for section in self._sections():
+        sections = self._sections()
+        self.append_summary(mdFile, sections)
+        for section in sections:
             section.append_to(mdFile)
         mdFile.new_table_of_contents(table_title="Contents", depth=2)
         mdFile.create_md_file()
+
+    def append_summary(self, mdFile, sections):
+        counter = 0
+        summary = ""
+        for section in sections:
+            summary += f"{len(section.templates)} {section.anchor()}, "
+            counter += len(section.templates)
+        summary = f"Currently there is total of {counter} templates, divided in {len(sections)} sections; {summary}"
+        mdFile.new_paragraph(summary)
 
     def _sections(self):
         result = []

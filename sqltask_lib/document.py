@@ -1,5 +1,7 @@
 from pathlib import Path
 
+from mdutils.tools.Header import Header
+
 
 class StringBuilder(object):
     def __init__(self):
@@ -54,8 +56,15 @@ class EntitySection(object):
         self.title = title
         self.sb = StringBuilder()
 
+    def anchor(self):
+        return Header.header_anchor(self.title)
+
     def append_to(self, mdFile):
         mdFile.new_header(level=1, title=self.title)
+        summary = (
+            f"Currently, there are {len(self.templates)} templates in this section"
+        )
+        mdFile.new_line(summary)
         for template in self.templates:
             template.append_to(mdFile)
 
