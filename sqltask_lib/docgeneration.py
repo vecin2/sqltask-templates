@@ -12,10 +12,16 @@ class DocGenerator(object):
         mdFile = MdUtils(file_name=str(path), title="SQLTask Library")
         sections = self._sections()
         self.append_summary(mdFile, sections)
+        self.append_table_of_contents(mdFile)
         for section in sections:
             section.append_to(mdFile)
-        mdFile.new_table_of_contents(table_title="Contents", depth=2)
+        mdFile.new_table_of_contents(
+            table_title="Table Of Contents", depth=2, marker="Table Of Contents"
+        )
         mdFile.create_md_file()
+
+    def append_table_of_contents(self, mdFile):
+        mdFile.new_header(level=1, title="Table Of Contents")
 
     def append_summary(self, mdFile, sections):
         counter = 0
