@@ -1,2 +1,0 @@
---{"userkeyname":"admin","profile_id":"AGENT"}
-INSERT INTO FD_USER_PROFILE_TYPE (TENANT_ID, USER_ID, PROFILE_TYPE_ID, PROFILE_TYPE_ENV_ID, IS_DELETED) VALUES ('default', @USER.admin, @PROFILE.AGENT, 666, 'N');
