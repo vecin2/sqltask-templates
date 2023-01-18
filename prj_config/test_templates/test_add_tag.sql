@@ -17,8 +17,8 @@ VALUES (@TAG.pepe3, --ID
 	'N',--IS_DELETED
 	'N',--IS_RETIRED
 	null,--EXPAND_DIRECTION
-	sysdate, -- created
-	sysdate, --LAST_MODIFIED
+	CURRENT_DATE, -- created
+	CURRENT_DATE, --LAST_MODIFIED
 	15, --LEFT_VAL
 	16, --RIGHT_VAL
 	1, --DEPTH_VAL

@@ -18,6 +18,6 @@ set PASSWORD = (select PASSWORD from AGENT where username ='admin'),
  SALT = (select SALT from agent where username = 'admin'),
  EXPIRES = (select EXPIRES from AGENT where USERNAME = 'admin'),
  DISABLED ='no',
- LASTLOGGEDIN = SYSDATE
+ LASTLOGGEDIN = CURRENT_DATE
 where USERNAME in ('ccagentdemo2');
 --INSERT INTO DIM_AGENT (TENANT_ID, ID, USERNAME, FIRST_NAME, LAST_NAME, PARENT_AGENT_ID) VALUES ('default', 2, 'ccdev', 'Mark', 'Johson', 1000000).

@@ -16,8 +16,8 @@ VALUES (@TAG.{{tag_name | print("Enter only the name, e.g article, faq")}}, --ID
 	'N',--IS_DELETED
 	'N',--IS_RETIRED
 	null,--EXPAND_DIRECTION
-	sysdate, -- created
-	sysdate, --LAST_MODIFIED
+	CURRENT_DATE, -- created
+	CURRENT_DATE, --LAST_MODIFIED
 	{% set previous_tags = _db.fetch.tags_by_parent_keyname(parent_tag_keyname) %}
 	{% set default_left_val = previous_tags | length *2 + 1%}
 	{% set __left_val = left_val |default(default_left_val)%} 
