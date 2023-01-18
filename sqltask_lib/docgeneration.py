@@ -15,6 +15,7 @@ class DocGenerator(object):
         self.append_summary(mdFile, sections)
         self.append_table_of_contents(mdFile)
         for section in sections:
+            print(f"Generating Section {section.title}")
             section.append_to(mdFile)
         mdFile.new_table_of_contents(
             table_title="Table Of Contents", depth=2, marker="Table Of Contents"
