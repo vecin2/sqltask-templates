@@ -1,6 +1,6 @@
 {#
 [related_tasks]
-toggle_verb_user_visible_flag.sql,add_activity_to_perspective.sql
+update_verb_user_visible_flag.sql,add_activity_to_perspective.sql
 
 [related_views]
 view_entity_displayed_verbs.sql,view_entity_verbs.sql

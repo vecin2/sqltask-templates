@@ -1,14 +1,15 @@
+from pathlib import Path
+
 from sqltask_lib.document import EntitySection, TemplateSection
-from sqltask_lib.sqltasklib import SQLTaskLib
 
 from mdutils.mdutils import MdUtils
 
 
 class DocGenerator(object):
-    def __init__(self, rootpath):
-        self.rootpath = rootpath
+    def __init__(self, tasklib):
+        self.tasklib = tasklib
 
-    def generate(self, path):
+    def generate(self, path=Path("docs/templates.md")):
         mdFile = MdUtils(file_name=str(path), title="SQLTask Library")
         sections = self._sections()
         self.append_summary(mdFile, sections)
@@ -19,6 +20,7 @@ class DocGenerator(object):
             table_title="Table Of Contents", depth=2, marker="Table Of Contents"
         )
         mdFile.create_md_file()
+        print(f"\n{path} has been generated")
 
     def append_table_of_contents(self, mdFile):
         mdFile.new_header(level=1, title="Table Of Contents")
@@ -34,7 +36,7 @@ class DocGenerator(object):
 
     def _sections(self):
         result = []
-        sections = SQLTaskLib(self.rootpath).sections()
+        sections = self.tasklib.sections()
         for section_name, templates in sections.items():
             result.append(self._make_section(section_name, templates))
         return result

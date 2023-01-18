@@ -108,6 +108,13 @@ class Template(object):
             self.reader = open(self.relative_path_to_lib(), "r")
         return self.reader
 
+    def update_references(self, old_name, new_name):
+        self._write(self.content().replace(old_name, new_name))
+
+    def _write(self, content):
+        with open(self.abspath(), "w") as f:
+            f.write(content)
+
 
 class SQLTaskLib(object):
     def __init__(self, rootpath):
@@ -116,15 +123,19 @@ class SQLTaskLib(object):
 
     def sections(self):
         sections = defaultdict(list)
-        print("Scanning folders to generate documentation:")
         for current_folder, dirs, files in os.walk(self.templates_path):
-            print(current_folder)
             key = self._map_folder_to_section_name(Path(current_folder).name)
 
-            for filename in files:
+            for filename in sorted(files):
                 absolute_filepath = Path(current_folder + "/" + filename)
                 self._append_template(sections[key], absolute_filepath)
         return sections
+
+    def list_all(self):
+        result = []
+        for templates in self.sections().values():
+            result.extend(templates)
+        return result
 
     def _map_folder_to_section_name(self, folder_name):
         if "templates" == folder_name:
