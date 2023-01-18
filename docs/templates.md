@@ -3,7 +3,7 @@ SQLTask Library
 ===============
 
 
-Currently there is total of 114 templates, divided in 4 sections; 81 [scripts](#scripts), 18 [views](#views), 9 [hidden_templates](#hidden_templates), 6 [tutorials](#tutorials), 
+Currently there is total of 115 templates, divided in 5 sections; 81 [scripts](#scripts), 18 [views](#views), 9 [hidden_templates](#hidden_templates), 1 [ManageContext](#managecontext), 6 [tutorials](#tutorials), 
 # 
 Table Of Contents
 =================
@@ -120,6 +120,8 @@ Table Of Contents
 	* [Insert Dynamic Verb Parameter](#insert-dynamic-verb-parameter)
 	* [Remove Dynamic Verb List](#remove-dynamic-verb-list)
 	* [Remove Idmap](#remove-idmap)
+* [ManageContext](#managecontext)
+	* [Add Perspective To Profile](#add-perspective-to-profile)
 * [tutorials](#tutorials)
 	* [Filters](#filters)
 	* [Globals And String Functions Tutorial](#globals-and-string-functions-tutorial)
@@ -1019,6 +1021,17 @@ Currently, there are 9 templates in this section
   
 *Template:* [remove_idmap.sql](../prj_config/templates/hidden_templates/remove_idmap.sql)  
 *Test:* [test_remove_idmap.sql](../prj_config/test_templates/hidden_templates/test_remove_idmap.sql)
+
+
+
+
+# ManageContext
+  
+Currently, there are 1 templates in this section
+## Add Perspective To Profile
+  
+*Template:* [add_perspective_to_profile.sql](../prj_config/templates/ManageContext/add_perspective_to_profile.sql)  
+*Test:* [test_add_perspective_to_profile.sql](../prj_config/test_templates/ManageContext/test_add_perspective_to_profile.sql)
 
 
 
