@@ -3,7 +3,7 @@ SQLTask Library
 ===============
 
 
-The SQL tasks library is has currently a total of 116 templates, divided in 4 sections; 83 [scripts](#scripts), 9 [hidden_templates](#hidden_templates), 6 [tutorials](#tutorials), 18 [views](#views), 
+The SQL tasks library has currently a total of 116 templates, divided in 4 sections; 83 [scripts](#scripts), 9 [hidden_templates](#hidden_templates), 6 [tutorials](#tutorials), 18 [views](#views), 
 # 
 Table Of Contents
 =================
