@@ -3,7 +3,7 @@ SQLTask Library
 ===============
 
 
-The SQL tasks library has currently a total of 116 templates, divided in 4 sections; 83 [scripts](#scripts), 9 [hidden_templates](#hidden_templates), 6 [tutorials](#tutorials), 18 [views](#views), 
+The SQL tasks library has currently a total of 113 templates, divided in 4 sections; 80 [scripts](#scripts), 9 [hidden_templates](#hidden_templates), 6 [tutorials](#tutorials), 18 [views](#views), 
 # 
 Table Of Contents
 =================
@@ -59,11 +59,8 @@ Table Of Contents
 	* [Extend Entity](#extend-entity)
 	* [Extend Verb](#extend-verb)
 	* [Extend Verb With Config](#extend-verb-with-config)
-	* [Fail](#fail)
 	* [Get Table From Fk Contraint Name](#get-table-from-fk-contraint-name)
 	* [How To Add Content Type](#how-to-add-content-type)
-	* [My Template](#my-template)
-	* [Quick Template](#quick-template)
 	* [Register Channel State Manager Listener](#register-channel-state-manager-listener)
 	* [Remove Activity From Perspective](#remove-activity-from-perspective)
 	* [Remove Agent For Dev](#remove-agent-for-dev)
@@ -133,7 +130,7 @@ Table Of Contents
 
 # scripts
   
-Currently, there are 83 templates in this section
+Currently, there are 80 templates in this section
 ## Add Activity To Perspective
   
 *Template:* [add_activity_to_perspective.sql](../prj_config/templates/add_activity_to_perspective.sql)  
@@ -539,14 +536,6 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
 
-## Fail
-  
-*Template:* [fail.sql](../prj_config/templates/fail.sql)  
-*Test:* [test_fail.sql](../prj_config/test_templates/test_fail.sql)
-
-
-
-
 ## Get Table From Fk Contraint Name
   
 *Template:* [get_table_from_fk_contraint_name.sql](../prj_config/templates/get_table_from_fk_contraint_name.sql)  
@@ -559,22 +548,6 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
   
 *Template:* [how_to_add_content_type.txt](../prj_config/templates/how_to_add_content_type.txt)  
 *Test:* [test_how_to_add_content_type.txt](../prj_config/test_templates/test_how_to_add_content_type.txt)
-
-
-
-
-## My Template
-  
-*Template:* [my_template.sql](../prj_config/templates/my_template.sql)  
-*Test:* [test_my_template.sql](../prj_config/test_templates/test_my_template.sql)
-
-
-
-
-## Quick Template
-  
-*Template:* [quick_template.txt](../prj_config/templates/quick_template.txt)  
-*Test:* [test_quick_template.txt](../prj_config/test_templates/test_quick_template.txt)
 
 
 
