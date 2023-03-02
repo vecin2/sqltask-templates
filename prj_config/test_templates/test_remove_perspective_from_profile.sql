@@ -1,4 +1,0 @@
---{"profile_keyname":"BUSINESS_ADMIN","perspectiveKeyname":"MyPerspective"}
-DELETE FROM FD_PROFILE_TYPE_PERSPECTIVE 
-WHERE PROFILE_ID = @PROFILE.BUSINESS_ADMIN
-AND PERSPECTIVE_ID = @PPTIVE.MyPerspective;

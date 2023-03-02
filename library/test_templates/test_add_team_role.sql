@@ -1,0 +1,20 @@
+--{"team_role_name":"TestConsultant","role_type_keyname":"ADMINISTRATOR"}
+INSERT INTO CE_TEAM_ROLE (TENANT_ID, ID, NAME, ROLE_TYPE_ID, ROLE_TYPE_ENV_ID, IS_DELETED) 
+VALUES (
+	'default', --TENANT_ID
+       	@TEAMROLE.TestConsultant,--ID
+       	'TestConsultant',--NAME
+       	@TEAMROLETYPE.ADMINISTRATOR,--ROLE_TYPE_ID
+	@ENV.Dflt,--ROLE_TYPE_ENV_ID
+       	'N'--IS_DELETED
+);
+INSERT INTO LOCALISED_FIELD (OBJECT_TYPE, OBJECT_INSTANCE, OBJECT_VERSION, FIELD_NAME, LOCALE, LOOKUP_LOCALE,TEXT,IS_DELETED) VALUES (
+'TeamRoleED', -- OBJECT_TYPE
+'TestConsultant',--OBJECT_INSTANCE
+@TEAMROLE.TestConsultant,--OBJECT_VERSION
+'displayName', -- FIELD_NAME
+'en-GB', -- LOCALE
+'default', -- LOOKUP_LOCALE
+'Test Consultant', --TEXT
+'N' --IS_DELETED
+);
