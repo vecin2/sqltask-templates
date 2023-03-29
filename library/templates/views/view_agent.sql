@@ -1,1 +1,1 @@
-SELECT * from agent where username ='{{username}}'
+SELECT * from agent where username ='{{username}}';
