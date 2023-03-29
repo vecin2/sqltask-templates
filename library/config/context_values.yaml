@@ -1,5 +1,7 @@
-_locale: en-US # this is used to suggest a default values
-locale: en-US # this is used to suggest a default values
-_entity_category: Pacificorp #normally will be SystemGeneral
-_prjprefix: PC #useful to compute process paths or entities relative ids
+_locale: en-GB # this is used to suggest a default values
+locale: en-GB # this is used to suggest a default values
+
+#'defualt_locale' useful if mulitple locals some view might only want to show display_name in one of the locals, e.g. view_verb_entitlement.sql
+_default_locale: en-GB
 default_locale: en-GB
+_prjprefix: Du #useful to compute process paths or entities relative ids

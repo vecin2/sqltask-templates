@@ -3,12 +3,11 @@ SQLTask Library
 ===============
 
 
-The SQL tasks library has currently a total of 113 templates, divided in 4 sections; 80 [scripts](#scripts), 9 [hidden_templates](#hidden_templates), 6 [tutorials](#tutorials), 18 [views](#views), 
-# 
-Table Of Contents
-=================
+The SQL tasks library has currently a total of 114 templates, divided in 4 sections; 81 [scripts](#scripts), 9 [hidden_templates](#hidden_templates), 6 [tutorials](#tutorials), 18 [views](#views)
 
-* [Table Of Contents](#table-of-contents)
+Tables of Contents
+==================
+
 * [scripts](#scripts)
 	* [Add Activity To Perspective](#add-activity-to-perspective)
 	* [Add Activity To Perspective With Seq No](#add-activity-to-perspective-with-seq-no)
@@ -81,11 +80,12 @@ Table Of Contents
 	* [Remove Team Role Type](#remove-team-role-type)
 	* [Remove Verb From Entity](#remove-verb-from-entity)
 	* [Remove View Contact Tab](#remove-view-contact-tab)
+	* [Reorder Dynamic View Field](#reorder-dynamic-view-field)
 	* [Set Entity Default Instance Verb](#set-entity-default-instance-verb)
-	* [Test Register Channel State Manager Listener](#test-register-channel-state-manager-listener)
 	* [Unregister Channel State Manager Listener](#unregister-channel-state-manager-listener)
 	* [Update Agent Password](#update-agent-password)
 	* [Update Ccadmin Version](#update-ccadmin-version)
+	* [Update Dynamic View Field Sequence No](#update-dynamic-view-field-sequence-no)
 	* [Update Localised Field](#update-localised-field)
 	* [Update Verb Path](#update-verb-path)
 	* [Update Verb Process Descriptor Reference](#update-verb-process-descriptor-reference)
@@ -127,18 +127,20 @@ Table Of Contents
 	* [View Verb Entitlements](#view-verb-entitlements)
 	* [View Verbs From Repo Path](#view-verbs-from-repo-path)
 
-
 # scripts
   
-Currently, there are 80 templates in this section
+There are currently 81 templates in this section
 ## Add Activity To Perspective
   
 *Template:* [add_activity_to_perspective.sql](../library/templates/add_activity_to_perspective.sql)  
 *Test:* [test_add_activity_to_perspective.sql](../library/test_templates/test_add_activity_to_perspective.sql)  
-*Tasks:* [Remove Activity From Perspective](#remove-activity-from-perspective), [Update Verb User Visible Flag](#update-verb-user-visible-flag), [Set Entity Default Instance Verb](#set-entity-default-instance-verb)
+*Related Tasks:* [Remove Activity From Perspective](#remove-activity-from-perspective), [Update Verb User Visible Flag](#update-verb-user-visible-flag), [Set Entity Default Instance Verb](#set-entity-default-instance-verb)
 
 
 
+  
+  
+**Images**  
 
 ## Add Activity To Perspective With Seq No
   
@@ -147,14 +149,19 @@ Currently, there are 80 templates in this section
 
 
 
+  
+  
+**Images**  
 
 ## Add Agent For Commit
   
-*Template:* [add_agent_for_commit.sql](../library/templates/add_agent_for_commit.sql)  
-*Test:* [test_add_agent_for_commit.sql](../library/test_templates/test_add_agent_for_commit.sql)
+*Template:* [add_agent_for_commit.sql](../library/templates/add_agent_for_commit.sql)
 
 
 
+  
+  
+**Images**  
 
 ## Add Agent For Dev
   
@@ -163,14 +170,19 @@ Currently, there are 80 templates in this section
 
 
 
+  
+  
+**Images**  
 
 ## Add All Background Verbs From Another Profile
   
-*Template:* [add_all_background_verbs_from_another_profile.sql](../library/templates/add_all_background_verbs_from_another_profile.sql)  
-*Test:* [test_add_all_background_verbs_from_another_profile.sql](../library/test_templates/test_add_all_background_verbs_from_another_profile.sql)
+*Template:* [add_all_background_verbs_from_another_profile.sql](../library/templates/add_all_background_verbs_from_another_profile.sql)
 
 
 
+  
+  
+**Images**  
 
 ## Add Association Type
   
@@ -179,6 +191,9 @@ Currently, there are 80 templates in this section
 
 
 
+  
+  
+**Images**  
 
 ## Add Background Verb
   
@@ -187,6 +202,9 @@ Currently, there are 80 templates in this section
 
 
 
+  
+  
+**Images**  
 
 ## Add Background Verb To Profile
   
@@ -195,14 +213,19 @@ Currently, there are 80 templates in this section
 
 
 
+  
+  
+**Images**  
 
 ## Add Basic Entity Definition
   
-*Template:* [add_basic_entity_definition.sql](../library/templates/add_basic_entity_definition.sql)  
-*Test:* [test_add_basic_entity_definition.sql](../library/test_templates/test_add_basic_entity_definition.sql)
+*Template:* [add_basic_entity_definition.sql](../library/templates/add_basic_entity_definition.sql)
 
 
 
+  
+  
+**Images**  
 
 ## Add Category
   
@@ -211,6 +234,9 @@ Currently, there are 80 templates in this section
 
 
 
+  
+  
+**Images**  
 
 ## Add Content Type
   
@@ -219,6 +245,9 @@ Currently, there are 80 templates in this section
 
 
 
+  
+  
+**Images**  
 
 ## Add Dynamic Content Verb
   
@@ -227,6 +256,9 @@ Currently, there are 80 templates in this section
 
 
 
+  
+  
+**Images**  
 
 ## Add Dynamic Entity
   
@@ -235,14 +267,19 @@ Currently, there are 80 templates in this section
 
 
 
+  
+  
+**Images**  
 
 ## Add Dynamic Entity Def
   
-*Template:* [add_dynamic_entity_def.sql](../library/templates/add_dynamic_entity_def.sql)  
-*Test:* [test_add_dynamic_entity_def.sql](../library/test_templates/test_add_dynamic_entity_def.sql)
+*Template:* [add_dynamic_entity_def.sql](../library/templates/add_dynamic_entity_def.sql)
 
 
 
+  
+  
+**Images**  
 
 ## Add Dynamic Entity Field
   
@@ -251,6 +288,9 @@ Currently, there are 80 templates in this section
 
 
 
+  
+  
+**Images**  
 
 ## Add Dynamic Entity View
   
@@ -259,6 +299,9 @@ Currently, there are 80 templates in this section
 
 
 
+  
+  
+**Images**  
 
 ## Add Dynamic Entity View Field
   
@@ -267,6 +310,9 @@ Currently, there are 80 templates in this section
 
 
 
+  
+  
+**Images**  
 
 ## Add Entitlement
   
@@ -275,6 +321,9 @@ Currently, there are 80 templates in this section
 
 
 
+  
+  
+**Images**  
 
 ## Add Entitlement To Agent
   
@@ -283,6 +332,9 @@ Currently, there are 80 templates in this section
 
 
 
+  
+  
+**Images**  
 
 ## Add Entitlement To Profile
   
@@ -291,6 +343,9 @@ Currently, there are 80 templates in this section
 
 
 
+  
+  
+**Images**  
 
 ## Add Entitlement To Team
   
@@ -299,6 +354,9 @@ Currently, there are 80 templates in this section
 
 
 
+  
+  
+**Images**  
 
 ## Add Entitlement To Verb
   
@@ -307,6 +365,9 @@ Currently, there are 80 templates in this section
 
 
 
+  
+  
+**Images**  
 
 ## Add Entity Definition
   
@@ -315,14 +376,19 @@ Currently, there are 80 templates in this section
 
 
 
+  
+  
+**Images**  
 
 ## Add Localised Field
   
-*Template:* [add_localised_field.sql](../library/templates/add_localised_field.sql)  
-*Test:* [test_add_localised_field.sql](../library/test_templates/test_add_localised_field.sql)
+*Template:* [add_localised_field.sql](../library/templates/add_localised_field.sql)
 
 
 
+  
+  
+**Images**  
 
 ## Add Menu Item
   
@@ -331,14 +397,19 @@ Currently, there are 80 templates in this section
 
 
 
+  
+  
+**Images**  
 
 ## Add Migration Domain
   
-*Template:* [add_migration_domain.sql](../library/templates/add_migration_domain.sql)  
-*Test:* [test_add_migration_domain.sql](../library/test_templates/test_add_migration_domain.sql)
+*Template:* [add_migration_domain.sql](../library/templates/add_migration_domain.sql)
 
 
 
+  
+  
+**Images**  
 
 ## Add Perspective
   
@@ -347,6 +418,9 @@ Currently, there are 80 templates in this section
 
 
 
+  
+  
+**Images**  
 
 ## Add Perspective To Profile
   
@@ -355,6 +429,9 @@ Currently, there are 80 templates in this section
 
 
 
+  
+  
+**Images**  
 
 ## Add Process Descriptor
   
@@ -363,6 +440,9 @@ Currently, there are 80 templates in this section
 
 
 
+  
+  
+**Images**  
 
 ## Add Profile
   
@@ -371,6 +451,9 @@ Currently, there are 80 templates in this section
 
 
 
+  
+  
+**Images**  
 
 ## Add Profile To Agent
   
@@ -379,6 +462,9 @@ Currently, there are 80 templates in this section
 
 
 
+  
+  
+**Images**  
 
 ## Add Static Menu
   
@@ -387,14 +473,19 @@ Currently, there are 80 templates in this section
 
 
 
+  
+  
+**Images**  
 
 ## Add Tab To Ad Right Panel
   
-*Template:* [add_tab_to_ad_right_panel.sql](../library/templates/add_tab_to_ad_right_panel.sql)  
-*Test:* [test_add_tab_to_ad_right_panel.sql](../library/test_templates/test_add_tab_to_ad_right_panel.sql)
+*Template:* [add_tab_to_ad_right_panel.sql](../library/templates/add_tab_to_ad_right_panel.sql)
 
 
 
+  
+  
+**Images**  
 
 ## Add Tag
   
@@ -403,6 +494,9 @@ Currently, there are 80 templates in this section
 
 
 
+  
+  
+**Images**  
 
 ## Add Team
   
@@ -411,6 +505,9 @@ Currently, there are 80 templates in this section
 
 
 
+  
+  
+**Images**  
 
 ## Add Team Position
   
@@ -419,6 +516,9 @@ Currently, there are 80 templates in this section
 
 
 
+  
+  
+**Images**  
 
 ## Add Team Role
   
@@ -427,6 +527,9 @@ Currently, there are 80 templates in this section
 
 
 
+  
+  
+**Images**  
 
 ## Add Team Role Type
   
@@ -435,6 +538,9 @@ Currently, there are 80 templates in this section
 
 
 
+  
+  
+**Images**  
 
 ## Add Url With Smartmatch Purpose
   
@@ -447,14 +553,19 @@ Adds a URL and makes it available to be used in rules editor
 
 
 A use case is setting up an inbound rule, within the Rules Editor, which calls a URL when something happens.
-For example creating a customer when the customer is not identified. We could do that by make a request to create customer URL REST API. This URL needs to be previously configured and saved in the database. This is what this template does.
+For example creating a customer when the customer is not identified. We could do that by making a request to create customer URL REST API. This URL needs to be previously configured and saved in the database. This is what this template does.
+
 Currently only saves to the URL table, it does not save to FWI_URL_HEADER or FWI_URL_PARAM table. Once we encounter a use case that needs to save to those tables this template should be modified to save to those tables as well.
+
 Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL non migratable, we do this because we are scripting and any modification to the rule is expected to be done through script, not using migration.  
+  
+**Images**  
+  
 ![1](../library/templates/add_url_with_smartmatch_purpose1.PNG)  
-**Image: 1**  
+**<center>Image 1</center>**  
   
 ![2](../library/templates/add_url_with_smartmatch_purpose2.PNG)  
-**Image: 2**  
+**<center>Image 2</center>**  
 
 ## Add Verb To Entity
   
@@ -463,14 +574,19 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
 
+  
+  
+**Images**  
 
 ## Add Verb With Existing Pdr
   
-*Template:* [add_verb_with_existing_pdr.sql](../library/templates/add_verb_with_existing_pdr.sql)  
-*Test:* [test_add_verb_with_existing_pdr.sql](../library/test_templates/test_add_verb_with_existing_pdr.sql)
+*Template:* [add_verb_with_existing_pdr.sql](../library/templates/add_verb_with_existing_pdr.sql)
 
 
 
+  
+  
+**Images**  
 
 ## Add View Contact Tab
   
@@ -479,6 +595,9 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
 
+  
+  
+**Images**  
 
 ## Add Web Integration Host
   
@@ -487,6 +606,9 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
 
+  
+  
+**Images**  
 
 ## Change Max Count Work Area
   
@@ -495,14 +617,19 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
 
+  
+  
+**Images**  
 
 ## Config New Content Type
   
-*Template:* [config_new_content_type.sql](../library/templates/config_new_content_type.sql)  
-*Test:* [test_config_new_content_type.sql](../library/test_templates/test_config_new_content_type.sql)
+*Template:* [config_new_content_type.sql](../library/templates/config_new_content_type.sql)
 
 
 
+  
+  
+**Images**  
 
 ## Extend Customer
   
@@ -511,6 +638,9 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
 
+  
+  
+**Images**  
 
 ## Extend Entity
   
@@ -519,6 +649,9 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
 
+  
+  
+**Images**  
 
 ## Extend Verb
   
@@ -527,6 +660,9 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
 
+  
+  
+**Images**  
 
 ## Extend Verb With Config
   
@@ -535,22 +671,29 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
 
+  
+  
+**Images**  
 
 ## Get Table From Fk Contraint Name
   
-*Template:* [get_table_from_fk_contraint_name.sql](../library/templates/get_table_from_fk_contraint_name.sql)  
-*Test:* [test_get_table_from_fk_contraint_name.sql](../library/test_templates/test_get_table_from_fk_contraint_name.sql)
+*Template:* [get_table_from_fk_contraint_name.sql](../library/templates/get_table_from_fk_contraint_name.sql)
 
 
 
+  
+  
+**Images**  
 
 ## How To Add Content Type
   
-*Template:* [how_to_add_content_type.txt](../library/templates/how_to_add_content_type.txt)  
-*Test:* [test_how_to_add_content_type.txt](../library/test_templates/test_how_to_add_content_type.txt)
+*Template:* [how_to_add_content_type.txt](../library/templates/how_to_add_content_type.txt)
 
 
 
+  
+  
+**Images**  
 
 ## Register Channel State Manager Listener
   
@@ -559,14 +702,19 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
 
+  
+  
+**Images**  
 
 ## Remove Activity From Perspective
   
-*Template:* [remove_activity_from_perspective.sql](../library/templates/remove_activity_from_perspective.sql)  
-*Test:* [test_remove_activity_from_perspective.sql](../library/test_templates/test_remove_activity_from_perspective.sql)
+*Template:* [remove_activity_from_perspective.sql](../library/templates/remove_activity_from_perspective.sql)
 
 
 
+  
+  
+**Images**  
 
 ## Remove Agent For Dev
   
@@ -575,14 +723,19 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
 
+  
+  
+**Images**  
 
 ## Remove Background Verb From Profile
   
-*Template:* [remove_background_verb_from_profile.sql](../library/templates/remove_background_verb_from_profile.sql)  
-*Test:* [test_remove_background_verb_from_profile.sql](../library/test_templates/test_remove_background_verb_from_profile.sql)
+*Template:* [remove_background_verb_from_profile.sql](../library/templates/remove_background_verb_from_profile.sql)
 
 
 
+  
+  
+**Images**  
 
 ## Remove Base Entity
   
@@ -591,6 +744,9 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
 
+  
+  
+**Images**  
 
 ## Remove Entitlement From Agent
   
@@ -599,6 +755,9 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
 
+  
+  
+**Images**  
 
 ## Remove Entitlement From Profile
   
@@ -607,6 +766,9 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
 
+  
+  
+**Images**  
 
 ## Remove Entitlement From Team
   
@@ -615,6 +777,9 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
 
+  
+  
+**Images**  
 
 ## Remove Entitlement From Verb
   
@@ -623,6 +788,9 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
 
+  
+  
+**Images**  
 
 ## Remove Entity Definition
   
@@ -631,6 +799,9 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
 
+  
+  
+**Images**  
 
 ## Remove Menu Item
   
@@ -639,6 +810,9 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
 
+  
+  
+**Images**  
 
 ## Remove Perspective From Profile
   
@@ -647,6 +821,9 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
 
+  
+  
+**Images**  
 
 ## Remove Process Desc Ref
   
@@ -655,14 +832,19 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
 
+  
+  
+**Images**  
 
 ## Remove Profile From Agent
   
-*Template:* [remove_profile_from_agent.sql](../library/templates/remove_profile_from_agent.sql)  
-*Test:* [test_remove_profile_from_agent.sql](../library/test_templates/test_remove_profile_from_agent.sql)
+*Template:* [remove_profile_from_agent.sql](../library/templates/remove_profile_from_agent.sql)
 
 
 
+  
+  
+**Images**  
 
 ## Remove Tab From Ad Right Panel
   
@@ -671,6 +853,9 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
 
+  
+  
+**Images**  
 
 ## Remove Team
   
@@ -679,6 +864,9 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
 
+  
+  
+**Images**  
 
 ## Remove Team Role
   
@@ -687,6 +875,9 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
 
+  
+  
+**Images**  
 
 ## Remove Team Role Type
   
@@ -695,6 +886,9 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
 
+  
+  
+**Images**  
 
 ## Remove Verb From Entity
   
@@ -703,6 +897,9 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
 
+  
+  
+**Images**  
 
 ## Remove View Contact Tab
   
@@ -711,13 +908,62 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
 
+  
+  
+**Images**  
+
+## Reorder Dynamic View Field
+  
+*Template:* [reorder_dynamic_view_field.sql](../library/templates/reorder_dynamic_view_field.sql)  
+*Test:* [test_reorder_dynamic_view_field.sql](../library/test_templates/test_reorder_dynamic_view_field.sql)  
+*Related Tasks:* [Add Dynamic Entity View Field](#add-dynamic-entity-view-field)
+
+Reorder dynamic view field by moving it up or down to a given position
+
+
+
+
+If we take as example the following fields:
+
+|            KEYNAME            | VIEW_FIELD_SEQUENCE |
+|-------------------------------|---------------------|
+|   KnowledgeSegmentCreateBody  |          1          |
+|  KnowledgeSegmentCreateKBase  |          2          |
+| KnowledgeSegmentCreateProduct |          3          |
+|  KnowledgeSegmentCreateTopic  |          4          |
+|  KnowledgeSegmentCreateRegion |          5          |
+
+
+**Moving Up**
+
+Selecting 'KnowledgeSegmentCreateTopic' and entering sequence_no '2' will change to:
+
+|            KEYNAME            | VIEW_FIELD_SEQUENCE |
+|-------------------------------|---------------------|
+|   KnowledgeSegmentCreateBody  |          1          |
+|  KnowledgeSegmentCreateTopic  |          2          |
+|  KnowledgeSegmentCreateKBase  |          3          |
+| KnowledgeSegmentCreateProduct |          4          |
+|  KnowledgeSegmentCreateRegion |          5          |
+
+
+**Moving Down**
+
+Now we can move the topic back to his original place by selecting 'KnowledgeSegmentCreateTopic' and entering sequence_no '4'.
+
+  
+  
+**Images**  
+  
+![1](../library/templates/reorder_dynamic_view_field1.PNG)  
+**<center>Image 1</center>**  
 
 ## Set Entity Default Instance Verb
   
 *Template:* [set_entity_default_instance_verb.sql](../library/templates/set_entity_default_instance_verb.sql)  
 *Test:* [test_set_entity_default_instance_verb.sql](../library/test_templates/test_set_entity_default_instance_verb.sql)  
-*Tasks:* [Update Verb User Visible Flag](#update-verb-user-visible-flag), [Add Activity To Perspective](#add-activity-to-perspective)  
-*Views:* [View Entity Displayed Verbs](#view-entity-displayed-verbs), [View Entity Verbs](#view-entity-verbs)
+*Related Tasks:* [Update Verb User Visible Flag](#update-verb-user-visible-flag), [Add Activity To Perspective](#add-activity-to-perspective)  
+*Related Views:* [View Entity Displayed Verbs](#view-entity-displayed-verbs), [View Entity Verbs](#view-entity-verbs)
 
 Determines what verb runs when user clicks on a entity displayed on context
 
@@ -727,14 +973,9 @@ This template prompts to select an entity keyname and then it prompts the instan
 
 ### What is an Entity Default Instance Verb?
 On agent desktop, when entity is added into context it displays on the left hand side activities panel showing as title the entities `toString()` result and underneath its "user visible" intance verbs.
-User can run each verb by clicking on the verb title. User can also click on the entities title and it will run the default instance verb.
-## Test Register Channel State Manager Listener
+User can run each verb by clicking on the verb title. User can also click on the entities title and it will run the default instance verb.  
   
-*Template:* [test_register_channel_state_manager_listener.sql](../library/templates/test_register_channel_state_manager_listener.sql)  
-*Test:* [test_test_register_channel_state_manager_listener.sql](../library/test_templates/test_test_register_channel_state_manager_listener.sql)
-
-
-
+**Images**  
 
 ## Unregister Channel State Manager Listener
   
@@ -743,6 +984,9 @@ User can run each verb by clicking on the verb title. User can also click on the
 
 
 
+  
+  
+**Images**  
 
 ## Update Agent Password
   
@@ -751,6 +995,9 @@ User can run each verb by clicking on the verb title. User can also click on the
 
 
 
+  
+  
+**Images**  
 
 ## Update Ccadmin Version
   
@@ -759,6 +1006,46 @@ User can run each verb by clicking on the verb title. User can also click on the
 
 
 
+  
+  
+**Images**  
+
+## Update Dynamic View Field Sequence No
+  
+*Template:* [update_dynamic_view_field_sequence_no.sql](../library/templates/update_dynamic_view_field_sequence_no.sql)
+
+Reorder dynamic view field by moving it up or down to a given position
+
+
+
+
+If we take as example the following fields:
+|-------------------------------|---------------------|
+|            KEYNAME            | VIEW_FIELD_SEQUENCE |
+|-------------------------------|---------------------|
+|   KnowledgeSegmentCreateBody  |          1          |
+|  KnowledgeSegmentCreateKBase  |          2          |
+| KnowledgeSegmentCreateProduct |          3          |
+|  KnowledgeSegmentCreateTopic  |          4          |
+|  KnowledgeSegmentCreateRegion |          5          |
+|-------------------------------|---------------------|
+
+# Moving up
+Selecting 'KnowledgeSegmentCreateTopic' and entering sequence_no '2' will change to:
++-------------------------------+---------------------+
+|            KEYNAME            | VIEW_FIELD_SEQUENCE |
++-------------------------------+---------------------+
+|   KnowledgeSegmentCreateBody  |          1          |
+|  KnowledgeSegmentCreateTopic  |          2          |
+|  KnowledgeSegmentCreateKBase  |          3          |
+| KnowledgeSegmentCreateProduct |          4          |
+|  KnowledgeSegmentCreateRegion |          5          |
++-------------------------------+---------------------+
+
+# Moving Down
+Now we can move the topic back to his original place by selecting 'KnowledgeSegmentCreateTopic' and entering sequence_no '4'.  
+  
+**Images**  
 
 ## Update Localised Field
   
@@ -767,6 +1054,9 @@ User can run each verb by clicking on the verb title. User can also click on the
 
 
 
+  
+  
+**Images**  
 
 ## Update Verb Path
   
@@ -775,6 +1065,9 @@ User can run each verb by clicking on the verb title. User can also click on the
 
 
 
+  
+  
+**Images**  
 
 ## Update Verb Process Descriptor Reference
   
@@ -783,6 +1076,9 @@ User can run each verb by clicking on the verb title. User can also click on the
 
 
 
+  
+  
+**Images**  
 
 ## Update Verb User Visible Flag
   
@@ -791,191 +1087,238 @@ User can run each verb by clicking on the verb title. User can also click on the
 
 
 
+  
+  
+**Images**  
 
 # hidden_templates
   
-Currently, there are 9 templates in this section
+There are currently 9 templates in this section
 ## Add Entity Entitlement
   
-*Template:* [add_entity_entitlement.sql](../library/templates/hidden_templates/add_entity_entitlement.sql)  
-*Test:* [test_add_entity_entitlement.sql](../library/test_templates/hidden_templates/test_add_entity_entitlement.sql)
+*Template:* [add_entity_entitlement.sql](../library/templates/hidden_templates/add_entity_entitlement.sql)
 
 
 
+  
+  
+**Images**  
 
 ## Add Process Descriptor Ref
   
-*Template:* [add_process_descriptor_ref.sql](../library/templates/hidden_templates/add_process_descriptor_ref.sql)  
-*Test:* [test_add_process_descriptor_ref.sql](../library/test_templates/hidden_templates/test_add_process_descriptor_ref.sql)
+*Template:* [add_process_descriptor_ref.sql](../library/templates/hidden_templates/add_process_descriptor_ref.sql)
 
 
 
+  
+  
+**Images**  
 
 ## Base Add Entity Def
   
-*Template:* [base_add_entity_def.sql](../library/templates/hidden_templates/base_add_entity_def.sql)  
-*Test:* [test_base_add_entity_def.sql](../library/test_templates/hidden_templates/test_base_add_entity_def.sql)
+*Template:* [base_add_entity_def.sql](../library/templates/hidden_templates/base_add_entity_def.sql)
 
 
 
+  
+  
+**Images**  
 
 ## Generic Set Update Values
   
-*Template:* [generic_set_update_values.sql](../library/templates/hidden_templates/generic_set_update_values.sql)  
-*Test:* [test_generic_set_update_values.sql](../library/test_templates/hidden_templates/test_generic_set_update_values.sql)
+*Template:* [generic_set_update_values.sql](../library/templates/hidden_templates/generic_set_update_values.sql)
 
 
 
+  
+  
+**Images**  
 
 ## Insert Context Verb Entry
   
-*Template:* [insert_context_verb_entry.sql](../library/templates/hidden_templates/insert_context_verb_entry.sql)  
-*Test:* [test_insert_context_verb_entry.sql](../library/test_templates/hidden_templates/test_insert_context_verb_entry.sql)
+*Template:* [insert_context_verb_entry.sql](../library/templates/hidden_templates/insert_context_verb_entry.sql)
 
 
 
+  
+  
+**Images**  
 
 ## Insert Dynamic Verb List
   
-*Template:* [insert_dynamic_verb_list.sql](../library/templates/hidden_templates/insert_dynamic_verb_list.sql)  
-*Test:* [test_insert_dynamic_verb_list.sql](../library/test_templates/hidden_templates/test_insert_dynamic_verb_list.sql)
+*Template:* [insert_dynamic_verb_list.sql](../library/templates/hidden_templates/insert_dynamic_verb_list.sql)
 
 
 
+  
+  
+**Images**  
 
 ## Insert Dynamic Verb Parameter
   
-*Template:* [insert_dynamic_verb_parameter.sql](../library/templates/hidden_templates/insert_dynamic_verb_parameter.sql)  
-*Test:* [test_insert_dynamic_verb_parameter.sql](../library/test_templates/hidden_templates/test_insert_dynamic_verb_parameter.sql)
+*Template:* [insert_dynamic_verb_parameter.sql](../library/templates/hidden_templates/insert_dynamic_verb_parameter.sql)
 
 
 
+  
+  
+**Images**  
 
 ## Remove Dynamic Verb List
   
-*Template:* [remove_dynamic_verb_list.sql](../library/templates/hidden_templates/remove_dynamic_verb_list.sql)  
-*Test:* [test_remove_dynamic_verb_list.sql](../library/test_templates/hidden_templates/test_remove_dynamic_verb_list.sql)
+*Template:* [remove_dynamic_verb_list.sql](../library/templates/hidden_templates/remove_dynamic_verb_list.sql)
 
 
 
+  
+  
+**Images**  
 
 ## Remove Idmap
   
-*Template:* [remove_idmap.sql](../library/templates/hidden_templates/remove_idmap.sql)  
-*Test:* [test_remove_idmap.sql](../library/test_templates/hidden_templates/test_remove_idmap.sql)
+*Template:* [remove_idmap.sql](../library/templates/hidden_templates/remove_idmap.sql)
 
 
 
+  
+  
+**Images**  
 
 # tutorials
   
-Currently, there are 6 templates in this section
+There are currently 6 templates in this section
 ## Filters
   
-*Template:* [filters.txt](../library/templates/tutorials/filters.txt)  
-*Test:* [test_filters.txt](../library/test_templates/tutorials/test_filters.txt)
+*Template:* [filters.txt](../library/templates/tutorials/filters.txt)
 
 
 
+  
+  
+**Images**  
 
 ## Globals And String Functions Tutorial
   
-*Template:* [globals_and_string_functions_tutorial.txt](../library/templates/tutorials/globals_and_string_functions_tutorial.txt)  
-*Test:* [test_globals_and_string_functions_tutorial.txt](../library/test_templates/tutorials/test_globals_and_string_functions_tutorial.txt)
+*Template:* [globals_and_string_functions_tutorial.txt](../library/templates/tutorials/globals_and_string_functions_tutorial.txt)
 
 
 
+  
+  
+**Images**  
 
 ## Include
   
-*Template:* [include.txt](../library/templates/tutorials/include.txt)  
-*Test:* [test_include.txt](../library/test_templates/tutorials/test_include.txt)
+*Template:* [include.txt](../library/templates/tutorials/include.txt)
 
 
 
+  
+  
+**Images**  
 
 ## Keynames
   
-*Template:* [keynames.txt](../library/templates/tutorials/keynames.txt)  
-*Test:* [test_keynames.txt](../library/test_templates/tutorials/test_keynames.txt)
+*Template:* [keynames.txt](../library/templates/tutorials/keynames.txt)
 
 
 
+  
+  
+**Images**  
 
 ## Querying Db
   
-*Template:* [querying_db.txt](../library/templates/tutorials/querying_db.txt)  
-*Test:* [test_querying_db.txt](../library/test_templates/tutorials/test_querying_db.txt)
+*Template:* [querying_db.txt](../library/templates/tutorials/querying_db.txt)
 
 
 
+  
+  
+**Images**  
 
 ## Variable And Prompts
   
-*Template:* [variable_and_prompts.txt](../library/templates/tutorials/variable_and_prompts.txt)  
-*Test:* [test_variable_and_prompts.txt](../library/test_templates/tutorials/test_variable_and_prompts.txt)
+*Template:* [variable_and_prompts.txt](../library/templates/tutorials/variable_and_prompts.txt)
 
 
 
+  
+  
+**Images**  
 
 # views
   
-Currently, there are 18 templates in this section
+There are currently 18 templates in this section
 ## View Ad Right Panel Tabs Verbs
   
-*Template:* [view_ad_right_panel_tabs_verbs.sql](../library/templates/views/view_ad_right_panel_tabs_verbs.sql)  
-*Test:* [test_view_ad_right_panel_tabs_verbs.sql](../library/test_templates/views/test_view_ad_right_panel_tabs_verbs.sql)
+*Template:* [view_ad_right_panel_tabs_verbs.sql](../library/templates/views/view_ad_right_panel_tabs_verbs.sql)
 
 
 
+  
+  
+**Images**  
 
 ## View Agent
   
-*Template:* [view_agent.sql](../library/templates/views/view_agent.sql)  
-*Test:* [test_view_agent.sql](../library/test_templates/views/test_view_agent.sql)
+*Template:* [view_agent.sql](../library/templates/views/view_agent.sql)
 
 
 
+  
+  
+**Images**  
 
 ## View Agent Profile Background Vebs
   
-*Template:* [view_agent_profile_background_vebs.sql](../library/templates/views/view_agent_profile_background_vebs.sql)  
-*Test:* [test_view_agent_profile_background_vebs.sql](../library/test_templates/views/test_view_agent_profile_background_vebs.sql)
+*Template:* [view_agent_profile_background_vebs.sql](../library/templates/views/view_agent_profile_background_vebs.sql)
 
 
 
+  
+  
+**Images**  
 
 ## View Channel State Manager Listeners
   
-*Template:* [view_channel_state_manager_listeners.sql](../library/templates/views/view_channel_state_manager_listeners.sql)  
-*Test:* [test_view_channel_state_manager_listeners.sql](../library/test_templates/views/test_view_channel_state_manager_listeners.sql)
+*Template:* [view_channel_state_manager_listeners.sql](../library/templates/views/view_channel_state_manager_listeners.sql)
 
 
 
+  
+  
+**Images**  
 
 ## View Entitlements By System Name
   
-*Template:* [view_entitlements_by_system_name.sql](../library/templates/views/view_entitlements_by_system_name.sql)  
-*Test:* [test_view_entitlements_by_system_name.sql](../library/test_templates/views/test_view_entitlements_by_system_name.sql)
+*Template:* [view_entitlements_by_system_name.sql](../library/templates/views/view_entitlements_by_system_name.sql)
 
 
 
+  
+  
+**Images**  
 
 ## View Entity Definition
   
-*Template:* [view_entity_definition.sql](../library/templates/views/view_entity_definition.sql)  
-*Test:* [test_view_entity_definition.sql](../library/test_templates/views/test_view_entity_definition.sql)
+*Template:* [view_entity_definition.sql](../library/templates/views/view_entity_definition.sql)
 
 
 
+  
+  
+**Images**  
 
 ## View Entity Displayed Verbs
   
-*Template:* [view_entity_displayed_verbs.sql](../library/templates/views/view_entity_displayed_verbs.sql)  
-*Test:* [test_view_entity_displayed_verbs.sql](../library/test_templates/views/test_view_entity_displayed_verbs.sql)
+*Template:* [view_entity_displayed_verbs.sql](../library/templates/views/view_entity_displayed_verbs.sql)
 
 
 
+  
+  
+**Images**  
 
 ## View Entity Verbs
   
@@ -984,54 +1327,69 @@ Currently, there are 18 templates in this section
 
 
 
+  
+  
+**Images**  
 
 ## View Entity Verbs Keynames
   
-*Template:* [view_entity_verbs_keynames.sql](../library/templates/views/view_entity_verbs_keynames.sql)  
-*Test:* [test_view_entity_verbs_keynames.sql](../library/test_templates/views/test_view_entity_verbs_keynames.sql)
+*Template:* [view_entity_verbs_keynames.sql](../library/templates/views/view_entity_verbs_keynames.sql)
 
 
 
+  
+  
+**Images**  
 
 ## View Entitydef By Keyname
   
-*Template:* [view_entitydef_by_keyname.sql](../library/templates/views/view_entitydef_by_keyname.sql)  
-*Test:* [test_view_entitydef_by_keyname.sql](../library/test_templates/views/test_view_entitydef_by_keyname.sql)
+*Template:* [view_entitydef_by_keyname.sql](../library/templates/views/view_entitydef_by_keyname.sql)
 
 
 
+  
+  
+**Images**  
 
 ## View Keynames
   
-*Template:* [view_keynames.sql](../library/templates/views/view_keynames.sql)  
-*Test:* [test_view_keynames.sql](../library/test_templates/views/test_view_keynames.sql)
+*Template:* [view_keynames.sql](../library/templates/views/view_keynames.sql)
 
 
 
+  
+  
+**Images**  
 
 ## View Process Descriptor Ref By Repo Path
   
-*Template:* [view_process_descriptor_ref_by_repo_path.sql](../library/templates/views/view_process_descriptor_ref_by_repo_path.sql)  
-*Test:* [test_view_process_descriptor_ref_by_repo_path.sql](../library/test_templates/views/test_view_process_descriptor_ref_by_repo_path.sql)
+*Template:* [view_process_descriptor_ref_by_repo_path.sql](../library/templates/views/view_process_descriptor_ref_by_repo_path.sql)
 
 
 
+  
+  
+**Images**  
 
 ## View Profile Entitlements
   
-*Template:* [view_profile_entitlements.sql](../library/templates/views/view_profile_entitlements.sql)  
-*Test:* [test_view_profile_entitlements.sql](../library/test_templates/views/test_view_profile_entitlements.sql)
+*Template:* [view_profile_entitlements.sql](../library/templates/views/view_profile_entitlements.sql)
 
 
 
+  
+  
+**Images**  
 
 ## View Profile Verbs
   
-*Template:* [view_profile_verbs.sql](../library/templates/views/view_profile_verbs.sql)  
-*Test:* [test_view_profile_verbs.sql](../library/test_templates/views/test_view_profile_verbs.sql)
+*Template:* [view_profile_verbs.sql](../library/templates/views/view_profile_verbs.sql)
 
 
 
+  
+  
+**Images**  
 
 ## View User Profiles
   
@@ -1040,27 +1398,36 @@ Currently, there are 18 templates in this section
 
 
 
+  
+  
+**Images**  
 
 ## View Verb By Keyname
   
-*Template:* [view_verb_by_keyname.sql](../library/templates/views/view_verb_by_keyname.sql)  
-*Test:* [test_view_verb_by_keyname.sql](../library/test_templates/views/test_view_verb_by_keyname.sql)
+*Template:* [view_verb_by_keyname.sql](../library/templates/views/view_verb_by_keyname.sql)
 
 
 
+  
+  
+**Images**  
 
 ## View Verb Entitlements
   
-*Template:* [view_verb_entitlements.sql](../library/templates/views/view_verb_entitlements.sql)  
-*Test:* [test_view_verb_entitlements.sql](../library/test_templates/views/test_view_verb_entitlements.sql)
+*Template:* [view_verb_entitlements.sql](../library/templates/views/view_verb_entitlements.sql)
 
 
 
+  
+  
+**Images**  
 
 ## View Verbs From Repo Path
   
-*Template:* [view_verbs_from_repo_path.sql](../library/templates/views/view_verbs_from_repo_path.sql)  
-*Test:* [test_view_verbs_from_repo_path.sql](../library/test_templates/views/test_view_verbs_from_repo_path.sql)
+*Template:* [view_verbs_from_repo_path.sql](../library/templates/views/view_verbs_from_repo_path.sql)
 
 
 
+  
+  
+**Images**  
