@@ -50,7 +50,7 @@ add_dynamic_entity_view_field.sql
 {% set __current_seq_no = __view_fields.find(keyname=__view_field)['VIEW_FIELD_SEQUENCE'] | string %}
 --Changing View {{__dyn_view_keyname}}
 --make space for field  {{__view_field}}
-{% if __current_seq_no > __sequence_no %}
+{% if __current_seq_no | int > __sequence_no | int %}
 {# Fields is being moved up#}
  {% set increasing_factor = 1 %}
 {% set __fields_to_update = __view_fields.where("VIEW_FIELD_SEQUENCE>="+__sequence_no)%}

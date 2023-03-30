@@ -3,7 +3,7 @@ SQLTask Library
 ===============
 
 
-The SQL tasks library has currently a total of 114 templates, divided in 4 sections; 81 [scripts](#scripts), 9 [hidden_templates](#hidden_templates), 6 [tutorials](#tutorials), 18 [views](#views)
+The SQL tasks library has currently a total of 113 templates, divided in 4 sections; 80 [scripts](#scripts), 9 [hidden_templates](#hidden_templates), 6 [tutorials](#tutorials), 18 [views](#views)
 
 Tables of Contents
 ==================
@@ -85,7 +85,6 @@ Tables of Contents
 	* [Unregister Channel State Manager Listener](#unregister-channel-state-manager-listener)
 	* [Update Agent Password](#update-agent-password)
 	* [Update Ccadmin Version](#update-ccadmin-version)
-	* [Update Dynamic View Field Sequence No](#update-dynamic-view-field-sequence-no)
 	* [Update Localised Field](#update-localised-field)
 	* [Update Verb Path](#update-verb-path)
 	* [Update Verb Process Descriptor Reference](#update-verb-process-descriptor-reference)
@@ -129,7 +128,7 @@ Tables of Contents
 
 # scripts
   
-There are currently 81 templates in this section
+There are currently 80 templates in this section
 ## Add Activity To Perspective
   
 *Template:* [add_activity_to_perspective.sql](../library/templates/add_activity_to_perspective.sql)  
@@ -949,7 +948,7 @@ Selecting 'KnowledgeSegmentCreateTopic' and entering sequence_no '2' will change
 
 **Moving Down**
 
-Now we can move the topic back to his original place by selecting 'KnowledgeSegmentCreateTopic' and entering sequence_no '4'.
+Now we can move 'KnowledgeSegmentCreateTopic' back to his original place by selecting 'KnowledgeSegmentCreateTopic' and entering sequence_no '4'.
 
   
   
@@ -957,6 +956,12 @@ Now we can move the topic back to his original place by selecting 'KnowledgeSegm
   
 ![1](../library/templates/reorder_dynamic_view_field1.PNG)  
 **<center>Image 1</center>**  
+  
+![2](../library/templates/reorder_dynamic_view_field2.PNG)  
+**<center>Image 2</center>**  
+  
+![3](../library/templates/reorder_dynamic_view_field3.PNG)  
+**<center>Image 3</center>**  
 
 ## Set Entity Default Instance Verb
   
@@ -1007,43 +1012,6 @@ User can run each verb by clicking on the verb title. User can also click on the
 
 
   
-  
-**Images**  
-
-## Update Dynamic View Field Sequence No
-  
-*Template:* [update_dynamic_view_field_sequence_no.sql](../library/templates/update_dynamic_view_field_sequence_no.sql)
-
-Reorder dynamic view field by moving it up or down to a given position
-
-
-
-
-If we take as example the following fields:
-|-------------------------------|---------------------|
-|            KEYNAME            | VIEW_FIELD_SEQUENCE |
-|-------------------------------|---------------------|
-|   KnowledgeSegmentCreateBody  |          1          |
-|  KnowledgeSegmentCreateKBase  |          2          |
-| KnowledgeSegmentCreateProduct |          3          |
-|  KnowledgeSegmentCreateTopic  |          4          |
-|  KnowledgeSegmentCreateRegion |          5          |
-|-------------------------------|---------------------|
-
-# Moving up
-Selecting 'KnowledgeSegmentCreateTopic' and entering sequence_no '2' will change to:
-+-------------------------------+---------------------+
-|            KEYNAME            | VIEW_FIELD_SEQUENCE |
-+-------------------------------+---------------------+
-|   KnowledgeSegmentCreateBody  |          1          |
-|  KnowledgeSegmentCreateTopic  |          2          |
-|  KnowledgeSegmentCreateKBase  |          3          |
-| KnowledgeSegmentCreateProduct |          4          |
-|  KnowledgeSegmentCreateRegion |          5          |
-+-------------------------------+---------------------+
-
-# Moving Down
-Now we can move the topic back to his original place by selecting 'KnowledgeSegmentCreateTopic' and entering sequence_no '4'.  
   
 **Images**  
 
