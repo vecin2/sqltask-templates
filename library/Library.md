@@ -3,7 +3,7 @@ SQLTask Library
 ===============
 
 
-The SQL tasks library has currently a total of 113 templates, divided in 4 sections; 80 [scripts](#scripts), 9 [hidden_templates](#hidden_templates), 6 [tutorials](#tutorials), 18 [views](#views)
+The SQL tasks library has currently a total of 113 templates, divided in 5 sections; 78 [scripts](#scripts), 9 [hidden_templates](#hidden_templates), 7 [tutorials](#tutorials), 18 [views](#views), 1 [oracle](#oracle)
 
 Tables of Contents
 ==================
@@ -58,8 +58,6 @@ Tables of Contents
 	* [Extend Entity](#extend-entity)
 	* [Extend Verb](#extend-verb)
 	* [Extend Verb With Config](#extend-verb-with-config)
-	* [Get Table From Fk Contraint Name](#get-table-from-fk-contraint-name)
-	* [How To Add Content Type](#how-to-add-content-type)
 	* [Register Channel State Manager Listener](#register-channel-state-manager-listener)
 	* [Remove Activity From Perspective](#remove-activity-from-perspective)
 	* [Remove Agent For Dev](#remove-agent-for-dev)
@@ -102,6 +100,7 @@ Tables of Contents
 * [tutorials](#tutorials)
 	* [Filters](#filters)
 	* [Globals And String Functions Tutorial](#globals-and-string-functions-tutorial)
+	* [How To Add Content Type](#how-to-add-content-type)
 	* [Include](#include)
 	* [Keynames](#keynames)
 	* [Querying Db](#querying-db)
@@ -125,10 +124,12 @@ Tables of Contents
 	* [View Verb By Keyname](#view-verb-by-keyname)
 	* [View Verb Entitlements](#view-verb-entitlements)
 	* [View Verbs From Repo Path](#view-verbs-from-repo-path)
+* [oracle](#oracle)
+	* [View Table Name From Foreign Key Name](#view-table-name-from-foreign-key-name)
 
 # scripts
   
-There are currently 80 templates in this section
+There are currently 78 templates in this section
 ## Add Activity To Perspective
   
 *Template:* [add_activity_to_perspective.sql](../library/templates/add_activity_to_perspective.sql)  
@@ -138,8 +139,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Activity To Perspective With Seq No
   
@@ -149,8 +148,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Agent For Commit
   
@@ -159,8 +156,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Agent For Dev
   
@@ -170,8 +165,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add All Background Verbs From Another Profile
   
@@ -180,8 +173,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Association Type
   
@@ -191,8 +182,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Background Verb
   
@@ -202,8 +191,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Background Verb To Profile
   
@@ -213,8 +200,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Basic Entity Definition
   
@@ -223,8 +208,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Category
   
@@ -234,8 +217,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Content Type
   
@@ -245,8 +226,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Dynamic Content Verb
   
@@ -256,8 +235,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Dynamic Entity
   
@@ -267,8 +244,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Dynamic Entity Def
   
@@ -277,8 +252,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Dynamic Entity Field
   
@@ -288,8 +261,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Dynamic Entity View
   
@@ -299,8 +270,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Dynamic Entity View Field
   
@@ -310,8 +279,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Entitlement
   
@@ -321,8 +288,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Entitlement To Agent
   
@@ -332,8 +297,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Entitlement To Profile
   
@@ -343,8 +306,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Entitlement To Team
   
@@ -354,8 +315,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Entitlement To Verb
   
@@ -365,8 +324,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Entity Definition
   
@@ -376,8 +333,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Localised Field
   
@@ -386,8 +341,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Menu Item
   
@@ -397,8 +350,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Migration Domain
   
@@ -407,8 +358,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Perspective
   
@@ -418,8 +367,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Perspective To Profile
   
@@ -429,8 +376,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Process Descriptor
   
@@ -440,8 +385,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Profile
   
@@ -451,8 +394,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Profile To Agent
   
@@ -462,8 +403,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Static Menu
   
@@ -473,8 +412,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Tab To Ad Right Panel
   
@@ -483,8 +420,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Tag
   
@@ -494,8 +429,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Team
   
@@ -505,8 +438,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Team Position
   
@@ -516,8 +447,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Team Role
   
@@ -527,8 +456,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Team Role Type
   
@@ -538,8 +465,6 @@ There are currently 80 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Url With Smartmatch Purpose
   
@@ -574,8 +499,6 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
   
-  
-**Images**  
 
 ## Add Verb With Existing Pdr
   
@@ -584,8 +507,6 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
   
-  
-**Images**  
 
 ## Add View Contact Tab
   
@@ -595,8 +516,6 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
   
-  
-**Images**  
 
 ## Add Web Integration Host
   
@@ -606,8 +525,6 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
   
-  
-**Images**  
 
 ## Change Max Count Work Area
   
@@ -617,8 +534,6 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
   
-  
-**Images**  
 
 ## Config New Content Type
   
@@ -627,8 +542,6 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
   
-  
-**Images**  
 
 ## Extend Customer
   
@@ -638,8 +551,6 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
   
-  
-**Images**  
 
 ## Extend Entity
   
@@ -649,8 +560,6 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
   
-  
-**Images**  
 
 ## Extend Verb
   
@@ -660,8 +569,6 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
   
-  
-**Images**  
 
 ## Extend Verb With Config
   
@@ -671,28 +578,6 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
   
-  
-**Images**  
-
-## Get Table From Fk Contraint Name
-  
-*Template:* [get_table_from_fk_contraint_name.sql](../library/templates/get_table_from_fk_contraint_name.sql)
-
-
-
-  
-  
-**Images**  
-
-## How To Add Content Type
-  
-*Template:* [how_to_add_content_type.txt](../library/templates/how_to_add_content_type.txt)
-
-
-
-  
-  
-**Images**  
 
 ## Register Channel State Manager Listener
   
@@ -702,8 +587,6 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
   
-  
-**Images**  
 
 ## Remove Activity From Perspective
   
@@ -712,8 +595,6 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
   
-  
-**Images**  
 
 ## Remove Agent For Dev
   
@@ -723,8 +604,6 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
   
-  
-**Images**  
 
 ## Remove Background Verb From Profile
   
@@ -733,8 +612,6 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
   
-  
-**Images**  
 
 ## Remove Base Entity
   
@@ -744,8 +621,6 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
   
-  
-**Images**  
 
 ## Remove Entitlement From Agent
   
@@ -755,8 +630,6 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
   
-  
-**Images**  
 
 ## Remove Entitlement From Profile
   
@@ -766,8 +639,6 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
   
-  
-**Images**  
 
 ## Remove Entitlement From Team
   
@@ -777,8 +648,6 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
   
-  
-**Images**  
 
 ## Remove Entitlement From Verb
   
@@ -788,8 +657,6 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
   
-  
-**Images**  
 
 ## Remove Entity Definition
   
@@ -799,8 +666,6 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
   
-  
-**Images**  
 
 ## Remove Menu Item
   
@@ -810,8 +675,6 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
   
-  
-**Images**  
 
 ## Remove Perspective From Profile
   
@@ -821,8 +684,6 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
   
-  
-**Images**  
 
 ## Remove Process Desc Ref
   
@@ -832,8 +693,6 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
   
-  
-**Images**  
 
 ## Remove Profile From Agent
   
@@ -842,8 +701,6 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
   
-  
-**Images**  
 
 ## Remove Tab From Ad Right Panel
   
@@ -853,8 +710,6 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
   
-  
-**Images**  
 
 ## Remove Team
   
@@ -864,8 +719,6 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
   
-  
-**Images**  
 
 ## Remove Team Role
   
@@ -875,8 +728,6 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
   
-  
-**Images**  
 
 ## Remove Team Role Type
   
@@ -886,8 +737,6 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
   
-  
-**Images**  
 
 ## Remove Verb From Entity
   
@@ -897,8 +746,6 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
   
-  
-**Images**  
 
 ## Remove View Contact Tab
   
@@ -908,8 +755,6 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 
 
   
-  
-**Images**  
 
 ## Reorder Dynamic View Field
   
@@ -979,8 +824,6 @@ This template prompts to select an entity keyname and then it prompts the instan
 ### What is an Entity Default Instance Verb?
 On agent desktop, when entity is added into context it displays on the left hand side activities panel showing as title the entities `toString()` result and underneath its "user visible" intance verbs.
 User can run each verb by clicking on the verb title. User can also click on the entities title and it will run the default instance verb.  
-  
-**Images**  
 
 ## Unregister Channel State Manager Listener
   
@@ -990,8 +833,6 @@ User can run each verb by clicking on the verb title. User can also click on the
 
 
   
-  
-**Images**  
 
 ## Update Agent Password
   
@@ -1001,8 +842,6 @@ User can run each verb by clicking on the verb title. User can also click on the
 
 
   
-  
-**Images**  
 
 ## Update Ccadmin Version
   
@@ -1012,8 +851,6 @@ User can run each verb by clicking on the verb title. User can also click on the
 
 
   
-  
-**Images**  
 
 ## Update Localised Field
   
@@ -1023,8 +860,6 @@ User can run each verb by clicking on the verb title. User can also click on the
 
 
   
-  
-**Images**  
 
 ## Update Verb Path
   
@@ -1034,8 +869,6 @@ User can run each verb by clicking on the verb title. User can also click on the
 
 
   
-  
-**Images**  
 
 ## Update Verb Process Descriptor Reference
   
@@ -1045,8 +878,6 @@ User can run each verb by clicking on the verb title. User can also click on the
 
 
   
-  
-**Images**  
 
 ## Update Verb User Visible Flag
   
@@ -1056,8 +887,6 @@ User can run each verb by clicking on the verb title. User can also click on the
 
 
   
-  
-**Images**  
 
 # hidden_templates
   
@@ -1069,8 +898,6 @@ There are currently 9 templates in this section
 
 
   
-  
-**Images**  
 
 ## Add Process Descriptor Ref
   
@@ -1079,8 +906,6 @@ There are currently 9 templates in this section
 
 
   
-  
-**Images**  
 
 ## Base Add Entity Def
   
@@ -1089,8 +914,6 @@ There are currently 9 templates in this section
 
 
   
-  
-**Images**  
 
 ## Generic Set Update Values
   
@@ -1099,8 +922,6 @@ There are currently 9 templates in this section
 
 
   
-  
-**Images**  
 
 ## Insert Context Verb Entry
   
@@ -1109,8 +930,6 @@ There are currently 9 templates in this section
 
 
   
-  
-**Images**  
 
 ## Insert Dynamic Verb List
   
@@ -1119,8 +938,6 @@ There are currently 9 templates in this section
 
 
   
-  
-**Images**  
 
 ## Insert Dynamic Verb Parameter
   
@@ -1129,8 +946,6 @@ There are currently 9 templates in this section
 
 
   
-  
-**Images**  
 
 ## Remove Dynamic Verb List
   
@@ -1139,8 +954,6 @@ There are currently 9 templates in this section
 
 
   
-  
-**Images**  
 
 ## Remove Idmap
   
@@ -1149,12 +962,10 @@ There are currently 9 templates in this section
 
 
   
-  
-**Images**  
 
 # tutorials
   
-There are currently 6 templates in this section
+There are currently 7 templates in this section
 ## Filters
   
 *Template:* [filters.txt](../library/templates/tutorials/filters.txt)
@@ -1162,8 +973,6 @@ There are currently 6 templates in this section
 
 
   
-  
-**Images**  
 
 ## Globals And String Functions Tutorial
   
@@ -1172,8 +981,14 @@ There are currently 6 templates in this section
 
 
   
+
+## How To Add Content Type
   
-**Images**  
+*Template:* [how_to_add_content_type.txt](../library/templates/tutorials/how_to_add_content_type.txt)
+
+
+
+  
 
 ## Include
   
@@ -1182,8 +997,6 @@ There are currently 6 templates in this section
 
 
   
-  
-**Images**  
 
 ## Keynames
   
@@ -1192,8 +1005,6 @@ There are currently 6 templates in this section
 
 
   
-  
-**Images**  
 
 ## Querying Db
   
@@ -1202,8 +1013,6 @@ There are currently 6 templates in this section
 
 
   
-  
-**Images**  
 
 ## Variable And Prompts
   
@@ -1212,8 +1021,6 @@ There are currently 6 templates in this section
 
 
   
-  
-**Images**  
 
 # views
   
@@ -1225,8 +1032,6 @@ There are currently 18 templates in this section
 
 
   
-  
-**Images**  
 
 ## View Agent
   
@@ -1235,8 +1040,6 @@ There are currently 18 templates in this section
 
 
   
-  
-**Images**  
 
 ## View Agent Profile Background Vebs
   
@@ -1245,8 +1048,6 @@ There are currently 18 templates in this section
 
 
   
-  
-**Images**  
 
 ## View Channel State Manager Listeners
   
@@ -1255,8 +1056,6 @@ There are currently 18 templates in this section
 
 
   
-  
-**Images**  
 
 ## View Entitlements By System Name
   
@@ -1265,8 +1064,6 @@ There are currently 18 templates in this section
 
 
   
-  
-**Images**  
 
 ## View Entity Definition
   
@@ -1275,8 +1072,6 @@ There are currently 18 templates in this section
 
 
   
-  
-**Images**  
 
 ## View Entity Displayed Verbs
   
@@ -1285,8 +1080,6 @@ There are currently 18 templates in this section
 
 
   
-  
-**Images**  
 
 ## View Entity Verbs
   
@@ -1296,8 +1089,6 @@ There are currently 18 templates in this section
 
 
   
-  
-**Images**  
 
 ## View Entity Verbs Keynames
   
@@ -1306,8 +1097,6 @@ There are currently 18 templates in this section
 
 
   
-  
-**Images**  
 
 ## View Entitydef By Keyname
   
@@ -1316,8 +1105,6 @@ There are currently 18 templates in this section
 
 
   
-  
-**Images**  
 
 ## View Keynames
   
@@ -1326,8 +1113,6 @@ There are currently 18 templates in this section
 
 
   
-  
-**Images**  
 
 ## View Process Descriptor Ref By Repo Path
   
@@ -1336,8 +1121,6 @@ There are currently 18 templates in this section
 
 
   
-  
-**Images**  
 
 ## View Profile Entitlements
   
@@ -1346,8 +1129,6 @@ There are currently 18 templates in this section
 
 
   
-  
-**Images**  
 
 ## View Profile Verbs
   
@@ -1356,8 +1137,6 @@ There are currently 18 templates in this section
 
 
   
-  
-**Images**  
 
 ## View User Profiles
   
@@ -1367,8 +1146,6 @@ There are currently 18 templates in this section
 
 
   
-  
-**Images**  
 
 ## View Verb By Keyname
   
@@ -1377,8 +1154,6 @@ There are currently 18 templates in this section
 
 
   
-  
-**Images**  
 
 ## View Verb Entitlements
   
@@ -1387,8 +1162,6 @@ There are currently 18 templates in this section
 
 
   
-  
-**Images**  
 
 ## View Verbs From Repo Path
   
@@ -1397,5 +1170,14 @@ There are currently 18 templates in this section
 
 
   
+
+# oracle
   
-**Images**  
+There are currently 1 templates in this section
+## View Table Name From Foreign Key Name
+  
+*Template:* [view_table_name_from_foreign_key_name.sql](../library/templates/views/oracle/view_table_name_from_foreign_key_name.sql)
+
+
+
+  
