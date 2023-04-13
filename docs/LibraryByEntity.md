@@ -3,7 +3,7 @@ SQLTask Library
 ===============
 
 
-The SQL tasks library has currently a total of 141 templates, divided in 84 sections; 3 [Activity](#activity), 6 [Perspective](#perspective), 8 [Agent](#agent), 1 [All Background Verbs](#all-background-verbs), 1 [Another profile](#another-profile), 1 [Association Type](#association-type), 3 [Background Verb](#background-verb), 9 [Profile](#profile), 1 [Basic Entity Definition](#basic-entity-definition), 1 [Category](#category), 1 [Content Type](#content-type), 1 [Dynamic Content Verb](#dynamic-content-verb), 1 [Dynamic Entity](#dynamic-entity), 1 [Dynamic Entity Def](#dynamic-entity-def), 1 [Dynamic Entity Field](#dynamic-entity-field), 1 [Dynamic Entity View](#dynamic-entity-view), 1 [Dynamic Entity View Field](#dynamic-entity-view-field), 9 [Entitlement](#entitlement), 4 [Team](#team), 7 [Verb](#verb), 3 [Entity Definition](#entity-definition), 2 [Localised Field](#localised-field), 2 [Menu Item](#menu-item), 1 [Migration Domain](#migration-domain), 1 [Process Descriptor](#process-descriptor), 1 [Static Menu](#static-menu), 2 [Tab](#tab), 2 [Ad right panel](#ad-right-panel), 1 [Tag](#tag), 1 [Team Position](#team-position), 2 [Team Role](#team-role), 2 [Team Role Type](#team-role-type), 1 [Url](#url), 3 [Entity](#entity), 2 [View Contact Tab](#view-contact-tab), 1 [Web Integration Host](#web-integration-host), 1 [Max Count Work Area](#max-count-work-area), 1 [New Content Type](#new-content-type), 1 [Customer](#customer), 2 [Channel State Manager Listener](#channel-state-manager-listener), 1 [Base Entity](#base-entity), 1 [Process Desc Ref](#process-desc-ref), 1 [Dynamic View Field](#dynamic-view-field), 0 [Dynamic View Field1](#dynamic-view-field1), 0 [Dynamic View Field2](#dynamic-view-field2), 0 [Dynamic View Field3](#dynamic-view-field3), 1 [Entity Default Instance Verb](#entity-default-instance-verb), 1 [Agent Password](#agent-password), 1 [Ccadmin Version](#ccadmin-version), 1 [Verb Path](#verb-path), 1 [Verb Process Descriptor Reference](#verb-process-descriptor-reference), 1 [Verb User Visible Flag](#verb-user-visible-flag), 1 [Entity Entitlement](#entity-entitlement), 1 [Process Descriptor Ref](#process-descriptor-ref), 1 [Add Entity Def](#add-entity-def), 1 [Set Update Values](#set-update-values), 1 [Context Verb Entry](#context-verb-entry), 2 [Dynamic Verb List](#dynamic-verb-list), 1 [Dynamic Verb Parameter](#dynamic-verb-parameter), 1 [Idmap](#idmap), 6 [](#), 2 [Tenant Property](#tenant-property), 1 [And String Functions Tutorial](#and-string-functions-tutorial), 1 [Add content type](#add-content-type), 1 [Db](#db), 1 [And Prompts](#and-prompts), 1 [Ad Right Panel Tabs Verbs](#ad-right-panel-tabs-verbs), 1 [Agent Profile Background Vebs](#agent-profile-background-vebs), 1 [Channel State Manager Listeners](#channel-state-manager-listeners), 1 [Entitlements By System Name](#entitlements-by-system-name), 1 [Entity Displayed Verbs](#entity-displayed-verbs), 1 [Entity Verbs](#entity-verbs), 1 [Entity Verbs Keynames](#entity-verbs-keynames), 1 [Entitydef By Keyname](#entitydef-by-keyname), 1 [Keynames](#keynames), 1 [Process Descriptor Ref By Repo Path](#process-descriptor-ref-by-repo-path), 1 [Profile Entitlements](#profile-entitlements), 1 [Profile Verbs](#profile-verbs), 1 [User Profiles](#user-profiles), 1 [Verb By Keyname](#verb-by-keyname), 1 [Verb Entitlements](#verb-entitlements), 1 [Verbs](#verbs), 1 [Repo path](#repo-path), 1 [Table Name](#table-name)
+This  library has currently a total of 141 templates, divided in 84 sections; 3 [Activity](#activity), 6 [Perspective](#perspective), 8 [Agent](#agent), 1 [All Background Verbs](#all-background-verbs), 1 [Another profile](#another-profile), 1 [Association Type](#association-type), 3 [Background Verb](#background-verb), 9 [Profile](#profile), 1 [Basic Entity Definition](#basic-entity-definition), 1 [Category](#category), 1 [Content Type](#content-type), 1 [Dynamic Content Verb](#dynamic-content-verb), 1 [Dynamic Entity](#dynamic-entity), 1 [Dynamic Entity Def](#dynamic-entity-def), 1 [Dynamic Entity Field](#dynamic-entity-field), 1 [Dynamic Entity View](#dynamic-entity-view), 1 [Dynamic Entity View Field](#dynamic-entity-view-field), 9 [Entitlement](#entitlement), 4 [Team](#team), 7 [Verb](#verb), 3 [Entity Definition](#entity-definition), 2 [Localised Field](#localised-field), 2 [Menu Item](#menu-item), 1 [Migration Domain](#migration-domain), 1 [Process Descriptor](#process-descriptor), 1 [Static Menu](#static-menu), 2 [Tab](#tab), 2 [Ad right panel](#ad-right-panel), 1 [Tag](#tag), 1 [Team Position](#team-position), 2 [Team Role](#team-role), 2 [Team Role Type](#team-role-type), 1 [Url](#url), 3 [Entity](#entity), 2 [View Contact Tab](#view-contact-tab), 1 [Web Integration Host](#web-integration-host), 1 [Max Count Work Area](#max-count-work-area), 1 [New Content Type](#new-content-type), 1 [Customer](#customer), 2 [Channel State Manager Listener](#channel-state-manager-listener), 1 [Base Entity](#base-entity), 1 [Process Desc Ref](#process-desc-ref), 1 [Dynamic View Field](#dynamic-view-field), 0 [Dynamic View Field1](#dynamic-view-field1), 0 [Dynamic View Field2](#dynamic-view-field2), 0 [Dynamic View Field3](#dynamic-view-field3), 1 [Entity Default Instance Verb](#entity-default-instance-verb), 1 [Agent Password](#agent-password), 1 [Ccadmin Version](#ccadmin-version), 1 [Verb Path](#verb-path), 1 [Verb Process Descriptor Reference](#verb-process-descriptor-reference), 1 [Verb User Visible Flag](#verb-user-visible-flag), 1 [Entity Entitlement](#entity-entitlement), 1 [Process Descriptor Ref](#process-descriptor-ref), 1 [Add Entity Def](#add-entity-def), 1 [Set Update Values](#set-update-values), 1 [Context Verb Entry](#context-verb-entry), 2 [Dynamic Verb List](#dynamic-verb-list), 1 [Dynamic Verb Parameter](#dynamic-verb-parameter), 1 [Idmap](#idmap), 6 [](#), 2 [Tenant Property](#tenant-property), 1 [And String Functions Tutorial](#and-string-functions-tutorial), 1 [Add content type](#add-content-type), 1 [Db](#db), 1 [And Prompts](#and-prompts), 1 [Ad Right Panel Tabs Verbs](#ad-right-panel-tabs-verbs), 1 [Agent Profile Background Vebs](#agent-profile-background-vebs), 1 [Channel State Manager Listeners](#channel-state-manager-listeners), 1 [Entitlements By System Name](#entitlements-by-system-name), 1 [Entity Displayed Verbs](#entity-displayed-verbs), 1 [Entity Verbs](#entity-verbs), 1 [Entity Verbs Keynames](#entity-verbs-keynames), 1 [Entitydef By Keyname](#entitydef-by-keyname), 1 [Keynames](#keynames), 1 [Process Descriptor Ref By Repo Path](#process-descriptor-ref-by-repo-path), 1 [Profile Entitlements](#profile-entitlements), 1 [Profile Verbs](#profile-verbs), 1 [User Profiles](#user-profiles), 1 [Verb By Keyname](#verb-by-keyname), 1 [Verb Entitlements](#verb-entitlements), 1 [Verbs](#verbs), 1 [Repo path](#repo-path), 1 [Table Name](#table-name)
 
 Tables of Contents
 ==================
@@ -239,8 +239,8 @@ Tables of Contents
 There are currently 3 templates in this section
 ## Add Activity To Perspective
   
-*Template:* [add_activity_to_perspective.sql](../sqltask-templates/templates/add_activity_to_perspective.sql)  
-*Test:* [test_add_activity_to_perspective.sql](../sqltask-templates/test_templates/test_add_activity_to_perspective.sql)  
+*Template:* [add_activity_to_perspective.sql](../templates/add_activity_to_perspective.sql)  
+*Test:* [test_add_activity_to_perspective.sql](../test_templates/test_add_activity_to_perspective.sql)  
 *Related Tasks:* [Remove Activity From Perspective](#remove-activity-from-perspective), [Update Verb User Visible Flag](#update-verb-user-visible-flag), [Set Entity Default Instance Verb](#set-entity-default-instance-verb)
 
 
@@ -249,8 +249,8 @@ There are currently 3 templates in this section
 
 ## Add Activity To Perspective With Seq No
   
-*Template:* [add_activity_to_perspective_with_seq_no.sql](../sqltask-templates/templates/add_activity_to_perspective_with_seq_no.sql)  
-*Test:* [test_add_activity_to_perspective_with_seq_no.sql](../sqltask-templates/test_templates/test_add_activity_to_perspective_with_seq_no.sql)
+*Template:* [add_activity_to_perspective_with_seq_no.sql](../templates/add_activity_to_perspective_with_seq_no.sql)  
+*Test:* [test_add_activity_to_perspective_with_seq_no.sql](../test_templates/test_add_activity_to_perspective_with_seq_no.sql)
 
 
 
@@ -258,7 +258,7 @@ There are currently 3 templates in this section
 
 ## Remove Activity From Perspective
   
-*Template:* [remove_activity_from_perspective.sql](../sqltask-templates/templates/remove_activity_from_perspective.sql)
+*Template:* [remove_activity_from_perspective.sql](../templates/remove_activity_from_perspective.sql)
 
 
 
@@ -269,8 +269,8 @@ There are currently 3 templates in this section
 There are currently 6 templates in this section
 ## Add Activity To Perspective
   
-*Template:* [add_activity_to_perspective.sql](../sqltask-templates/templates/add_activity_to_perspective.sql)  
-*Test:* [test_add_activity_to_perspective.sql](../sqltask-templates/test_templates/test_add_activity_to_perspective.sql)  
+*Template:* [add_activity_to_perspective.sql](../templates/add_activity_to_perspective.sql)  
+*Test:* [test_add_activity_to_perspective.sql](../test_templates/test_add_activity_to_perspective.sql)  
 *Related Tasks:* [Remove Activity From Perspective](#remove-activity-from-perspective), [Update Verb User Visible Flag](#update-verb-user-visible-flag), [Set Entity Default Instance Verb](#set-entity-default-instance-verb)
 
 
@@ -279,8 +279,8 @@ There are currently 6 templates in this section
 
 ## Add Activity To Perspective With Seq No
   
-*Template:* [add_activity_to_perspective_with_seq_no.sql](../sqltask-templates/templates/add_activity_to_perspective_with_seq_no.sql)  
-*Test:* [test_add_activity_to_perspective_with_seq_no.sql](../sqltask-templates/test_templates/test_add_activity_to_perspective_with_seq_no.sql)
+*Template:* [add_activity_to_perspective_with_seq_no.sql](../templates/add_activity_to_perspective_with_seq_no.sql)  
+*Test:* [test_add_activity_to_perspective_with_seq_no.sql](../test_templates/test_add_activity_to_perspective_with_seq_no.sql)
 
 
 
@@ -288,8 +288,8 @@ There are currently 6 templates in this section
 
 ## Add Perspective
   
-*Template:* [add_perspective.sql](../sqltask-templates/templates/add_perspective.sql)  
-*Test:* [test_add_perspective.sql](../sqltask-templates/test_templates/test_add_perspective.sql)
+*Template:* [add_perspective.sql](../templates/add_perspective.sql)  
+*Test:* [test_add_perspective.sql](../test_templates/test_add_perspective.sql)
 
 
 
@@ -297,8 +297,8 @@ There are currently 6 templates in this section
 
 ## Add Perspective To Profile
   
-*Template:* [add_perspective_to_profile.sql](../sqltask-templates/templates/add_perspective_to_profile.sql)  
-*Test:* [test_add_perspective_to_profile.sql](../sqltask-templates/test_templates/test_add_perspective_to_profile.sql)
+*Template:* [add_perspective_to_profile.sql](../templates/add_perspective_to_profile.sql)  
+*Test:* [test_add_perspective_to_profile.sql](../test_templates/test_add_perspective_to_profile.sql)
 
 
 
@@ -306,7 +306,7 @@ There are currently 6 templates in this section
 
 ## Remove Activity From Perspective
   
-*Template:* [remove_activity_from_perspective.sql](../sqltask-templates/templates/remove_activity_from_perspective.sql)
+*Template:* [remove_activity_from_perspective.sql](../templates/remove_activity_from_perspective.sql)
 
 
 
@@ -314,8 +314,8 @@ There are currently 6 templates in this section
 
 ## Remove Perspective From Profile
   
-*Template:* [remove_perspective_from_profile.sql](../sqltask-templates/templates/remove_perspective_from_profile.sql)  
-*Test:* [test_remove_perspective_from_profile.sql](../sqltask-templates/test_templates/test_remove_perspective_from_profile.sql)
+*Template:* [remove_perspective_from_profile.sql](../templates/remove_perspective_from_profile.sql)  
+*Test:* [test_remove_perspective_from_profile.sql](../test_templates/test_remove_perspective_from_profile.sql)
 
 
 
@@ -326,7 +326,7 @@ There are currently 6 templates in this section
 There are currently 8 templates in this section
 ## Add Agent For Commit
   
-*Template:* [add_agent_for_commit.sql](../sqltask-templates/templates/add_agent_for_commit.sql)
+*Template:* [add_agent_for_commit.sql](../templates/add_agent_for_commit.sql)
 
 
 
@@ -334,8 +334,8 @@ There are currently 8 templates in this section
 
 ## Add Agent For Dev
   
-*Template:* [add_agent_for_dev.sql](../sqltask-templates/templates/add_agent_for_dev.sql)  
-*Test:* [test_add_agent_for_dev.sql](../sqltask-templates/test_templates/test_add_agent_for_dev.sql)
+*Template:* [add_agent_for_dev.sql](../templates/add_agent_for_dev.sql)  
+*Test:* [test_add_agent_for_dev.sql](../test_templates/test_add_agent_for_dev.sql)
 
 
 
@@ -343,8 +343,8 @@ There are currently 8 templates in this section
 
 ## Add Entitlement To Agent
   
-*Template:* [add_entitlement_to_agent.sql](../sqltask-templates/templates/add_entitlement_to_agent.sql)  
-*Test:* [test_add_entitlement_to_agent.sql](../sqltask-templates/test_templates/test_add_entitlement_to_agent.sql)
+*Template:* [add_entitlement_to_agent.sql](../templates/add_entitlement_to_agent.sql)  
+*Test:* [test_add_entitlement_to_agent.sql](../test_templates/test_add_entitlement_to_agent.sql)
 
 
 
@@ -352,8 +352,8 @@ There are currently 8 templates in this section
 
 ## Add Profile To Agent
   
-*Template:* [add_profile_to_agent.sql](../sqltask-templates/templates/add_profile_to_agent.sql)  
-*Test:* [test_add_profile_to_agent.sql](../sqltask-templates/test_templates/test_add_profile_to_agent.sql)
+*Template:* [add_profile_to_agent.sql](../templates/add_profile_to_agent.sql)  
+*Test:* [test_add_profile_to_agent.sql](../test_templates/test_add_profile_to_agent.sql)
 
 
 
@@ -361,8 +361,8 @@ There are currently 8 templates in this section
 
 ## Remove Agent For Dev
   
-*Template:* [remove_agent_for_dev.sql](../sqltask-templates/templates/remove_agent_for_dev.sql)  
-*Test:* [test_remove_agent_for_dev.sql](../sqltask-templates/test_templates/test_remove_agent_for_dev.sql)
+*Template:* [remove_agent_for_dev.sql](../templates/remove_agent_for_dev.sql)  
+*Test:* [test_remove_agent_for_dev.sql](../test_templates/test_remove_agent_for_dev.sql)
 
 
 
@@ -370,8 +370,8 @@ There are currently 8 templates in this section
 
 ## Remove Entitlement From Agent
   
-*Template:* [remove_entitlement_from_agent.sql](../sqltask-templates/templates/remove_entitlement_from_agent.sql)  
-*Test:* [test_remove_entitlement_from_agent.sql](../sqltask-templates/test_templates/test_remove_entitlement_from_agent.sql)
+*Template:* [remove_entitlement_from_agent.sql](../templates/remove_entitlement_from_agent.sql)  
+*Test:* [test_remove_entitlement_from_agent.sql](../test_templates/test_remove_entitlement_from_agent.sql)
 
 
 
@@ -379,7 +379,7 @@ There are currently 8 templates in this section
 
 ## Remove Profile From Agent
   
-*Template:* [remove_profile_from_agent.sql](../sqltask-templates/templates/remove_profile_from_agent.sql)
+*Template:* [remove_profile_from_agent.sql](../templates/remove_profile_from_agent.sql)
 
 
 
@@ -387,7 +387,7 @@ There are currently 8 templates in this section
 
 ## View Agent
   
-*Template:* [view_agent.sql](../sqltask-templates/templates/views/view_agent.sql)
+*Template:* [view_agent.sql](../templates/views/view_agent.sql)
 
 
 
@@ -398,7 +398,7 @@ There are currently 8 templates in this section
 There are currently 1 templates in this section
 ## Add All Background Verbs From Another Profile
   
-*Template:* [add_all_background_verbs_from_another_profile.sql](../sqltask-templates/templates/add_all_background_verbs_from_another_profile.sql)
+*Template:* [add_all_background_verbs_from_another_profile.sql](../templates/add_all_background_verbs_from_another_profile.sql)
 
 
 
@@ -409,7 +409,7 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## Add All Background Verbs From Another Profile
   
-*Template:* [add_all_background_verbs_from_another_profile.sql](../sqltask-templates/templates/add_all_background_verbs_from_another_profile.sql)
+*Template:* [add_all_background_verbs_from_another_profile.sql](../templates/add_all_background_verbs_from_another_profile.sql)
 
 
 
@@ -420,8 +420,8 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## Add Association Type
   
-*Template:* [add_association_type.sql](../sqltask-templates/templates/add_association_type.sql)  
-*Test:* [test_add_association_type.sql](../sqltask-templates/test_templates/test_add_association_type.sql)
+*Template:* [add_association_type.sql](../templates/add_association_type.sql)  
+*Test:* [test_add_association_type.sql](../test_templates/test_add_association_type.sql)
 
 
 
@@ -432,8 +432,8 @@ There are currently 1 templates in this section
 There are currently 3 templates in this section
 ## Add Background Verb
   
-*Template:* [add_background_verb.sql](../sqltask-templates/templates/add_background_verb.sql)  
-*Test:* [test_add_background_verb.sql](../sqltask-templates/test_templates/test_add_background_verb.sql)
+*Template:* [add_background_verb.sql](../templates/add_background_verb.sql)  
+*Test:* [test_add_background_verb.sql](../test_templates/test_add_background_verb.sql)
 
 
 
@@ -441,8 +441,8 @@ There are currently 3 templates in this section
 
 ## Add Background Verb To Profile
   
-*Template:* [add_background_verb_to_profile.sql](../sqltask-templates/templates/add_background_verb_to_profile.sql)  
-*Test:* [test_add_background_verb_to_profile.sql](../sqltask-templates/test_templates/test_add_background_verb_to_profile.sql)
+*Template:* [add_background_verb_to_profile.sql](../templates/add_background_verb_to_profile.sql)  
+*Test:* [test_add_background_verb_to_profile.sql](../test_templates/test_add_background_verb_to_profile.sql)
 
 
 
@@ -450,7 +450,7 @@ There are currently 3 templates in this section
 
 ## Remove Background Verb From Profile
   
-*Template:* [remove_background_verb_from_profile.sql](../sqltask-templates/templates/remove_background_verb_from_profile.sql)
+*Template:* [remove_background_verb_from_profile.sql](../templates/remove_background_verb_from_profile.sql)
 
 
 
@@ -461,8 +461,8 @@ There are currently 3 templates in this section
 There are currently 9 templates in this section
 ## Add Background Verb To Profile
   
-*Template:* [add_background_verb_to_profile.sql](../sqltask-templates/templates/add_background_verb_to_profile.sql)  
-*Test:* [test_add_background_verb_to_profile.sql](../sqltask-templates/test_templates/test_add_background_verb_to_profile.sql)
+*Template:* [add_background_verb_to_profile.sql](../templates/add_background_verb_to_profile.sql)  
+*Test:* [test_add_background_verb_to_profile.sql](../test_templates/test_add_background_verb_to_profile.sql)
 
 
 
@@ -470,8 +470,8 @@ There are currently 9 templates in this section
 
 ## Add Entitlement To Profile
   
-*Template:* [add_entitlement_to_profile.sql](../sqltask-templates/templates/add_entitlement_to_profile.sql)  
-*Test:* [test_add_entitlement_to_profile.sql](../sqltask-templates/test_templates/test_add_entitlement_to_profile.sql)
+*Template:* [add_entitlement_to_profile.sql](../templates/add_entitlement_to_profile.sql)  
+*Test:* [test_add_entitlement_to_profile.sql](../test_templates/test_add_entitlement_to_profile.sql)
 
 
 
@@ -479,8 +479,8 @@ There are currently 9 templates in this section
 
 ## Add Perspective To Profile
   
-*Template:* [add_perspective_to_profile.sql](../sqltask-templates/templates/add_perspective_to_profile.sql)  
-*Test:* [test_add_perspective_to_profile.sql](../sqltask-templates/test_templates/test_add_perspective_to_profile.sql)
+*Template:* [add_perspective_to_profile.sql](../templates/add_perspective_to_profile.sql)  
+*Test:* [test_add_perspective_to_profile.sql](../test_templates/test_add_perspective_to_profile.sql)
 
 
 
@@ -488,8 +488,8 @@ There are currently 9 templates in this section
 
 ## Add Profile
   
-*Template:* [add_profile.sql](../sqltask-templates/templates/add_profile.sql)  
-*Test:* [test_add_profile.sql](../sqltask-templates/test_templates/test_add_profile.sql)
+*Template:* [add_profile.sql](../templates/add_profile.sql)  
+*Test:* [test_add_profile.sql](../test_templates/test_add_profile.sql)
 
 
 
@@ -497,8 +497,8 @@ There are currently 9 templates in this section
 
 ## Add Profile To Agent
   
-*Template:* [add_profile_to_agent.sql](../sqltask-templates/templates/add_profile_to_agent.sql)  
-*Test:* [test_add_profile_to_agent.sql](../sqltask-templates/test_templates/test_add_profile_to_agent.sql)
+*Template:* [add_profile_to_agent.sql](../templates/add_profile_to_agent.sql)  
+*Test:* [test_add_profile_to_agent.sql](../test_templates/test_add_profile_to_agent.sql)
 
 
 
@@ -506,7 +506,7 @@ There are currently 9 templates in this section
 
 ## Remove Background Verb From Profile
   
-*Template:* [remove_background_verb_from_profile.sql](../sqltask-templates/templates/remove_background_verb_from_profile.sql)
+*Template:* [remove_background_verb_from_profile.sql](../templates/remove_background_verb_from_profile.sql)
 
 
 
@@ -514,8 +514,8 @@ There are currently 9 templates in this section
 
 ## Remove Entitlement From Profile
   
-*Template:* [remove_entitlement_from_profile.sql](../sqltask-templates/templates/remove_entitlement_from_profile.sql)  
-*Test:* [test_remove_entitlement_from_profile.sql](../sqltask-templates/test_templates/test_remove_entitlement_from_profile.sql)
+*Template:* [remove_entitlement_from_profile.sql](../templates/remove_entitlement_from_profile.sql)  
+*Test:* [test_remove_entitlement_from_profile.sql](../test_templates/test_remove_entitlement_from_profile.sql)
 
 
 
@@ -523,8 +523,8 @@ There are currently 9 templates in this section
 
 ## Remove Perspective From Profile
   
-*Template:* [remove_perspective_from_profile.sql](../sqltask-templates/templates/remove_perspective_from_profile.sql)  
-*Test:* [test_remove_perspective_from_profile.sql](../sqltask-templates/test_templates/test_remove_perspective_from_profile.sql)
+*Template:* [remove_perspective_from_profile.sql](../templates/remove_perspective_from_profile.sql)  
+*Test:* [test_remove_perspective_from_profile.sql](../test_templates/test_remove_perspective_from_profile.sql)
 
 
 
@@ -532,7 +532,7 @@ There are currently 9 templates in this section
 
 ## Remove Profile From Agent
   
-*Template:* [remove_profile_from_agent.sql](../sqltask-templates/templates/remove_profile_from_agent.sql)
+*Template:* [remove_profile_from_agent.sql](../templates/remove_profile_from_agent.sql)
 
 
 
@@ -543,7 +543,7 @@ There are currently 9 templates in this section
 There are currently 1 templates in this section
 ## Add Basic Entity Definition
   
-*Template:* [add_basic_entity_definition.sql](../sqltask-templates/templates/add_basic_entity_definition.sql)
+*Template:* [add_basic_entity_definition.sql](../templates/add_basic_entity_definition.sql)
 
 
 
@@ -554,8 +554,8 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## Add Category
   
-*Template:* [add_category.sql](../sqltask-templates/templates/add_category.sql)  
-*Test:* [test_add_category.sql](../sqltask-templates/test_templates/test_add_category.sql)
+*Template:* [add_category.sql](../templates/add_category.sql)  
+*Test:* [test_add_category.sql](../test_templates/test_add_category.sql)
 
 
 
@@ -566,8 +566,8 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## Add Content Type
   
-*Template:* [add_content_type.sql](../sqltask-templates/templates/add_content_type.sql)  
-*Test:* [test_add_content_type.sql](../sqltask-templates/test_templates/test_add_content_type.sql)
+*Template:* [add_content_type.sql](../templates/add_content_type.sql)  
+*Test:* [test_add_content_type.sql](../test_templates/test_add_content_type.sql)
 
 
 
@@ -578,8 +578,8 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## Add Dynamic Content Verb
   
-*Template:* [add_dynamic_content_verb.sql](../sqltask-templates/templates/add_dynamic_content_verb.sql)  
-*Test:* [test_add_dynamic_content_verb.sql](../sqltask-templates/test_templates/test_add_dynamic_content_verb.sql)
+*Template:* [add_dynamic_content_verb.sql](../templates/add_dynamic_content_verb.sql)  
+*Test:* [test_add_dynamic_content_verb.sql](../test_templates/test_add_dynamic_content_verb.sql)
 
 
 
@@ -590,8 +590,8 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## Add Dynamic Entity
   
-*Template:* [add_dynamic_entity.sql](../sqltask-templates/templates/add_dynamic_entity.sql)  
-*Test:* [test_add_dynamic_entity.sql](../sqltask-templates/test_templates/test_add_dynamic_entity.sql)
+*Template:* [add_dynamic_entity.sql](../templates/add_dynamic_entity.sql)  
+*Test:* [test_add_dynamic_entity.sql](../test_templates/test_add_dynamic_entity.sql)
 
 
 
@@ -602,7 +602,7 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## Add Dynamic Entity Def
   
-*Template:* [add_dynamic_entity_def.sql](../sqltask-templates/templates/add_dynamic_entity_def.sql)
+*Template:* [add_dynamic_entity_def.sql](../templates/add_dynamic_entity_def.sql)
 
 
 
@@ -613,8 +613,8 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## Add Dynamic Entity Field
   
-*Template:* [add_dynamic_entity_field.sql](../sqltask-templates/templates/add_dynamic_entity_field.sql)  
-*Test:* [test_add_dynamic_entity_field.sql](../sqltask-templates/test_templates/test_add_dynamic_entity_field.sql)
+*Template:* [add_dynamic_entity_field.sql](../templates/add_dynamic_entity_field.sql)  
+*Test:* [test_add_dynamic_entity_field.sql](../test_templates/test_add_dynamic_entity_field.sql)
 
 
 
@@ -625,8 +625,8 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## Add Dynamic Entity View
   
-*Template:* [add_dynamic_entity_view.sql](../sqltask-templates/templates/add_dynamic_entity_view.sql)  
-*Test:* [test_add_dynamic_entity_view.sql](../sqltask-templates/test_templates/test_add_dynamic_entity_view.sql)
+*Template:* [add_dynamic_entity_view.sql](../templates/add_dynamic_entity_view.sql)  
+*Test:* [test_add_dynamic_entity_view.sql](../test_templates/test_add_dynamic_entity_view.sql)
 
 
 
@@ -637,8 +637,8 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## Add Dynamic Entity View Field
   
-*Template:* [add_dynamic_entity_view_field.sql](../sqltask-templates/templates/add_dynamic_entity_view_field.sql)  
-*Test:* [test_add_dynamic_entity_view_field.sql](../sqltask-templates/test_templates/test_add_dynamic_entity_view_field.sql)
+*Template:* [add_dynamic_entity_view_field.sql](../templates/add_dynamic_entity_view_field.sql)  
+*Test:* [test_add_dynamic_entity_view_field.sql](../test_templates/test_add_dynamic_entity_view_field.sql)
 
 
 
@@ -649,8 +649,8 @@ There are currently 1 templates in this section
 There are currently 9 templates in this section
 ## Add Entitlement
   
-*Template:* [add_entitlement.sql](../sqltask-templates/templates/add_entitlement.sql)  
-*Test:* [test_add_entitlement.sql](../sqltask-templates/test_templates/test_add_entitlement.sql)
+*Template:* [add_entitlement.sql](../templates/add_entitlement.sql)  
+*Test:* [test_add_entitlement.sql](../test_templates/test_add_entitlement.sql)
 
 
 
@@ -658,8 +658,8 @@ There are currently 9 templates in this section
 
 ## Add Entitlement To Agent
   
-*Template:* [add_entitlement_to_agent.sql](../sqltask-templates/templates/add_entitlement_to_agent.sql)  
-*Test:* [test_add_entitlement_to_agent.sql](../sqltask-templates/test_templates/test_add_entitlement_to_agent.sql)
+*Template:* [add_entitlement_to_agent.sql](../templates/add_entitlement_to_agent.sql)  
+*Test:* [test_add_entitlement_to_agent.sql](../test_templates/test_add_entitlement_to_agent.sql)
 
 
 
@@ -667,8 +667,8 @@ There are currently 9 templates in this section
 
 ## Add Entitlement To Profile
   
-*Template:* [add_entitlement_to_profile.sql](../sqltask-templates/templates/add_entitlement_to_profile.sql)  
-*Test:* [test_add_entitlement_to_profile.sql](../sqltask-templates/test_templates/test_add_entitlement_to_profile.sql)
+*Template:* [add_entitlement_to_profile.sql](../templates/add_entitlement_to_profile.sql)  
+*Test:* [test_add_entitlement_to_profile.sql](../test_templates/test_add_entitlement_to_profile.sql)
 
 
 
@@ -676,8 +676,8 @@ There are currently 9 templates in this section
 
 ## Add Entitlement To Team
   
-*Template:* [add_entitlement_to_team.sql](../sqltask-templates/templates/add_entitlement_to_team.sql)  
-*Test:* [test_add_entitlement_to_team.sql](../sqltask-templates/test_templates/test_add_entitlement_to_team.sql)
+*Template:* [add_entitlement_to_team.sql](../templates/add_entitlement_to_team.sql)  
+*Test:* [test_add_entitlement_to_team.sql](../test_templates/test_add_entitlement_to_team.sql)
 
 
 
@@ -685,8 +685,8 @@ There are currently 9 templates in this section
 
 ## Add Entitlement To Verb
   
-*Template:* [add_entitlement_to_verb.sql](../sqltask-templates/templates/add_entitlement_to_verb.sql)  
-*Test:* [test_add_entitlement_to_verb.sql](../sqltask-templates/test_templates/test_add_entitlement_to_verb.sql)
+*Template:* [add_entitlement_to_verb.sql](../templates/add_entitlement_to_verb.sql)  
+*Test:* [test_add_entitlement_to_verb.sql](../test_templates/test_add_entitlement_to_verb.sql)
 
 
 
@@ -694,8 +694,8 @@ There are currently 9 templates in this section
 
 ## Remove Entitlement From Agent
   
-*Template:* [remove_entitlement_from_agent.sql](../sqltask-templates/templates/remove_entitlement_from_agent.sql)  
-*Test:* [test_remove_entitlement_from_agent.sql](../sqltask-templates/test_templates/test_remove_entitlement_from_agent.sql)
+*Template:* [remove_entitlement_from_agent.sql](../templates/remove_entitlement_from_agent.sql)  
+*Test:* [test_remove_entitlement_from_agent.sql](../test_templates/test_remove_entitlement_from_agent.sql)
 
 
 
@@ -703,8 +703,8 @@ There are currently 9 templates in this section
 
 ## Remove Entitlement From Profile
   
-*Template:* [remove_entitlement_from_profile.sql](../sqltask-templates/templates/remove_entitlement_from_profile.sql)  
-*Test:* [test_remove_entitlement_from_profile.sql](../sqltask-templates/test_templates/test_remove_entitlement_from_profile.sql)
+*Template:* [remove_entitlement_from_profile.sql](../templates/remove_entitlement_from_profile.sql)  
+*Test:* [test_remove_entitlement_from_profile.sql](../test_templates/test_remove_entitlement_from_profile.sql)
 
 
 
@@ -712,8 +712,8 @@ There are currently 9 templates in this section
 
 ## Remove Entitlement From Team
   
-*Template:* [remove_entitlement_from_team.sql](../sqltask-templates/templates/remove_entitlement_from_team.sql)  
-*Test:* [test_remove_entitlement_from_team.sql](../sqltask-templates/test_templates/test_remove_entitlement_from_team.sql)
+*Template:* [remove_entitlement_from_team.sql](../templates/remove_entitlement_from_team.sql)  
+*Test:* [test_remove_entitlement_from_team.sql](../test_templates/test_remove_entitlement_from_team.sql)
 
 
 
@@ -721,8 +721,8 @@ There are currently 9 templates in this section
 
 ## Remove Entitlement From Verb
   
-*Template:* [remove_entitlement_from_verb.sql](../sqltask-templates/templates/remove_entitlement_from_verb.sql)  
-*Test:* [test_remove_entitlement_from_verb.sql](../sqltask-templates/test_templates/test_remove_entitlement_from_verb.sql)
+*Template:* [remove_entitlement_from_verb.sql](../templates/remove_entitlement_from_verb.sql)  
+*Test:* [test_remove_entitlement_from_verb.sql](../test_templates/test_remove_entitlement_from_verb.sql)
 
 
 
@@ -733,8 +733,8 @@ There are currently 9 templates in this section
 There are currently 4 templates in this section
 ## Add Entitlement To Team
   
-*Template:* [add_entitlement_to_team.sql](../sqltask-templates/templates/add_entitlement_to_team.sql)  
-*Test:* [test_add_entitlement_to_team.sql](../sqltask-templates/test_templates/test_add_entitlement_to_team.sql)
+*Template:* [add_entitlement_to_team.sql](../templates/add_entitlement_to_team.sql)  
+*Test:* [test_add_entitlement_to_team.sql](../test_templates/test_add_entitlement_to_team.sql)
 
 
 
@@ -742,8 +742,8 @@ There are currently 4 templates in this section
 
 ## Add Team
   
-*Template:* [add_team.sql](../sqltask-templates/templates/add_team.sql)  
-*Test:* [test_add_team.sql](../sqltask-templates/test_templates/test_add_team.sql)
+*Template:* [add_team.sql](../templates/add_team.sql)  
+*Test:* [test_add_team.sql](../test_templates/test_add_team.sql)
 
 
 
@@ -751,8 +751,8 @@ There are currently 4 templates in this section
 
 ## Remove Entitlement From Team
   
-*Template:* [remove_entitlement_from_team.sql](../sqltask-templates/templates/remove_entitlement_from_team.sql)  
-*Test:* [test_remove_entitlement_from_team.sql](../sqltask-templates/test_templates/test_remove_entitlement_from_team.sql)
+*Template:* [remove_entitlement_from_team.sql](../templates/remove_entitlement_from_team.sql)  
+*Test:* [test_remove_entitlement_from_team.sql](../test_templates/test_remove_entitlement_from_team.sql)
 
 
 
@@ -760,8 +760,8 @@ There are currently 4 templates in this section
 
 ## Remove Team
   
-*Template:* [remove_team.sql](../sqltask-templates/templates/remove_team.sql)  
-*Test:* [test_remove_team.sql](../sqltask-templates/test_templates/test_remove_team.sql)
+*Template:* [remove_team.sql](../templates/remove_team.sql)  
+*Test:* [test_remove_team.sql](../test_templates/test_remove_team.sql)
 
 
 
@@ -772,8 +772,8 @@ There are currently 4 templates in this section
 There are currently 7 templates in this section
 ## Add Entitlement To Verb
   
-*Template:* [add_entitlement_to_verb.sql](../sqltask-templates/templates/add_entitlement_to_verb.sql)  
-*Test:* [test_add_entitlement_to_verb.sql](../sqltask-templates/test_templates/test_add_entitlement_to_verb.sql)
+*Template:* [add_entitlement_to_verb.sql](../templates/add_entitlement_to_verb.sql)  
+*Test:* [test_add_entitlement_to_verb.sql](../test_templates/test_add_entitlement_to_verb.sql)
 
 
 
@@ -781,8 +781,8 @@ There are currently 7 templates in this section
 
 ## Add Verb To Entity
   
-*Template:* [add_verb_to_entity.sql](../sqltask-templates/templates/add_verb_to_entity.sql)  
-*Test:* [test_add_verb_to_entity.sql](../sqltask-templates/test_templates/test_add_verb_to_entity.sql)
+*Template:* [add_verb_to_entity.sql](../templates/add_verb_to_entity.sql)  
+*Test:* [test_add_verb_to_entity.sql](../test_templates/test_add_verb_to_entity.sql)
 
 
 
@@ -790,7 +790,7 @@ There are currently 7 templates in this section
 
 ## Add Verb With Existing Pdr
   
-*Template:* [add_verb_with_existing_pdr.sql](../sqltask-templates/templates/add_verb_with_existing_pdr.sql)
+*Template:* [add_verb_with_existing_pdr.sql](../templates/add_verb_with_existing_pdr.sql)
 
 
 
@@ -798,8 +798,8 @@ There are currently 7 templates in this section
 
 ## Extend Verb
   
-*Template:* [extend_verb.sql](../sqltask-templates/templates/extend_verb.sql)  
-*Test:* [test_extend_verb.sql](../sqltask-templates/test_templates/test_extend_verb.sql)
+*Template:* [extend_verb.sql](../templates/extend_verb.sql)  
+*Test:* [test_extend_verb.sql](../test_templates/test_extend_verb.sql)
 
 
 
@@ -807,8 +807,8 @@ There are currently 7 templates in this section
 
 ## Extend Verb With Config
   
-*Template:* [extend_verb_with_config.sql](../sqltask-templates/templates/extend_verb_with_config.sql)  
-*Test:* [test_extend_verb_with_config.sql](../sqltask-templates/test_templates/test_extend_verb_with_config.sql)
+*Template:* [extend_verb_with_config.sql](../templates/extend_verb_with_config.sql)  
+*Test:* [test_extend_verb_with_config.sql](../test_templates/test_extend_verb_with_config.sql)
 
 
 
@@ -816,8 +816,8 @@ There are currently 7 templates in this section
 
 ## Remove Entitlement From Verb
   
-*Template:* [remove_entitlement_from_verb.sql](../sqltask-templates/templates/remove_entitlement_from_verb.sql)  
-*Test:* [test_remove_entitlement_from_verb.sql](../sqltask-templates/test_templates/test_remove_entitlement_from_verb.sql)
+*Template:* [remove_entitlement_from_verb.sql](../templates/remove_entitlement_from_verb.sql)  
+*Test:* [test_remove_entitlement_from_verb.sql](../test_templates/test_remove_entitlement_from_verb.sql)
 
 
 
@@ -825,8 +825,8 @@ There are currently 7 templates in this section
 
 ## Remove Verb From Entity
   
-*Template:* [remove_verb_from_entity.sql](../sqltask-templates/templates/remove_verb_from_entity.sql)  
-*Test:* [test_remove_verb_from_entity.sql](../sqltask-templates/test_templates/test_remove_verb_from_entity.sql)
+*Template:* [remove_verb_from_entity.sql](../templates/remove_verb_from_entity.sql)  
+*Test:* [test_remove_verb_from_entity.sql](../test_templates/test_remove_verb_from_entity.sql)
 
 
 
@@ -837,8 +837,8 @@ There are currently 7 templates in this section
 There are currently 3 templates in this section
 ## Add Entity Definition
   
-*Template:* [add_entity_definition.sql](../sqltask-templates/templates/add_entity_definition.sql)  
-*Test:* [test_add_entity_definition.sql](../sqltask-templates/test_templates/test_add_entity_definition.sql)
+*Template:* [add_entity_definition.sql](../templates/add_entity_definition.sql)  
+*Test:* [test_add_entity_definition.sql](../test_templates/test_add_entity_definition.sql)
 
 
 
@@ -846,8 +846,8 @@ There are currently 3 templates in this section
 
 ## Remove Entity Definition
   
-*Template:* [remove_entity_definition.sql](../sqltask-templates/templates/remove_entity_definition.sql)  
-*Test:* [test_remove_entity_definition.sql](../sqltask-templates/test_templates/test_remove_entity_definition.sql)
+*Template:* [remove_entity_definition.sql](../templates/remove_entity_definition.sql)  
+*Test:* [test_remove_entity_definition.sql](../test_templates/test_remove_entity_definition.sql)
 
 
 
@@ -855,7 +855,7 @@ There are currently 3 templates in this section
 
 ## View Entity Definition
   
-*Template:* [view_entity_definition.sql](../sqltask-templates/templates/views/view_entity_definition.sql)
+*Template:* [view_entity_definition.sql](../templates/views/view_entity_definition.sql)
 
 
 
@@ -866,7 +866,7 @@ There are currently 3 templates in this section
 There are currently 2 templates in this section
 ## Add Localised Field
   
-*Template:* [add_localised_field.sql](../sqltask-templates/templates/add_localised_field.sql)
+*Template:* [add_localised_field.sql](../templates/add_localised_field.sql)
 
 
 
@@ -874,8 +874,8 @@ There are currently 2 templates in this section
 
 ## Update Localised Field
   
-*Template:* [update_localised_field.sql](../sqltask-templates/templates/update_localised_field.sql)  
-*Test:* [test_update_localised_field.sql](../sqltask-templates/test_templates/test_update_localised_field.sql)
+*Template:* [update_localised_field.sql](../templates/update_localised_field.sql)  
+*Test:* [test_update_localised_field.sql](../test_templates/test_update_localised_field.sql)
 
 
 
@@ -886,8 +886,8 @@ There are currently 2 templates in this section
 There are currently 2 templates in this section
 ## Add Menu Item
   
-*Template:* [add_menu_item.sql](../sqltask-templates/templates/add_menu_item.sql)  
-*Test:* [test_add_menu_item.sql](../sqltask-templates/test_templates/test_add_menu_item.sql)
+*Template:* [add_menu_item.sql](../templates/add_menu_item.sql)  
+*Test:* [test_add_menu_item.sql](../test_templates/test_add_menu_item.sql)
 
 
 
@@ -895,8 +895,8 @@ There are currently 2 templates in this section
 
 ## Remove Menu Item
   
-*Template:* [remove_menu_item.sql](../sqltask-templates/templates/remove_menu_item.sql)  
-*Test:* [test_remove_menu_item.sql](../sqltask-templates/test_templates/test_remove_menu_item.sql)
+*Template:* [remove_menu_item.sql](../templates/remove_menu_item.sql)  
+*Test:* [test_remove_menu_item.sql](../test_templates/test_remove_menu_item.sql)
 
 
 
@@ -907,7 +907,7 @@ There are currently 2 templates in this section
 There are currently 1 templates in this section
 ## Add Migration Domain
   
-*Template:* [add_migration_domain.sql](../sqltask-templates/templates/add_migration_domain.sql)
+*Template:* [add_migration_domain.sql](../templates/add_migration_domain.sql)
 
 
 
@@ -918,8 +918,8 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## Add Process Descriptor
   
-*Template:* [add_process_descriptor.sql](../sqltask-templates/templates/add_process_descriptor.sql)  
-*Test:* [test_add_process_descriptor.sql](../sqltask-templates/test_templates/test_add_process_descriptor.sql)
+*Template:* [add_process_descriptor.sql](../templates/add_process_descriptor.sql)  
+*Test:* [test_add_process_descriptor.sql](../test_templates/test_add_process_descriptor.sql)
 
 
 
@@ -930,8 +930,8 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## Add Static Menu
   
-*Template:* [add_static_menu.sql](../sqltask-templates/templates/add_static_menu.sql)  
-*Test:* [test_add_static_menu.sql](../sqltask-templates/test_templates/test_add_static_menu.sql)
+*Template:* [add_static_menu.sql](../templates/add_static_menu.sql)  
+*Test:* [test_add_static_menu.sql](../test_templates/test_add_static_menu.sql)
 
 
 
@@ -942,7 +942,7 @@ There are currently 1 templates in this section
 There are currently 2 templates in this section
 ## Add Tab To Ad Right Panel
   
-*Template:* [add_tab_to_ad_right_panel.sql](../sqltask-templates/templates/add_tab_to_ad_right_panel.sql)
+*Template:* [add_tab_to_ad_right_panel.sql](../templates/add_tab_to_ad_right_panel.sql)
 
 
 
@@ -950,8 +950,8 @@ There are currently 2 templates in this section
 
 ## Remove Tab From Ad Right Panel
   
-*Template:* [remove_tab_from_ad_right_panel.sql](../sqltask-templates/templates/remove_tab_from_ad_right_panel.sql)  
-*Test:* [test_remove_tab_from_ad_right_panel.sql](../sqltask-templates/test_templates/test_remove_tab_from_ad_right_panel.sql)
+*Template:* [remove_tab_from_ad_right_panel.sql](../templates/remove_tab_from_ad_right_panel.sql)  
+*Test:* [test_remove_tab_from_ad_right_panel.sql](../test_templates/test_remove_tab_from_ad_right_panel.sql)
 
 
 
@@ -962,7 +962,7 @@ There are currently 2 templates in this section
 There are currently 2 templates in this section
 ## Add Tab To Ad Right Panel
   
-*Template:* [add_tab_to_ad_right_panel.sql](../sqltask-templates/templates/add_tab_to_ad_right_panel.sql)
+*Template:* [add_tab_to_ad_right_panel.sql](../templates/add_tab_to_ad_right_panel.sql)
 
 
 
@@ -970,8 +970,8 @@ There are currently 2 templates in this section
 
 ## Remove Tab From Ad Right Panel
   
-*Template:* [remove_tab_from_ad_right_panel.sql](../sqltask-templates/templates/remove_tab_from_ad_right_panel.sql)  
-*Test:* [test_remove_tab_from_ad_right_panel.sql](../sqltask-templates/test_templates/test_remove_tab_from_ad_right_panel.sql)
+*Template:* [remove_tab_from_ad_right_panel.sql](../templates/remove_tab_from_ad_right_panel.sql)  
+*Test:* [test_remove_tab_from_ad_right_panel.sql](../test_templates/test_remove_tab_from_ad_right_panel.sql)
 
 
 
@@ -982,8 +982,8 @@ There are currently 2 templates in this section
 There are currently 1 templates in this section
 ## Add Tag
   
-*Template:* [add_tag.sql](../sqltask-templates/templates/add_tag.sql)  
-*Test:* [test_add_tag.sql](../sqltask-templates/test_templates/test_add_tag.sql)
+*Template:* [add_tag.sql](../templates/add_tag.sql)  
+*Test:* [test_add_tag.sql](../test_templates/test_add_tag.sql)
 
 
 
@@ -994,8 +994,8 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## Add Team Position
   
-*Template:* [add_team_position.sql](../sqltask-templates/templates/add_team_position.sql)  
-*Test:* [test_add_team_position.sql](../sqltask-templates/test_templates/test_add_team_position.sql)
+*Template:* [add_team_position.sql](../templates/add_team_position.sql)  
+*Test:* [test_add_team_position.sql](../test_templates/test_add_team_position.sql)
 
 
 
@@ -1006,8 +1006,8 @@ There are currently 1 templates in this section
 There are currently 2 templates in this section
 ## Add Team Role
   
-*Template:* [add_team_role.sql](../sqltask-templates/templates/add_team_role.sql)  
-*Test:* [test_add_team_role.sql](../sqltask-templates/test_templates/test_add_team_role.sql)
+*Template:* [add_team_role.sql](../templates/add_team_role.sql)  
+*Test:* [test_add_team_role.sql](../test_templates/test_add_team_role.sql)
 
 
 
@@ -1015,8 +1015,8 @@ There are currently 2 templates in this section
 
 ## Remove Team Role
   
-*Template:* [remove_team_role.sql](../sqltask-templates/templates/remove_team_role.sql)  
-*Test:* [test_remove_team_role.sql](../sqltask-templates/test_templates/test_remove_team_role.sql)
+*Template:* [remove_team_role.sql](../templates/remove_team_role.sql)  
+*Test:* [test_remove_team_role.sql](../test_templates/test_remove_team_role.sql)
 
 
 
@@ -1027,8 +1027,8 @@ There are currently 2 templates in this section
 There are currently 2 templates in this section
 ## Add Team Role Type
   
-*Template:* [add_team_role_type.sql](../sqltask-templates/templates/add_team_role_type.sql)  
-*Test:* [test_add_team_role_type.sql](../sqltask-templates/test_templates/test_add_team_role_type.sql)
+*Template:* [add_team_role_type.sql](../templates/add_team_role_type.sql)  
+*Test:* [test_add_team_role_type.sql](../test_templates/test_add_team_role_type.sql)
 
 
 
@@ -1036,8 +1036,8 @@ There are currently 2 templates in this section
 
 ## Remove Team Role Type
   
-*Template:* [remove_team_role_type.sql](../sqltask-templates/templates/remove_team_role_type.sql)  
-*Test:* [test_remove_team_role_type.sql](../sqltask-templates/test_templates/test_remove_team_role_type.sql)
+*Template:* [remove_team_role_type.sql](../templates/remove_team_role_type.sql)  
+*Test:* [test_remove_team_role_type.sql](../test_templates/test_remove_team_role_type.sql)
 
 
 
@@ -1048,8 +1048,8 @@ There are currently 2 templates in this section
 There are currently 1 templates in this section
 ## Add Url With Smartmatch Purpose
   
-*Template:* [add_url_with_smartmatch_purpose.sql](../sqltask-templates/templates/add_url_with_smartmatch_purpose.sql)  
-*Test:* [test_add_url_with_smartmatch_purpose.sql](../sqltask-templates/test_templates/test_add_url_with_smartmatch_purpose.sql)
+*Template:* [add_url_with_smartmatch_purpose.sql](../templates/add_url_with_smartmatch_purpose.sql)  
+*Test:* [test_add_url_with_smartmatch_purpose.sql](../test_templates/test_add_url_with_smartmatch_purpose.sql)
 
 Adds a URL and makes it available to be used in rules editor
 
@@ -1065,10 +1065,10 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
   
 **Images**  
   
-![1](../sqltask-templates/templates/add_url_with_smartmatch_purpose1.PNG)  
+![1](../templates/add_url_with_smartmatch_purpose1.PNG)  
 **<center>Image 1</center>**  
   
-![2](../sqltask-templates/templates/add_url_with_smartmatch_purpose2.PNG)  
+![2](../templates/add_url_with_smartmatch_purpose2.PNG)  
 **<center>Image 2</center>**  
 
 # Entity
@@ -1076,8 +1076,8 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
 There are currently 3 templates in this section
 ## Add Verb To Entity
   
-*Template:* [add_verb_to_entity.sql](../sqltask-templates/templates/add_verb_to_entity.sql)  
-*Test:* [test_add_verb_to_entity.sql](../sqltask-templates/test_templates/test_add_verb_to_entity.sql)
+*Template:* [add_verb_to_entity.sql](../templates/add_verb_to_entity.sql)  
+*Test:* [test_add_verb_to_entity.sql](../test_templates/test_add_verb_to_entity.sql)
 
 
 
@@ -1085,8 +1085,8 @@ There are currently 3 templates in this section
 
 ## Extend Entity
   
-*Template:* [extend_entity.sql](../sqltask-templates/templates/extend_entity.sql)  
-*Test:* [test_extend_entity.sql](../sqltask-templates/test_templates/test_extend_entity.sql)
+*Template:* [extend_entity.sql](../templates/extend_entity.sql)  
+*Test:* [test_extend_entity.sql](../test_templates/test_extend_entity.sql)
 
 
 
@@ -1094,8 +1094,8 @@ There are currently 3 templates in this section
 
 ## Remove Verb From Entity
   
-*Template:* [remove_verb_from_entity.sql](../sqltask-templates/templates/remove_verb_from_entity.sql)  
-*Test:* [test_remove_verb_from_entity.sql](../sqltask-templates/test_templates/test_remove_verb_from_entity.sql)
+*Template:* [remove_verb_from_entity.sql](../templates/remove_verb_from_entity.sql)  
+*Test:* [test_remove_verb_from_entity.sql](../test_templates/test_remove_verb_from_entity.sql)
 
 
 
@@ -1106,8 +1106,8 @@ There are currently 3 templates in this section
 There are currently 2 templates in this section
 ## Add View Contact Tab
   
-*Template:* [add_view_contact_tab.sql](../sqltask-templates/templates/add_view_contact_tab.sql)  
-*Test:* [test_add_view_contact_tab.sql](../sqltask-templates/test_templates/test_add_view_contact_tab.sql)
+*Template:* [add_view_contact_tab.sql](../templates/add_view_contact_tab.sql)  
+*Test:* [test_add_view_contact_tab.sql](../test_templates/test_add_view_contact_tab.sql)
 
 
 
@@ -1115,8 +1115,8 @@ There are currently 2 templates in this section
 
 ## Remove View Contact Tab
   
-*Template:* [remove_view_contact_tab.sql](../sqltask-templates/templates/remove_view_contact_tab.sql)  
-*Test:* [test_remove_view_contact_tab.sql](../sqltask-templates/test_templates/test_remove_view_contact_tab.sql)
+*Template:* [remove_view_contact_tab.sql](../templates/remove_view_contact_tab.sql)  
+*Test:* [test_remove_view_contact_tab.sql](../test_templates/test_remove_view_contact_tab.sql)
 
 
 
@@ -1127,8 +1127,8 @@ There are currently 2 templates in this section
 There are currently 1 templates in this section
 ## Add Web Integration Host
   
-*Template:* [add_web_integration_host.groovy](../sqltask-templates/templates/add_web_integration_host.groovy)  
-*Test:* [test_add_web_integration_host.groovy](../sqltask-templates/test_templates/test_add_web_integration_host.groovy)
+*Template:* [add_web_integration_host.groovy](../templates/add_web_integration_host.groovy)  
+*Test:* [test_add_web_integration_host.groovy](../test_templates/test_add_web_integration_host.groovy)
 
 
 
@@ -1139,8 +1139,8 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## Change Max Count Work Area
   
-*Template:* [change_max_count_work_area.sql](../sqltask-templates/templates/change_max_count_work_area.sql)  
-*Test:* [test_change_max_count_work_area.sql](../sqltask-templates/test_templates/test_change_max_count_work_area.sql)
+*Template:* [change_max_count_work_area.sql](../templates/change_max_count_work_area.sql)  
+*Test:* [test_change_max_count_work_area.sql](../test_templates/test_change_max_count_work_area.sql)
 
 
 
@@ -1151,7 +1151,7 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## Config New Content Type
   
-*Template:* [config_new_content_type.sql](../sqltask-templates/templates/config_new_content_type.sql)
+*Template:* [config_new_content_type.sql](../templates/config_new_content_type.sql)
 
 
 
@@ -1162,8 +1162,8 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## Extend Customer
   
-*Template:* [extend_customer.sql](../sqltask-templates/templates/extend_customer.sql)  
-*Test:* [test_extend_customer.sql](../sqltask-templates/test_templates/test_extend_customer.sql)
+*Template:* [extend_customer.sql](../templates/extend_customer.sql)  
+*Test:* [test_extend_customer.sql](../test_templates/test_extend_customer.sql)
 
 
 
@@ -1174,8 +1174,8 @@ There are currently 1 templates in this section
 There are currently 2 templates in this section
 ## Register Channel State Manager Listener
   
-*Template:* [register_channel_state_manager_listener.sql](../sqltask-templates/templates/register_channel_state_manager_listener.sql)  
-*Test:* [test_register_channel_state_manager_listener.sql](../sqltask-templates/test_templates/test_register_channel_state_manager_listener.sql)
+*Template:* [register_channel_state_manager_listener.sql](../templates/register_channel_state_manager_listener.sql)  
+*Test:* [test_register_channel_state_manager_listener.sql](../test_templates/test_register_channel_state_manager_listener.sql)
 
 
 
@@ -1183,8 +1183,8 @@ There are currently 2 templates in this section
 
 ## Unregister Channel State Manager Listener
   
-*Template:* [unregister_channel_state_manager_listener.sql](../sqltask-templates/templates/unregister_channel_state_manager_listener.sql)  
-*Test:* [test_unregister_channel_state_manager_listener.sql](../sqltask-templates/test_templates/test_unregister_channel_state_manager_listener.sql)
+*Template:* [unregister_channel_state_manager_listener.sql](../templates/unregister_channel_state_manager_listener.sql)  
+*Test:* [test_unregister_channel_state_manager_listener.sql](../test_templates/test_unregister_channel_state_manager_listener.sql)
 
 
 
@@ -1195,8 +1195,8 @@ There are currently 2 templates in this section
 There are currently 1 templates in this section
 ## Remove Base Entity
   
-*Template:* [remove_base_entity.sql](../sqltask-templates/templates/remove_base_entity.sql)  
-*Test:* [test_remove_base_entity.sql](../sqltask-templates/test_templates/test_remove_base_entity.sql)
+*Template:* [remove_base_entity.sql](../templates/remove_base_entity.sql)  
+*Test:* [test_remove_base_entity.sql](../test_templates/test_remove_base_entity.sql)
 
 
 
@@ -1207,8 +1207,8 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## Remove Process Desc Ref
   
-*Template:* [remove_process_desc_ref.sql](../sqltask-templates/templates/remove_process_desc_ref.sql)  
-*Test:* [test_remove_process_desc_ref.sql](../sqltask-templates/test_templates/test_remove_process_desc_ref.sql)
+*Template:* [remove_process_desc_ref.sql](../templates/remove_process_desc_ref.sql)  
+*Test:* [test_remove_process_desc_ref.sql](../test_templates/test_remove_process_desc_ref.sql)
 
 
 
@@ -1219,8 +1219,8 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## Reorder Dynamic View Field
   
-*Template:* [reorder_dynamic_view_field.sql](../sqltask-templates/templates/reorder_dynamic_view_field.sql)  
-*Test:* [test_reorder_dynamic_view_field.sql](../sqltask-templates/test_templates/test_reorder_dynamic_view_field.sql)  
+*Template:* [reorder_dynamic_view_field.sql](../templates/reorder_dynamic_view_field.sql)  
+*Test:* [test_reorder_dynamic_view_field.sql](../test_templates/test_reorder_dynamic_view_field.sql)  
 *Related Tasks:* [Add Dynamic Entity View Field](#add-dynamic-entity-view-field)
 
 Reorder dynamic view field by moving it up or down to a given position
@@ -1260,13 +1260,13 @@ Now we can move 'KnowledgeSegmentCreateTopic' back to his original place by sele
   
 **Images**  
   
-![1](../sqltask-templates/templates/reorder_dynamic_view_field1.PNG)  
+![1](../templates/reorder_dynamic_view_field1.PNG)  
 **<center>Image 1</center>**  
   
-![2](../sqltask-templates/templates/reorder_dynamic_view_field2.PNG)  
+![2](../templates/reorder_dynamic_view_field2.PNG)  
 **<center>Image 2</center>**  
   
-![3](../sqltask-templates/templates/reorder_dynamic_view_field3.PNG)  
+![3](../templates/reorder_dynamic_view_field3.PNG)  
 **<center>Image 3</center>**  
 
 # Dynamic View Field1
@@ -1283,8 +1283,8 @@ There are currently 0 templates in this section
 There are currently 1 templates in this section
 ## Set Entity Default Instance Verb
   
-*Template:* [set_entity_default_instance_verb.sql](../sqltask-templates/templates/set_entity_default_instance_verb.sql)  
-*Test:* [test_set_entity_default_instance_verb.sql](../sqltask-templates/test_templates/test_set_entity_default_instance_verb.sql)  
+*Template:* [set_entity_default_instance_verb.sql](../templates/set_entity_default_instance_verb.sql)  
+*Test:* [test_set_entity_default_instance_verb.sql](../test_templates/test_set_entity_default_instance_verb.sql)  
 *Related Tasks:* [Update Verb User Visible Flag](#update-verb-user-visible-flag), [Add Activity To Perspective](#add-activity-to-perspective)  
 *Related Views:* [View Entity Displayed Verbs](#view-entity-displayed-verbs), [View Entity Verbs](#view-entity-verbs)
 
@@ -1303,8 +1303,8 @@ User can run each verb by clicking on the verb title. User can also click on the
 There are currently 1 templates in this section
 ## Update Agent Password
   
-*Template:* [update_agent_password.sql](../sqltask-templates/templates/update_agent_password.sql)  
-*Test:* [test_update_agent_password.sql](../sqltask-templates/test_templates/test_update_agent_password.sql)
+*Template:* [update_agent_password.sql](../templates/update_agent_password.sql)  
+*Test:* [test_update_agent_password.sql](../test_templates/test_update_agent_password.sql)
 
 
 
@@ -1315,8 +1315,8 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## Update Ccadmin Version
   
-*Template:* [update_ccadmin_version.sql](../sqltask-templates/templates/update_ccadmin_version.sql)  
-*Test:* [test_update_ccadmin_version.sql](../sqltask-templates/test_templates/test_update_ccadmin_version.sql)
+*Template:* [update_ccadmin_version.sql](../templates/update_ccadmin_version.sql)  
+*Test:* [test_update_ccadmin_version.sql](../test_templates/test_update_ccadmin_version.sql)
 
 
 
@@ -1327,8 +1327,8 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## Update Verb Path
   
-*Template:* [update_verb_path.sql](../sqltask-templates/templates/update_verb_path.sql)  
-*Test:* [test_update_verb_path.sql](../sqltask-templates/test_templates/test_update_verb_path.sql)
+*Template:* [update_verb_path.sql](../templates/update_verb_path.sql)  
+*Test:* [test_update_verb_path.sql](../test_templates/test_update_verb_path.sql)
 
 
 
@@ -1339,8 +1339,8 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## Update Verb Process Descriptor Reference
   
-*Template:* [update_verb_process_descriptor_reference.sql](../sqltask-templates/templates/update_verb_process_descriptor_reference.sql)  
-*Test:* [test_update_verb_process_descriptor_reference.sql](../sqltask-templates/test_templates/test_update_verb_process_descriptor_reference.sql)
+*Template:* [update_verb_process_descriptor_reference.sql](../templates/update_verb_process_descriptor_reference.sql)  
+*Test:* [test_update_verb_process_descriptor_reference.sql](../test_templates/test_update_verb_process_descriptor_reference.sql)
 
 
 
@@ -1351,8 +1351,8 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## Update Verb User Visible Flag
   
-*Template:* [update_verb_user_visible_flag.sql](../sqltask-templates/templates/update_verb_user_visible_flag.sql)  
-*Test:* [test_update_verb_user_visible_flag.sql](../sqltask-templates/test_templates/test_update_verb_user_visible_flag.sql)
+*Template:* [update_verb_user_visible_flag.sql](../templates/update_verb_user_visible_flag.sql)  
+*Test:* [test_update_verb_user_visible_flag.sql](../test_templates/test_update_verb_user_visible_flag.sql)
 
 
 
@@ -1363,7 +1363,7 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## Add Entity Entitlement
   
-*Template:* [add_entity_entitlement.sql](../sqltask-templates/templates/hidden_templates/add_entity_entitlement.sql)
+*Template:* [add_entity_entitlement.sql](../templates/hidden_templates/add_entity_entitlement.sql)
 
 
 
@@ -1374,7 +1374,7 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## Add Process Descriptor Ref
   
-*Template:* [add_process_descriptor_ref.sql](../sqltask-templates/templates/hidden_templates/add_process_descriptor_ref.sql)
+*Template:* [add_process_descriptor_ref.sql](../templates/hidden_templates/add_process_descriptor_ref.sql)
 
 
 
@@ -1385,7 +1385,7 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## Base Add Entity Def
   
-*Template:* [base_add_entity_def.sql](../sqltask-templates/templates/hidden_templates/base_add_entity_def.sql)
+*Template:* [base_add_entity_def.sql](../templates/hidden_templates/base_add_entity_def.sql)
 
 
 
@@ -1396,7 +1396,7 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## Generic Set Update Values
   
-*Template:* [generic_set_update_values.sql](../sqltask-templates/templates/hidden_templates/generic_set_update_values.sql)
+*Template:* [generic_set_update_values.sql](../templates/hidden_templates/generic_set_update_values.sql)
 
 
 
@@ -1407,7 +1407,7 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## Insert Context Verb Entry
   
-*Template:* [insert_context_verb_entry.sql](../sqltask-templates/templates/hidden_templates/insert_context_verb_entry.sql)
+*Template:* [insert_context_verb_entry.sql](../templates/hidden_templates/insert_context_verb_entry.sql)
 
 
 
@@ -1418,7 +1418,7 @@ There are currently 1 templates in this section
 There are currently 2 templates in this section
 ## Insert Dynamic Verb List
   
-*Template:* [insert_dynamic_verb_list.sql](../sqltask-templates/templates/hidden_templates/insert_dynamic_verb_list.sql)
+*Template:* [insert_dynamic_verb_list.sql](../templates/hidden_templates/insert_dynamic_verb_list.sql)
 
 
 
@@ -1426,7 +1426,7 @@ There are currently 2 templates in this section
 
 ## Remove Dynamic Verb List
   
-*Template:* [remove_dynamic_verb_list.sql](../sqltask-templates/templates/hidden_templates/remove_dynamic_verb_list.sql)
+*Template:* [remove_dynamic_verb_list.sql](../templates/hidden_templates/remove_dynamic_verb_list.sql)
 
 
 
@@ -1437,7 +1437,7 @@ There are currently 2 templates in this section
 There are currently 1 templates in this section
 ## Insert Dynamic Verb Parameter
   
-*Template:* [insert_dynamic_verb_parameter.sql](../sqltask-templates/templates/hidden_templates/insert_dynamic_verb_parameter.sql)
+*Template:* [insert_dynamic_verb_parameter.sql](../templates/hidden_templates/insert_dynamic_verb_parameter.sql)
 
 
 
@@ -1448,7 +1448,7 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## Remove Idmap
   
-*Template:* [remove_idmap.sql](../sqltask-templates/templates/hidden_templates/remove_idmap.sql)
+*Template:* [remove_idmap.sql](../templates/hidden_templates/remove_idmap.sql)
 
 
 
@@ -1459,7 +1459,7 @@ There are currently 1 templates in this section
 There are currently 6 templates in this section
 ## Test
   
-*Template:* [test.sql](../sqltask-templates/templates/pepi-one/test.sql)
+*Template:* [test.sql](../templates/pepi-one/test.sql)
 
 
 
@@ -1467,7 +1467,7 @@ There are currently 6 templates in this section
 
 ## Test
   
-*Template:* [test.sql](../sqltask-templates/templates/pepi_one/test.sql)
+*Template:* [test.sql](../templates/pepi_one/test.sql)
 
 
 
@@ -1475,7 +1475,7 @@ There are currently 6 templates in this section
 
 ## Filters
   
-*Template:* [filters.txt](../sqltask-templates/templates/tutorials/filters.txt)
+*Template:* [filters.txt](../templates/tutorials/filters.txt)
 
 
 
@@ -1483,7 +1483,7 @@ There are currently 6 templates in this section
 
 ## How To Add Content Type
   
-*Template:* [how_to_add_content_type.txt](../sqltask-templates/templates/tutorials/how_to_add_content_type.txt)
+*Template:* [how_to_add_content_type.txt](../templates/tutorials/how_to_add_content_type.txt)
 
 
 
@@ -1491,7 +1491,7 @@ There are currently 6 templates in this section
 
 ## Include
   
-*Template:* [include.txt](../sqltask-templates/templates/tutorials/include.txt)
+*Template:* [include.txt](../templates/tutorials/include.txt)
 
 
 
@@ -1499,7 +1499,7 @@ There are currently 6 templates in this section
 
 ## Keynames
   
-*Template:* [keynames.txt](../sqltask-templates/templates/tutorials/keynames.txt)
+*Template:* [keynames.txt](../templates/tutorials/keynames.txt)
 
 
 
@@ -1510,8 +1510,8 @@ There are currently 6 templates in this section
 There are currently 2 templates in this section
 ## Add Tenant Property
   
-*Template:* [add_tenant_property.sql](../sqltask-templates/templates/tenant_properties_service/add_tenant_property.sql)  
-*Test:* [test_add_tenant_property.sql](../sqltask-templates/test_templates/tenant_properties_service/test_add_tenant_property.sql)
+*Template:* [add_tenant_property.sql](../templates/tenant_properties_service/add_tenant_property.sql)  
+*Test:* [test_add_tenant_property.sql](../test_templates/tenant_properties_service/test_add_tenant_property.sql)
 
 
 
@@ -1519,8 +1519,8 @@ There are currently 2 templates in this section
 
 ## Remove Tenant Property
   
-*Template:* [remove_tenant_property.sql](../sqltask-templates/templates/tenant_properties_service/remove_tenant_property.sql)  
-*Test:* [test_remove_tenant_property.sql](../sqltask-templates/test_templates/tenant_properties_service/test_remove_tenant_property.sql)
+*Template:* [remove_tenant_property.sql](../templates/tenant_properties_service/remove_tenant_property.sql)  
+*Test:* [test_remove_tenant_property.sql](../test_templates/tenant_properties_service/test_remove_tenant_property.sql)
 
 
 
@@ -1531,7 +1531,7 @@ There are currently 2 templates in this section
 There are currently 1 templates in this section
 ## Globals And String Functions Tutorial
   
-*Template:* [globals_and_string_functions_tutorial.txt](../sqltask-templates/templates/tutorials/globals_and_string_functions_tutorial.txt)
+*Template:* [globals_and_string_functions_tutorial.txt](../templates/tutorials/globals_and_string_functions_tutorial.txt)
 
 
 
@@ -1542,7 +1542,7 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## How To Add Content Type
   
-*Template:* [how_to_add_content_type.txt](../sqltask-templates/templates/tutorials/how_to_add_content_type.txt)
+*Template:* [how_to_add_content_type.txt](../templates/tutorials/how_to_add_content_type.txt)
 
 
 
@@ -1553,7 +1553,7 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## Querying Db
   
-*Template:* [querying_db.txt](../sqltask-templates/templates/tutorials/querying_db.txt)
+*Template:* [querying_db.txt](../templates/tutorials/querying_db.txt)
 
 
 
@@ -1564,7 +1564,7 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## Variable And Prompts
   
-*Template:* [variable_and_prompts.txt](../sqltask-templates/templates/tutorials/variable_and_prompts.txt)
+*Template:* [variable_and_prompts.txt](../templates/tutorials/variable_and_prompts.txt)
 
 
 
@@ -1575,7 +1575,7 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## View Ad Right Panel Tabs Verbs
   
-*Template:* [view_ad_right_panel_tabs_verbs.sql](../sqltask-templates/templates/views/view_ad_right_panel_tabs_verbs.sql)
+*Template:* [view_ad_right_panel_tabs_verbs.sql](../templates/views/view_ad_right_panel_tabs_verbs.sql)
 
 
 
@@ -1586,7 +1586,7 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## View Agent Profile Background Vebs
   
-*Template:* [view_agent_profile_background_vebs.sql](../sqltask-templates/templates/views/view_agent_profile_background_vebs.sql)
+*Template:* [view_agent_profile_background_vebs.sql](../templates/views/view_agent_profile_background_vebs.sql)
 
 
 
@@ -1597,7 +1597,7 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## View Channel State Manager Listeners
   
-*Template:* [view_channel_state_manager_listeners.sql](../sqltask-templates/templates/views/view_channel_state_manager_listeners.sql)
+*Template:* [view_channel_state_manager_listeners.sql](../templates/views/view_channel_state_manager_listeners.sql)
 
 
 
@@ -1608,7 +1608,7 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## View Entitlements By System Name
   
-*Template:* [view_entitlements_by_system_name.sql](../sqltask-templates/templates/views/view_entitlements_by_system_name.sql)
+*Template:* [view_entitlements_by_system_name.sql](../templates/views/view_entitlements_by_system_name.sql)
 
 
 
@@ -1619,7 +1619,7 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## View Entity Displayed Verbs
   
-*Template:* [view_entity_displayed_verbs.sql](../sqltask-templates/templates/views/view_entity_displayed_verbs.sql)
+*Template:* [view_entity_displayed_verbs.sql](../templates/views/view_entity_displayed_verbs.sql)
 
 
 
@@ -1630,8 +1630,8 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## View Entity Verbs
   
-*Template:* [view_entity_verbs.sql](../sqltask-templates/templates/views/view_entity_verbs.sql)  
-*Test:* [test_view_entity_verbs.sql](../sqltask-templates/test_templates/views/test_view_entity_verbs.sql)
+*Template:* [view_entity_verbs.sql](../templates/views/view_entity_verbs.sql)  
+*Test:* [test_view_entity_verbs.sql](../test_templates/views/test_view_entity_verbs.sql)
 
 
 
@@ -1642,7 +1642,7 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## View Entity Verbs Keynames
   
-*Template:* [view_entity_verbs_keynames.sql](../sqltask-templates/templates/views/view_entity_verbs_keynames.sql)
+*Template:* [view_entity_verbs_keynames.sql](../templates/views/view_entity_verbs_keynames.sql)
 
 
 
@@ -1653,7 +1653,7 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## View Entitydef By Keyname
   
-*Template:* [view_entitydef_by_keyname.sql](../sqltask-templates/templates/views/view_entitydef_by_keyname.sql)
+*Template:* [view_entitydef_by_keyname.sql](../templates/views/view_entitydef_by_keyname.sql)
 
 
 
@@ -1664,7 +1664,7 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## View Keynames
   
-*Template:* [view_keynames.sql](../sqltask-templates/templates/views/view_keynames.sql)
+*Template:* [view_keynames.sql](../templates/views/view_keynames.sql)
 
 
 
@@ -1675,7 +1675,7 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## View Process Descriptor Ref By Repo Path
   
-*Template:* [view_process_descriptor_ref_by_repo_path.sql](../sqltask-templates/templates/views/view_process_descriptor_ref_by_repo_path.sql)
+*Template:* [view_process_descriptor_ref_by_repo_path.sql](../templates/views/view_process_descriptor_ref_by_repo_path.sql)
 
 
 
@@ -1686,7 +1686,7 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## View Profile Entitlements
   
-*Template:* [view_profile_entitlements.sql](../sqltask-templates/templates/views/view_profile_entitlements.sql)
+*Template:* [view_profile_entitlements.sql](../templates/views/view_profile_entitlements.sql)
 
 
 
@@ -1697,7 +1697,7 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## View Profile Verbs
   
-*Template:* [view_profile_verbs.sql](../sqltask-templates/templates/views/view_profile_verbs.sql)
+*Template:* [view_profile_verbs.sql](../templates/views/view_profile_verbs.sql)
 
 
 
@@ -1708,8 +1708,8 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## View User Profiles
   
-*Template:* [view_user_profiles.sql](../sqltask-templates/templates/views/view_user_profiles.sql)  
-*Test:* [test_view_user_profiles.sql](../sqltask-templates/test_templates/views/test_view_user_profiles.sql)
+*Template:* [view_user_profiles.sql](../templates/views/view_user_profiles.sql)  
+*Test:* [test_view_user_profiles.sql](../test_templates/views/test_view_user_profiles.sql)
 
 
 
@@ -1720,7 +1720,7 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## View Verb By Keyname
   
-*Template:* [view_verb_by_keyname.sql](../sqltask-templates/templates/views/view_verb_by_keyname.sql)
+*Template:* [view_verb_by_keyname.sql](../templates/views/view_verb_by_keyname.sql)
 
 
 
@@ -1731,7 +1731,7 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## View Verb Entitlements
   
-*Template:* [view_verb_entitlements.sql](../sqltask-templates/templates/views/view_verb_entitlements.sql)
+*Template:* [view_verb_entitlements.sql](../templates/views/view_verb_entitlements.sql)
 
 
 
@@ -1742,7 +1742,7 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## View Verbs From Repo Path
   
-*Template:* [view_verbs_from_repo_path.sql](../sqltask-templates/templates/views/view_verbs_from_repo_path.sql)
+*Template:* [view_verbs_from_repo_path.sql](../templates/views/view_verbs_from_repo_path.sql)
 
 
 
@@ -1753,7 +1753,7 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## View Verbs From Repo Path
   
-*Template:* [view_verbs_from_repo_path.sql](../sqltask-templates/templates/views/view_verbs_from_repo_path.sql)
+*Template:* [view_verbs_from_repo_path.sql](../templates/views/view_verbs_from_repo_path.sql)
 
 
 
@@ -1764,7 +1764,7 @@ There are currently 1 templates in this section
 There are currently 1 templates in this section
 ## View Table Name From Foreign Key Name
   
-*Template:* [view_table_name_from_foreign_key_name.sql](../sqltask-templates/templates/views/oracle/view_table_name_from_foreign_key_name.sql)
+*Template:* [view_table_name_from_foreign_key_name.sql](../templates/views/oracle/view_table_name_from_foreign_key_name.sql)
 
 
 
