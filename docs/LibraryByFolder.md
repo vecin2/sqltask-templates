@@ -3,7 +3,7 @@ SQLTask Library
 ===============
 
 
-The SQL tasks library has currently a total of 113 templates, divided in 5 sections; 78 [scripts](#scripts), 9 [hidden_templates](#hidden_templates), 7 [tutorials](#tutorials), 18 [views](#views), 1 [oracle](#oracle)
+The SQL tasks library has currently a total of 117 templates, divided in 8 sections; 78 [scripts](#scripts), 9 [hidden_templates](#hidden_templates), 1 [pepi-one](#pepi-one), 1 [pepi_one](#pepi_one), 2 [tenant_properties_service](#tenant_properties_service), 7 [tutorials](#tutorials), 18 [views](#views), 1 [oracle](#oracle)
 
 Tables of Contents
 ==================
@@ -97,6 +97,13 @@ Tables of Contents
 	* [Insert Dynamic Verb Parameter](#insert-dynamic-verb-parameter)
 	* [Remove Dynamic Verb List](#remove-dynamic-verb-list)
 	* [Remove Idmap](#remove-idmap)
+* [pepi-one](#pepi-one)
+	* [Test](#test)
+* [pepi_one](#pepi_one)
+	* [Test](#test)
+* [tenant_properties_service](#tenant_properties_service)
+	* [Add Tenant Property](#add-tenant-property)
+	* [Remove Tenant Property](#remove-tenant-property)
 * [tutorials](#tutorials)
 	* [Filters](#filters)
 	* [Globals And String Functions Tutorial](#globals-and-string-functions-tutorial)
@@ -958,6 +965,49 @@ There are currently 9 templates in this section
 ## Remove Idmap
   
 *Template:* [remove_idmap.sql](../sqltask-templates/templates/hidden_templates/remove_idmap.sql)
+
+
+
+  
+
+# pepi-one
+  
+There are currently 1 templates in this section
+## Test
+  
+*Template:* [test.sql](../sqltask-templates/templates/pepi-one/test.sql)
+
+
+
+  
+
+# pepi_one
+  
+There are currently 1 templates in this section
+## Test
+  
+*Template:* [test.sql](../sqltask-templates/templates/pepi_one/test.sql)
+
+
+
+  
+
+# tenant_properties_service
+  
+There are currently 2 templates in this section
+## Add Tenant Property
+  
+*Template:* [add_tenant_property.sql](../sqltask-templates/templates/tenant_properties_service/add_tenant_property.sql)  
+*Test:* [test_add_tenant_property.sql](../sqltask-templates/test_templates/tenant_properties_service/test_add_tenant_property.sql)
+
+
+
+  
+
+## Remove Tenant Property
+  
+*Template:* [remove_tenant_property.sql](../sqltask-templates/templates/tenant_properties_service/remove_tenant_property.sql)  
+*Test:* [test_remove_tenant_property.sql](../sqltask-templates/test_templates/tenant_properties_service/test_remove_tenant_property.sql)
 
 
 

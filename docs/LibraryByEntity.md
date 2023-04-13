@@ -3,7 +3,7 @@ SQLTask Library
 ===============
 
 
-The SQL tasks library has currently a total of 137 templates, divided in 83 sections; 3 [Activity](#activity), 6 [Perspective](#perspective), 8 [Agent](#agent), 1 [All Background Verbs](#all-background-verbs), 1 [Another profile](#another-profile), 1 [Association Type](#association-type), 3 [Background Verb](#background-verb), 9 [Profile](#profile), 1 [Basic Entity Definition](#basic-entity-definition), 1 [Category](#category), 1 [Content Type](#content-type), 1 [Dynamic Content Verb](#dynamic-content-verb), 1 [Dynamic Entity](#dynamic-entity), 1 [Dynamic Entity Def](#dynamic-entity-def), 1 [Dynamic Entity Field](#dynamic-entity-field), 1 [Dynamic Entity View](#dynamic-entity-view), 1 [Dynamic Entity View Field](#dynamic-entity-view-field), 9 [Entitlement](#entitlement), 4 [Team](#team), 7 [Verb](#verb), 3 [Entity Definition](#entity-definition), 2 [Localised Field](#localised-field), 2 [Menu Item](#menu-item), 1 [Migration Domain](#migration-domain), 1 [Process Descriptor](#process-descriptor), 1 [Static Menu](#static-menu), 2 [Tab](#tab), 2 [Ad right panel](#ad-right-panel), 1 [Tag](#tag), 1 [Team Position](#team-position), 2 [Team Role](#team-role), 2 [Team Role Type](#team-role-type), 1 [Url](#url), 3 [Entity](#entity), 2 [View Contact Tab](#view-contact-tab), 1 [Web Integration Host](#web-integration-host), 1 [Max Count Work Area](#max-count-work-area), 1 [New Content Type](#new-content-type), 1 [Customer](#customer), 2 [Channel State Manager Listener](#channel-state-manager-listener), 1 [Base Entity](#base-entity), 1 [Process Desc Ref](#process-desc-ref), 1 [Dynamic View Field](#dynamic-view-field), 0 [Dynamic View Field1](#dynamic-view-field1), 0 [Dynamic View Field2](#dynamic-view-field2), 0 [Dynamic View Field3](#dynamic-view-field3), 1 [Entity Default Instance Verb](#entity-default-instance-verb), 1 [Agent Password](#agent-password), 1 [Ccadmin Version](#ccadmin-version), 1 [Verb Path](#verb-path), 1 [Verb Process Descriptor Reference](#verb-process-descriptor-reference), 1 [Verb User Visible Flag](#verb-user-visible-flag), 1 [Entity Entitlement](#entity-entitlement), 1 [Process Descriptor Ref](#process-descriptor-ref), 1 [Add Entity Def](#add-entity-def), 1 [Set Update Values](#set-update-values), 1 [Context Verb Entry](#context-verb-entry), 2 [Dynamic Verb List](#dynamic-verb-list), 1 [Dynamic Verb Parameter](#dynamic-verb-parameter), 1 [Idmap](#idmap), 4 [](#), 1 [And String Functions Tutorial](#and-string-functions-tutorial), 1 [Add content type](#add-content-type), 1 [Db](#db), 1 [And Prompts](#and-prompts), 1 [Ad Right Panel Tabs Verbs](#ad-right-panel-tabs-verbs), 1 [Agent Profile Background Vebs](#agent-profile-background-vebs), 1 [Channel State Manager Listeners](#channel-state-manager-listeners), 1 [Entitlements By System Name](#entitlements-by-system-name), 1 [Entity Displayed Verbs](#entity-displayed-verbs), 1 [Entity Verbs](#entity-verbs), 1 [Entity Verbs Keynames](#entity-verbs-keynames), 1 [Entitydef By Keyname](#entitydef-by-keyname), 1 [Keynames](#keynames), 1 [Process Descriptor Ref By Repo Path](#process-descriptor-ref-by-repo-path), 1 [Profile Entitlements](#profile-entitlements), 1 [Profile Verbs](#profile-verbs), 1 [User Profiles](#user-profiles), 1 [Verb By Keyname](#verb-by-keyname), 1 [Verb Entitlements](#verb-entitlements), 1 [Verbs](#verbs), 1 [Repo path](#repo-path), 1 [Table Name](#table-name)
+The SQL tasks library has currently a total of 141 templates, divided in 84 sections; 3 [Activity](#activity), 6 [Perspective](#perspective), 8 [Agent](#agent), 1 [All Background Verbs](#all-background-verbs), 1 [Another profile](#another-profile), 1 [Association Type](#association-type), 3 [Background Verb](#background-verb), 9 [Profile](#profile), 1 [Basic Entity Definition](#basic-entity-definition), 1 [Category](#category), 1 [Content Type](#content-type), 1 [Dynamic Content Verb](#dynamic-content-verb), 1 [Dynamic Entity](#dynamic-entity), 1 [Dynamic Entity Def](#dynamic-entity-def), 1 [Dynamic Entity Field](#dynamic-entity-field), 1 [Dynamic Entity View](#dynamic-entity-view), 1 [Dynamic Entity View Field](#dynamic-entity-view-field), 9 [Entitlement](#entitlement), 4 [Team](#team), 7 [Verb](#verb), 3 [Entity Definition](#entity-definition), 2 [Localised Field](#localised-field), 2 [Menu Item](#menu-item), 1 [Migration Domain](#migration-domain), 1 [Process Descriptor](#process-descriptor), 1 [Static Menu](#static-menu), 2 [Tab](#tab), 2 [Ad right panel](#ad-right-panel), 1 [Tag](#tag), 1 [Team Position](#team-position), 2 [Team Role](#team-role), 2 [Team Role Type](#team-role-type), 1 [Url](#url), 3 [Entity](#entity), 2 [View Contact Tab](#view-contact-tab), 1 [Web Integration Host](#web-integration-host), 1 [Max Count Work Area](#max-count-work-area), 1 [New Content Type](#new-content-type), 1 [Customer](#customer), 2 [Channel State Manager Listener](#channel-state-manager-listener), 1 [Base Entity](#base-entity), 1 [Process Desc Ref](#process-desc-ref), 1 [Dynamic View Field](#dynamic-view-field), 0 [Dynamic View Field1](#dynamic-view-field1), 0 [Dynamic View Field2](#dynamic-view-field2), 0 [Dynamic View Field3](#dynamic-view-field3), 1 [Entity Default Instance Verb](#entity-default-instance-verb), 1 [Agent Password](#agent-password), 1 [Ccadmin Version](#ccadmin-version), 1 [Verb Path](#verb-path), 1 [Verb Process Descriptor Reference](#verb-process-descriptor-reference), 1 [Verb User Visible Flag](#verb-user-visible-flag), 1 [Entity Entitlement](#entity-entitlement), 1 [Process Descriptor Ref](#process-descriptor-ref), 1 [Add Entity Def](#add-entity-def), 1 [Set Update Values](#set-update-values), 1 [Context Verb Entry](#context-verb-entry), 2 [Dynamic Verb List](#dynamic-verb-list), 1 [Dynamic Verb Parameter](#dynamic-verb-parameter), 1 [Idmap](#idmap), 6 [](#), 2 [Tenant Property](#tenant-property), 1 [And String Functions Tutorial](#and-string-functions-tutorial), 1 [Add content type](#add-content-type), 1 [Db](#db), 1 [And Prompts](#and-prompts), 1 [Ad Right Panel Tabs Verbs](#ad-right-panel-tabs-verbs), 1 [Agent Profile Background Vebs](#agent-profile-background-vebs), 1 [Channel State Manager Listeners](#channel-state-manager-listeners), 1 [Entitlements By System Name](#entitlements-by-system-name), 1 [Entity Displayed Verbs](#entity-displayed-verbs), 1 [Entity Verbs](#entity-verbs), 1 [Entity Verbs Keynames](#entity-verbs-keynames), 1 [Entitydef By Keyname](#entitydef-by-keyname), 1 [Keynames](#keynames), 1 [Process Descriptor Ref By Repo Path](#process-descriptor-ref-by-repo-path), 1 [Profile Entitlements](#profile-entitlements), 1 [Profile Verbs](#profile-verbs), 1 [User Profiles](#user-profiles), 1 [Verb By Keyname](#verb-by-keyname), 1 [Verb Entitlements](#verb-entitlements), 1 [Verbs](#verbs), 1 [Repo path](#repo-path), 1 [Table Name](#table-name)
 
 Tables of Contents
 ==================
@@ -180,10 +180,15 @@ Tables of Contents
 * [Idmap](#idmap)
 	* [Remove Idmap](#remove-idmap)
 * [](#)
+	* [Test](#test)
+	* [Test](#test)
 	* [Filters](#filters)
 	* [How To Add Content Type](#how-to-add-content-type)
 	* [Include](#include)
 	* [Keynames](#keynames)
+* [Tenant Property](#tenant-property)
+	* [Add Tenant Property](#add-tenant-property)
+	* [Remove Tenant Property](#remove-tenant-property)
 * [And String Functions Tutorial](#and-string-functions-tutorial)
 	* [Globals And String Functions Tutorial](#globals-and-string-functions-tutorial)
 * [Add content type](#add-content-type)
@@ -1451,7 +1456,23 @@ There are currently 1 templates in this section
 
 # 
   
-There are currently 4 templates in this section
+There are currently 6 templates in this section
+## Test
+  
+*Template:* [test.sql](../sqltask-templates/templates/pepi-one/test.sql)
+
+
+
+  
+
+## Test
+  
+*Template:* [test.sql](../sqltask-templates/templates/pepi_one/test.sql)
+
+
+
+  
+
 ## Filters
   
 *Template:* [filters.txt](../sqltask-templates/templates/tutorials/filters.txt)
@@ -1479,6 +1500,27 @@ There are currently 4 templates in this section
 ## Keynames
   
 *Template:* [keynames.txt](../sqltask-templates/templates/tutorials/keynames.txt)
+
+
+
+  
+
+# Tenant Property
+  
+There are currently 2 templates in this section
+## Add Tenant Property
+  
+*Template:* [add_tenant_property.sql](../sqltask-templates/templates/tenant_properties_service/add_tenant_property.sql)  
+*Test:* [test_add_tenant_property.sql](../sqltask-templates/test_templates/tenant_properties_service/test_add_tenant_property.sql)
+
+
+
+  
+
+## Remove Tenant Property
+  
+*Template:* [remove_tenant_property.sql](../sqltask-templates/templates/tenant_properties_service/remove_tenant_property.sql)  
+*Test:* [test_remove_tenant_property.sql](../sqltask-templates/test_templates/tenant_properties_service/test_remove_tenant_property.sql)
 
 
 
