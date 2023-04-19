@@ -1,7 +1,8 @@
 _locale: en-GB # this is used to suggest a default values
-locale: en-GB # this is used to suggest a default values
+locale: en-GB # this is used to avoid prompting use for locale when a localised field is added
 
 #'defualt_locale' useful if mulitple locals some view might only want to show display_name in one of the locals, e.g. view_verb_entitlement.sql
 _default_locale: en-GB
-default_locale: en-GB
+# default_locale: en-GB
+default_locale: {{_props.preferred_default_locale}}
 _prjprefix: Du #useful to compute process paths or entities relative ids
