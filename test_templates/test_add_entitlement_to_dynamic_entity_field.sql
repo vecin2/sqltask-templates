@@ -1,0 +1,3 @@
+--{"dynamic_entity_field":"KnowledgeArticlePrivateSectionContent","entitlement":"TagsetConfigure","entitlement_type":"BOTH"}
+INSERT INTO EVA_DYNAMIC_ENTITY_ENTITLEMENT (FIELD_ID, FIELD_REL_ID, ENTITLEMENT_ID, ENTITLEMENT_ENV_ID, ENTITLEMENT_REL_ID, TYPE) VALUES (@EDEF.KnowledgeArticlePrivateSectionContent, @RELEASE.ID, @ENTLMNT.TagsetConfigure, @ENV.Dflt, @RELEASE.ID, 0);
+INSERT INTO EVA_DYNAMIC_ENTITY_ENTITLEMENT (FIELD_ID, FIELD_REL_ID, ENTITLEMENT_ID, ENTITLEMENT_ENV_ID, ENTITLEMENT_REL_ID, TYPE) VALUES (@EDEF.KnowledgeArticlePrivateSectionContent, @RELEASE.ID, @ENTLMNT.TagsetConfigure, @ENV.Dflt, @RELEASE.ID, 1);

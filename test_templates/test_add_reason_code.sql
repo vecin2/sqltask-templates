@@ -1,0 +1,39 @@
+--{"id": "50", "name": "My New Reason Code","system_name":"","description":"this is my new state", "is_default_state":"","is_available_state":"Y"}
+
+-- ADDING REASON CODE '{{_name}}'
+INSERT INTO GTCC_REASON_CODE
+(ID, RELEASE_ID, "ORDERING", DEFAULT_STATE, AVAILABLE_STATE, SYSTEM_NAME, IS_DELETED, TENANT_ID)
+VALUES(
+	50,--ID
+	@RELEASE.ID,--RELEASE_ID
+	5100, --ORDERING
+	'N',--DEFAULT_STATE 
+	'Y', --AVAILABLE_STATE
+	'My New Reason Code',--SYSTEM_NAME
+	'N', --IS_DELETED
+	'default' --TENANT_ID
+);
+
+
+INSERT INTO LOCALISED_FIELD (OBJECT_TYPE, OBJECT_INSTANCE, OBJECT_VERSION, FIELD_NAME, LOCALE, LOOKUP_LOCALE,TEXT,IS_DELETED) VALUES (
+'ReasonCodeED', -- OBJECT_TYPE
+'MyNewReasonCode', -- OBJECT_INSTANCE
+50, -- OBJECT_VERSION
+'name', -- FIELD_NAME
+'en-GB', -- LOCALE
+'default', -- LOOKUP_LOCALE
+'My New Reason Code', --TEXT
+'N' --IS_DELETED
+);
+
+INSERT INTO LOCALISED_FIELD (OBJECT_TYPE, OBJECT_INSTANCE, OBJECT_VERSION, FIELD_NAME, LOCALE, LOOKUP_LOCALE,TEXT,IS_DELETED) VALUES (
+'ReasonCodeED', -- OBJECT_TYPE
+'MyNewReasonCode', -- OBJECT_INSTANCE
+50, -- OBJECT_VERSION
+'description', -- FIELD_NAME
+'en-GB', -- LOCALE
+'default', -- LOOKUP_LOCALE
+'this is my new state', --TEXT
+'N' --IS_DELETED
+);
+-- END ADDING REASON CODE '{{_name}}'

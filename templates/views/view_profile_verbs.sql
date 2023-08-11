@@ -1,4 +1,4 @@
-SELECT fp.NAME AS PERS_NAME, pptids.KEYNAME AS pptive_keyname, ccids.KEYNAME AS CC_KEYNAME, eed.NAME AS ED, ecve.VERB  AS verbname
+SELECT fp.NAME AS PERS_NAME, fp.ID as pptive_id, pptids.KEYNAME AS pptive_keyname, ecc.ID as cc_id,ccids.KEYNAME AS CC_KEYNAME, eed.NAME AS ED, ecve.VERB  AS verbname
 FROM  FD_PROFILE_TYPE fpt 
 INNER JOIN CCADMIN_IDMAP IDS ON fpt.id = IDS.ID AND IDS.KEYSET ='PROFILE'
 INNER JOIN FD_PROFILE_TYPE_PERSPECTIVE fptp ON fpt.ID  = fptp.PROFILE_ID 

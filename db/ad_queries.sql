@@ -70,6 +70,7 @@ views_by_ed=SELECT CC.keyname, V.NAME FROM EVA_DYNAMIC_ENTITY_VIEW v, CCADMIN_ID
 
 #DYNAMIC_VIEW_FIELDS
 fields_by_ed=SELECT f.NAME, cc.KEYNAME FROM EVA_DYNAMIC_ENTITY_FIELD f, CCADMIN_IDMAP cc where f.id = cc.id and cc.keyset= 'EDEF' and ENTITY_DEF_ID = @ED.{}
+fields_by_ed_names= SELECT distinct edef.NAME FROM EVA_DYNAMIC_ENTITY_FIELD edef INNER JOIN EVA_ENTITY_DEFINITION eed ON edef.ENTITY_DEF_ID = eed.ID WHERE eed.NAME IN ({})
 all_property_types=SELECT cc.KEYNAME FROM eva_entity_definition  ed, CCADMIN_IDMAP cc where cc.id =ed.TYPE_ID and name like '%Properties%' 
 all_field_pds=SELECT pd.REPOSITORY_PATH, cc.keyname FROM EVA_PROCESS_DESCRIPTOR pd, CCADMIN_IDMAP cc where  pd.id = cc.id and cc.keyset='PD'
 and TYPE =@PDT.Field
@@ -78,7 +79,7 @@ view_groups=SELECT cc.*,g.GROUP_NAME FROM CCADMIN_IDMAP cc, EVA_DYNAMIC_ENTITY_V
 
 #TAGS
 tags_by_parent_keyname=SELECT name FROM eva_tag where parent_tag =@TAG.{} and is_deleted ='N' and is_retired ='N';
-
+tagset_names=SELECT NAME FROM EVA_TAG et WHERE PARENT_TAG IS null
 # DYNAMIC VERB LIST
 edvl_by_type_id=SELECT idmap.keyname as edvl_keyname, idmap2.keyname || edvl.VERB_NAME as entity_Verb FROM CCADMIN_IDMAP IDMAP, CCADMIN_IDMAP IDMAP2, EVA_DYNAMIC_VERB_LIST EDVL WHERE idmap.KEYSET ='EDVL' AND  EDVL.ID = IDMAP.ID and IDMAP2.id = edvl.ENTITY_TYPE_ID and idmap2.keyset ='ET' AND edvl.TYPE_ID=@EDVLT.{};
 

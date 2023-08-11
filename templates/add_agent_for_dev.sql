@@ -1,5 +1,6 @@
 --creates an agent with the same password as 'admin' user
-{%set locale_id = _db.find.locale_by_name(_locale)['ID'] %}
+{% set _agent_locale = agent_locale | default(_locale) %}
+{%set locale_id = _db.find.locale_by_name(_agent_locale)['ID'] %}
 INSERT INTO FU_USER (ID, USERNAME, LOCALE_ID, LOCALE_ENV_ID, IS_DELETED, VIRTUAL_ENVIRONMENT_ID, VIRTUAL_ENVIRONMENT_ENV_ID, TENANT_ID, CONTENT_LOCALE) VALUES (@USER.{{username | print("Password will be copied from user 'admin'")}}, '{{username}}', {{locale_id}}, 666, 'N', 1, 666, 'default', '{{_locale}}');
 
 {% include 'add_profile_to_agent.sql' %}

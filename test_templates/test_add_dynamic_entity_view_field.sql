@@ -1,4 +1,4 @@
---["KnowledgeArticle","KnowledgeArticleCreate","KnowledgeArticlePublic","Y","3","Public Information 2","en-GB","KnowledgeArticleCreatePublic2","process","FieldEditorRichText","Y"]
+--{"entity_keyname":"KnowledgeArticle","entity_view_keyname":"KnowledgeArticleCreate","entity_field_keyname":"KnowledgeArticlePublic","label":"PublicInformation2","show_label":"Y","view_field_sequence":"3","group_name":"Public Information 2","locale":"en-GB","entity_view_field_keyname":"KnowledgeArticleCreatePublic2","field_type":"process","show_as_pd":"FieldEditorRichText","is_mandatory":"Y"}
 INSERT INTO EVA_DYNAMIC_ENTITY_VIEW_GROUP (ID,VIEW_ID,GROUP_NAME,RELEASE_ID)
 VALUES (@EDEVG.KnowledgeArticleCreateGroupPublicInformation2,@DEV.KnowledgeArticleCreate,'Public Information 2',@RELEASE.ID);
 
