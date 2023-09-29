@@ -1,7 +1,3 @@
-{% set __is_new_perspective = is_new__perspective | description("Are you creating a new perspective?(y/n)") %}
-{% if __is_new_perspective.lower() == 'y' %}
-{% include 'add_perspective.sql' %}
-{% endif %}
 
 INSERT INTO FD_PROFILE_TYPE_PERSPECTIVE (PROFILE_ID,PROFILE_ENV_ID,PERSPECTIVE_ID,PERSPECTIVE_ENV_ID,SEQ_NO,RELEASE_ID,TENANT_ID,CONTEXT_UPDATER_DEFAULT) VALUES (
 	@PROFILE.{{profile_keyname | suggest(_keynames.PROFILE)}}, --PROFILE_ID

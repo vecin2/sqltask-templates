@@ -5,23 +5,23 @@
 {% set __sso_attribute_name = sso_attribute_name | print(attribute_msg) %}
 INSERT INTO TENANT_PROPERTY
 (NAME, SHORT_TEXT, LONG_TEXT, LAST_MODIFIED_BY, LAST_MODIFIED_DATE)
-VALUES('agent-synchronizer.mapping.9.ssoAttributeName', '{{__sso_attribute_name}}', NULL, 'admin', SYSDATE);
+VALUES('agent-synchronizer.mapping.{{__sequence_number}}.ssoAttributeName', '{{__sso_attribute_name}}', NULL, 'admin', SYSDATE);
 
 INSERT INTO TENANT_PROPERTY
 (NAME, SHORT_TEXT, LONG_TEXT, LAST_MODIFIED_BY, LAST_MODIFIED_DATE)
-VALUES('agent-synchronizer.mapping.9.ssoAttributeValue', '{{ssoAttributeValue}}', NULL, 'admin', SYSDATE);
+VALUES('agent-synchronizer.mapping.{{__sequence_number}}.ssoAttributeValue', '{{ssoAttributeValue}}', NULL, 'admin', SYSDATE);
 
 INSERT INTO TENANT_PROPERTY
 (NAME, SHORT_TEXT, LONG_TEXT, LAST_MODIFIED_BY, LAST_MODIFIED_DATE)
 {% set __operator = operator | suggest(["Contains","Equals"]) | default("Equals") %}
-VALUES('agent-synchronizer.mapping.9.ssoAttributeOperator', '{{operator}}', NULL, 'admin', SYSDATE);
+VALUES('agent-synchronizer.mapping.{{__sequence_number}}.ssoAttributeOperator', '{{operator}}', NULL, 'admin', SYSDATE);
 
 INSERT INTO TENANT_PROPERTY
 (NAME, SHORT_TEXT, LONG_TEXT, LAST_MODIFIED_BY, LAST_MODIFIED_DATE)
 {% set agent_properties =["profile", "organisation", "team", "role", "givenName", "familyName", "qualityAssuranceEntitlement", "supervisor", "qualityAssuranceRatio", "saveForLaterEntitlement", "desktopLocale", "contentLocale", "homepage" ] %}
 {% set __agent_property_name = agent_property_name | suggest(agent_properties) %}
-VALUES('agent-synchronizer.mapping.9.agentPropertyName', 'profile', NULL, 'admin', SYSDATE);
+VALUES('agent-synchronizer.mapping.{{__sequence_number}}.agentPropertyName', '{{__agent_property_name}}', NULL, 'admin', SYSDATE);
 
 INSERT INTO TENANT_PROPERTY
 (NAME, SHORT_TEXT, LONG_TEXT, LAST_MODIFIED_BY, LAST_MODIFIED_DATE)
-VALUES('agent-synchronizer.mapping.9.agentPropertyValue', '{{agent_property_value | print("The profile name, if the agent_property_name is \"profile\" or a team name if the agent_property_name is \"team\"")}}' , NULL, 'admin', SYSDATE);
+VALUES('agent-synchronizer.mapping.{{__sequence_number}}.agentPropertyValue', '{{agent_property_value | print("The profile name, if the agent_property_name is \"profile\" or a team name if the agent_property_name is \"team\"")}}' , NULL, 'admin', SYSDATE);

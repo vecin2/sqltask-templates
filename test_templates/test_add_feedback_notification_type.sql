@@ -1,0 +1,10 @@
+--{"entity_type":"SocialMessage","notification_type_name":""}
+
+INSERT INTO AKF_FEEDBACK_NOTIFICATION_TYPE (ID, ENV_ID, RELEASE_ID, ENTITY_DEF_TYPE_ID, ENTITY_DEF_TYPE_ENV_ID, NAME) VALUES (
+@AFNT.SOCIALMESSAGE, --ID
+@ENV.Dflt, -- ENV_ID
+@RELEASE.ID, --RELEASE_ID
+@ET.SocialMessage, -- ENTITY_DEF_TYPE_ID
+@ENV.Dflt, -- ENTITY_DEF_TYPE_ENV_ID
+'SocialMessage' --NAME
+);

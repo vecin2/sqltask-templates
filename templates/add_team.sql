@@ -1,9 +1,26 @@
 {% set description =" Display name will be computed from the name - 'ProductSupport' --> 'Product Support'"%} 
 {% set __team_name = team_name | description("team_name (one word capitalize, e.g. ProductSupport)")  | print(description) %}
+{% set rule_set_keyname = __team_name +"TeamQueue"%}
+{% set rule_set_name = __team_name+"TeamQueue0" %}
+INSERT INTO EVA_MIGRATABLE (TENANT_ID, ENTITY_ID, ENTITY_ENV_ID, RELEASE_ID, TYPE_NAME, MIGRATABLE_REFERENCE, VERSION, IS_REMOTE, ENTITY_VERSION,  IS_DELETED, INCLUDE_IN_EXPORT, EXPORT_LOCALE, ENTITY_MINOR_VERSION) 
+VALUES
+('default', 
+	@RS.{{rule_set_keyname}},
+	@ENV.Dflt,--RELEASE_ID
+	@RELEASE.ID,--RELEASE_ID
+	'RuleSetED',
+	'{{rule_set_name}}',
+	1,
+	'N',
+	0,
+	'N',
+	'Y',
+	'ALL',
+	0);
 INSERT INTO FRB_RULE_SET (TENANT_ID, ID, NAME, TYPE, VERSION, FACTS_LIST, RULESET_JSON, ENV_ID, IS_DELETED, ENTITY_REFERENCES, IS_ORIGINAL) 
 VALUES ('default',
-       	@RS.{{__team_name}}TeamQueue,
-       	'{{__team_name}}TeamQueue0',
+       	@RS.{{rule_set_keyname}},
+       	'{{rule_set_name}}',
        	'Queue',
        	1,
        	NULL,
@@ -35,7 +52,7 @@ VALUES (
 {% set object_instance = uuid_name+"_Team_Queue" %}
 {% set object_version = "@QUEUE."+__team_name+"TeamQueue" %}
 {% set field_name = "displayName" %}
-{% set text = team_display_name +"Team Queue" %}
+{% set text = team_display_name +" Team Queue" %}
 {% set locale = _locale %}
 {% include 'add_localised_field.sql' %}
 
