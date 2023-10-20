@@ -4,7 +4,7 @@
 {% set __object_instance = object_instance | suggest(object_instances)%}
 {% set field_names = _db.fetch.lf_field_names_by_ot_and_oi(__object_type,__object_instance).column('FIELD_NAME') %}
 {% set __field_name = field_name | description("field_name (leave blank to update all fields)") | default("") | suggest(field_names)%}
-{% set __locale =locale | default(_locale)%}
+{% set __locale = locale | default(_locale)%}
 UPDATE LOCALISED_FIELD
 {% set table_name="LOCALISED_FIELD" %}
 {% include '/hidden_templates/generic_set_update_values.sql' %}
