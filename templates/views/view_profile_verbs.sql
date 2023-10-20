@@ -1,4 +1,4 @@
-SELECT fp.NAME AS PERS_NAME, fp.ID as pptive_id, pptids.KEYNAME AS pptive_keyname, ecc.ID as cc_id,ccids.KEYNAME AS CC_KEYNAME, eed.NAME AS ED, ecve.VERB  AS verbname
+SELECT fptp.SEQ_NO, fp.NAME AS PERS_NAME, fp.ID as pptive_id, pptids.KEYNAME AS pptive_keyname, ecc.ID as cc_id,ccids.KEYNAME AS CC_KEYNAME, eed.NAME AS ED, ecve.VERB  AS verbname
 FROM  FD_PROFILE_TYPE fpt 
 INNER JOIN CCADMIN_IDMAP IDS ON fpt.id = IDS.ID AND IDS.KEYSET ='PROFILE'
 INNER JOIN FD_PROFILE_TYPE_PERSPECTIVE fptp ON fpt.ID  = fptp.PROFILE_ID 
@@ -9,3 +9,4 @@ INNER JOIN CCADMIN_IDMAP ccids ON ccids.ID  = ecc.ID  AND ccids.KEYSET ='CC'
 INNER JOIN EVA_CONTEXT_VERB_ENTRY ecve ON ecve.CONFIG_ID = ecc.ID 
 INNER JOIN EVA_ENTITY_DEFINITION eed ON eed.TYPE_ID =ecve.ENTITY_DEF_TYPE_ID 
 WHERE fptp.PROFILE_ID = @PROFILE.{{profile_keyname | suggest(_keynames.PROFILE)}}
+ORDER BY fptp.SEQ_NO, ecve.VERB
