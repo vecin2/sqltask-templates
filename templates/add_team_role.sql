@@ -14,5 +14,5 @@ VALUES (
 {% set object_version = "@TEAMROLE."+__team_role_name%}
 {% set field_name = "displayName" %}
 {% set text = __team_role_name | split_uppercase %}
-{% set locale = _locale %}
+{% set locale = _default_locale %}
 {% include 'add_localised_field.sql' %}

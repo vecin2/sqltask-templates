@@ -65,7 +65,7 @@ VALUES(@WIU.{{_keyname}}, @ENV.Dflt, @RELEASE.ID, '{{display_name}}', 'N', 'defa
 {% set object_version = "@WIU."+_keyname %}
 {% set field_name = "displayName" %}
 {% set text = _display_name %}
-{% set locale = _locale %}
+{% set locale = _default_locale %}
 {% include 'add_localised_field.sql' %}
 
 INSERT INTO EVA_ENTITY__TAGSET_SELECTION (TENANT_ID, ENTITY_TYPE_ID, ENTITY_TYPE_ENV_ID, ENTITY_TYPE_RELEASE_ID, ENTITY_ID, ENTITY_ENV_ID, ENTITY_RELEASE_ID, RELATIONSHIP_TYPE, TAG_SELECTION)

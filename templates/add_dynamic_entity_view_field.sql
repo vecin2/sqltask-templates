@@ -44,7 +44,7 @@ INSERT INTO LOCALISED_FIELD (OBJECT_TYPE,OBJECT_INSTANCE,OBJECT_VERSION,FIELD_NA
 	@ED.{{__entity_keyname}},
 	{% set group_field = group_name | replace(" ","") %}
 	'views.{{selected_view["NAME"]}}.groups.{{group_field}}.displayGroupName',
-	'{{locale | default(_locale)}}',
+	'{{locale | default(_default_locale)}}',
 	'default',
 	{{full_group_name}},
 	null,

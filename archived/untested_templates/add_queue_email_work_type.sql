@@ -34,5 +34,5 @@ INSERT INTO CHANN_QUEUED_EMAIL_TYPE (ID, ENV_ID, RELEASE_ID, TENANT_ID, FROM_ADD
 {% set object_version = "@QWT."+_queued_email_type_id %}
 {% set field_name = "displayName" %}
 {% set text =  queue_name %}
-{% set locale = _locale %}
+{% set locale = _default_locale %}
 {% include 'add_localised_field.sql' %}

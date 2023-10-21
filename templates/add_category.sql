@@ -18,7 +18,7 @@ VALUES (
 {% set object_version = "@EC." +category_id %}
 {% set field_name = "displayName" %}
 {% set text = category_id | split_uppercase() %}
-{% set locale = _locale %}
+{% set locale = _default_locale %}
 {% include 'add_localised_field.sql' %}
 
 {% set field_name = "description" %}

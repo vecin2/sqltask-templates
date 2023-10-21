@@ -3,7 +3,7 @@ INSERT INTO LOCALISED_FIELD (OBJECT_TYPE, OBJECT_INSTANCE, OBJECT_VERSION, FIELD
 '{{object_instance}}', -- OBJECT_INSTANCE
 {{object_version}}, -- OBJECT_VERSION
 '{{field_name}}', -- FIELD_NAME
-'{{locale | default(_locale)}}', -- LOCALE
+'{{locale | default(_default_locale)}}', -- LOCALE
 'default', -- LOOKUP_LOCALE
 '{{text}}', --TEXT
 'N' --IS_DELETED

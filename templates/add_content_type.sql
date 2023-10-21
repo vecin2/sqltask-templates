@@ -17,7 +17,7 @@ INSERT INTO AKCB_CONTENT_TYPE_LOC (ID,ENV_ID,RELEASE_ID,LOCALE,DISPLAY_NAME,DESC
 VALUES (@AKCBCT.{{content_type_keyname}}, --ID
 	@ENV.Dflt, --ENV_ID
 	@RELEASE.ID, --RELEASE_ID
-	'{{locale | default(_locale)}}',
+	'{{locale | default(_default_locale)}}',
 	'{{display_name | default(content_type_keyname)}}',
 	'{{description | default(content_type_keyname)}}',
 	'default');

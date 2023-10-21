@@ -22,7 +22,7 @@ VALUES (@EDEF.{{keyname}}, @ED.{{__entity_keyname}}, '{{__dynamic_field_name}}',
 {% set object_version = "@ED." +entity_keyname %}
 {% set field_name = "fields."+__dynamic_field_name+".displayName" %}
 {% set text = __dynamic_field_display_name %}
-{% set locale = _locale %}
+{% set locale = _default_locale %}
 {% include 'add_localised_field.sql' %} 
 
 INSERT INTO EVA_DYN_ENT_FIELD_PROPERTIES (ID, RELEASE_ID, FIELD_ID, ENTITY_DEF_TYPE_ID,ENTITY_DEF_TYPE_ENV_ID) 

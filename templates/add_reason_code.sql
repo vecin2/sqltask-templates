@@ -40,7 +40,7 @@ VALUES(
 {% set object_version = _id %}
 {% set field_name = "name" %}
 {% set text = _name %}
-{% set locale = _locale %}
+{% set locale = _default_locale %}
 {% include 'add_localised_field.sql' %}
 
 {% set field_name = "description" %}

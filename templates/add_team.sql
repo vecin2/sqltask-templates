@@ -53,7 +53,7 @@ VALUES (
 {% set object_version = "@QUEUE."+__team_name+"TeamQueue" %}
 {% set field_name = "displayName" %}
 {% set text = team_display_name +" Team Queue" %}
-{% set locale = _locale %}
+{% set locale = _default_locale %}
 {% include 'add_localised_field.sql' %}
 
 INSERT INTO CE_TEAM (ID, ENV_ID, NAME, IS_DELETED, QUEUE_ID, QUEUE_ENV_ID, TENANT_ID, ORG_REALM_ID) 
