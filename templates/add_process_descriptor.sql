@@ -17,6 +17,8 @@ VALUES (
 {% set object_version = '@PD.' +process_descriptor_id %}
 {% set text = process_descriptor_id %}
 {% set field_name = "displayName" %}
+{#Dont prompt for locale, used default_locale#}
+{% set locale = _default_locale %} 
 {% include 'add_localised_field.sql' %}
 
 {% set field_name = "description" %}

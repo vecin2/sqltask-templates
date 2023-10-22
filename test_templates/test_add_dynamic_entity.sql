@@ -1,4 +1,4 @@
---{"entity_name":"AgreementED","entity_display_name":"Agreement","entity_description":"Agreement Description","_locale":"en-GB","summary":"Article2 [title]"}
+--{"entity_name":"AgreementED","entity_display_name":"Agreement","entity_description":"Agreement Description","summary":"Article2 [title]"}
 INSERT INTO EVA_ENTITY_DEFINITION (ID, ENV_ID, NAME, UUID, TYPE_UUID, TYPE_ID, TYPE_ENV_ID, LOGICAL_OBJ_PATH, INTERFACE_PATH, SUPER_ENTITY_DEFINITION, SUPER_ENTITY_DEFINITION_ENV_ID, IS_DELETED, IS_BASIC, SUPPORTS_READONLY,IS_EXPANDABLE, ICON_PATH, INSTANCE_ICON_PATH) VALUES (
 @ED.Agreement, -- ID
 @ENV.Dflt, -- ENV_ID

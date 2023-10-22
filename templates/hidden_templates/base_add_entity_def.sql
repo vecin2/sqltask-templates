@@ -51,6 +51,8 @@ In that case we dont want to insert in EVA_CATEGORY_ENTRY#}
 {% set object_version = "@ED." +entity_id %}
 {% set field_name = "displayName" %}
 {% set text = __entity_display_name %}
+{#Dont prompt for locale, used default_locale#}
+{% set locale = _default_locale %} 
 {% include 'add_localised_field.sql' %}
 
 {% set field_name = "description" %}
