@@ -2,7 +2,7 @@
 {% set process_descriptor_keyname = _db.find.pdr_by_keyname(process_desc_ref_keyname)['PD_KEYNAME'] %}
 
 UPDATE EVA_VERB
-set PROCESS_DESC_REF_ID = NULL
+set (PROCESS_DESC_REF_ID) = NULL
 where PROCESS_DESC_REF_ID = @PDR.{{process_desc_ref_keyname}};
 
 DELETE FROM EVA_PROCESS_DESC_REFERENCE 
@@ -16,4 +16,4 @@ DELETE FROM EVA_PROCESS_DESCRIPTOR
 WHERE ID = @PD.{{process_descriptor_keyname}};
 
 DELETE FROM CCADMIN_IDMAP 
-WHERE KEYSET IN ('PDR','PD') AND KEYNAME = '{{process_descriptor_keyname}}'
+WHERE KEYSET IN ('PDR','PD') AND KEYNAME = '{{process_descriptor_keyname}}';
