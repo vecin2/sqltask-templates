@@ -1,10 +1,6 @@
 {%set process_desc_ref_keyname = _process_desc_ref_keyname | suggest(_keynames.PDR)%}
 {% set process_descriptor_keyname = _db.find.pdr_by_keyname(process_desc_ref_keyname)['PD_KEYNAME'] %}
 
-UPDATE EVA_VERB
-set (PROCESS_DESC_REF_ID) = NULL
-where PROCESS_DESC_REF_ID = @PDR.{{process_desc_ref_keyname}};
-
 DELETE FROM EVA_PROCESS_DESC_REFERENCE 
 WHERE ID = @PDR.{{process_desc_ref_keyname}};
 
