@@ -35,6 +35,7 @@ INSERT INTO EVA_VERB (ID, NAME, PROCESS_DESC_REF_ID, ENTITY_DEF_ID, ENTITY_DEF_E
 {% set object_version = "@V."+__verb_id %}
 {% set text = __verb_display_name %}
 {% set field_name= 'displayName'  %}
+{% set locale = _default_locale %}
 {% include 'add_localised_field.sql' %}
 
 {% set field_name= 'description'  %}
