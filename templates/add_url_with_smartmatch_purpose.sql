@@ -10,6 +10,12 @@ For example creating a customer when the customer is not identified. We could do
 Currently only saves to the URL table, it does not save to FWI_URL_HEADER or FWI_URL_PARAM table. Once we encounter a use case that needs to save to those tables this template could be modified to save to those tables as well or, a additional templates could be created.
 
 Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL non migratable, we do this because we are scripting and any modification to the rule is expected to be done through script, not using migration.
+
+A URL is added to an existing host, which is an entry  on the `FWI_HOST` table. Use the template `add_web_integration_host.groovy` to create a host.
+
+[related_tasks]
+add_web_integration_host.groovy
+
 #}
 {%set _display_name = display_name %}
 {%set _keyname = display_name.replace(" ","") %}

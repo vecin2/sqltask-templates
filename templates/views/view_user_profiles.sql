@@ -1,5 +1,5 @@
 {% set usernames = _db.fetch.all_users().column('username') %}
-SELECT fu.USERNAME, IDS.ID, IDS.KEYNAME AS profile_keyname, fptp.PERSPECTIVE_ID, fp.NAME,pptids.KEYNAME AS pptive_keyname, ccids.KEYNAME AS context_config_keyname
+SELECT fu.USERNAME, IDS.ID, IDS.KEYNAME AS profile_keyname, fptp.PERSPECTIVE_ID, fptp.SEQ_NO, fp.NAME,pptids.KEYNAME AS pptive_keyname, ccids.KEYNAME AS context_config_keyname
 FROM FU_USER fu 
 INNER join FD_USER_PROFILE_TYPE fupt ON fu.id = fupt.USER_ID 
 INNER JOIN CCADMIN_IDMAP IDS ON fupt.PROFILE_TYPE_ID = IDS.ID AND IDS.KEYSET ='PROFILE'

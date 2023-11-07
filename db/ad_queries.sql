@@ -31,7 +31,8 @@ av_topseq_by_pers_keyname=SELECT SEQUENCE_NUM FROM FD_ENTITY__AUX_VERBS AV, CCAD
 
 #PERSPECTIVE
 v_by_pers_keyname=SELECT l.text as DISPLAY_NAME, cv.SEQUENCE_NUMBER, et_ids.keyname as ET_KEYNAME, CV.VERB FROM EVA_CONTEXT_VERB_ENTRY cv, EVA_ENTITY_DEFINITION ed, eva_verb v, LOCALISED_FIELD l, CCADMIN_IDMAP	et_ids where cv.ENTITY_def_type_id =ed.type_id and v.entity_def_id =ed.id and v.name =cv.verb and l.object_version = v.id and l.object_type='VerbED' and cv.config_id =@CC.{} and l.locale ='en-GB' and l.field_name ='displayName' and l.is_deleted ='N' and et_ids.id = cv.ENTITY_DEF_TYPE_ID and et_ids.keyset='ET' order by cv.SEQUENCE_NUMBER, DISPLAY_NAME
-perspectives_by_profile=SELECT * FROM FD_PROFILE_TYPE_PERSPECTIVE WHERE PROFILE_ID=@PROFILE.{} order by SEQ_NO desc
+perspectives_by_profile=SELECT FPT.name AS profile_name, CI.KEYNAME AS pers_keyname, fptp.SEQ_NO,  fp.PERSPECTIVE_PROCESS FROM FD_PROFILE_TYPE_PERSPECTIVE fptp INNER JOIN FD_PROFILE_TYPE fpt ON FPTP.PROFILE_ID  = fpt.ID INNER JOIN FD_PERSPECTIVE fp ON FPTP.PERSPECTIVE_ID  = fp.ID INNER JOIN CCADMIN_IDMAP ci ON fp.ID = ci.ID AND ci.KEYSET  ='PPTIVE' WHERE PROFILE_ID=@PROFILE.{} order by SEQ_NO desc
+
 #AGENT
 all_agents=SELECT KEYNAME,u.USERNAME,FULLNAME,DISABLED,EXPIRES FROM AGENT a INNER JOIN FU_USER u ON a.USERNAME  = u.USERNAME INNER JOIN CE_AGENT ca ON u.ID = ca.USER_ID INNER JOIN CCADMIN_IDMAP ci ON ci.ID =ca.ID  AND ci.KEYSET ='PERSON'
 

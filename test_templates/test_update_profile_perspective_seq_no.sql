@@ -1,0 +1,5 @@
+--{"profile_keyname":"Agent","perspective_keyname":"WORKLIST","SEQ_NO":"5"}
+UPDATE  FD_PROFILE_TYPE_PERSPECTIVE 
+set (SEQ_NO) = (5)
+WHERE PROFILE_ID = @PROFILE.Agent
+AND PERSPECTIVE_ID = @PPTIVE.WORKLIST;
