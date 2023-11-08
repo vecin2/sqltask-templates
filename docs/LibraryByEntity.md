@@ -3,15 +3,18 @@ SQLTask Library
 ===============
 
 
-This  library has currently a total of 141 templates, divided in 84 sections; 3 [Activity](#activity), 6 [Perspective](#perspective), 8 [Agent](#agent), 1 [All Background Verbs](#all-background-verbs), 1 [Another profile](#another-profile), 1 [Association Type](#association-type), 3 [Background Verb](#background-verb), 9 [Profile](#profile), 1 [Basic Entity Definition](#basic-entity-definition), 1 [Category](#category), 1 [Content Type](#content-type), 1 [Dynamic Content Verb](#dynamic-content-verb), 1 [Dynamic Entity](#dynamic-entity), 1 [Dynamic Entity Def](#dynamic-entity-def), 1 [Dynamic Entity Field](#dynamic-entity-field), 1 [Dynamic Entity View](#dynamic-entity-view), 1 [Dynamic Entity View Field](#dynamic-entity-view-field), 9 [Entitlement](#entitlement), 4 [Team](#team), 7 [Verb](#verb), 3 [Entity Definition](#entity-definition), 2 [Localised Field](#localised-field), 2 [Menu Item](#menu-item), 1 [Migration Domain](#migration-domain), 1 [Process Descriptor](#process-descriptor), 1 [Static Menu](#static-menu), 2 [Tab](#tab), 2 [Ad right panel](#ad-right-panel), 1 [Tag](#tag), 1 [Team Position](#team-position), 2 [Team Role](#team-role), 2 [Team Role Type](#team-role-type), 1 [Url](#url), 3 [Entity](#entity), 2 [View Contact Tab](#view-contact-tab), 1 [Web Integration Host](#web-integration-host), 1 [Max Count Work Area](#max-count-work-area), 1 [New Content Type](#new-content-type), 1 [Customer](#customer), 2 [Channel State Manager Listener](#channel-state-manager-listener), 1 [Base Entity](#base-entity), 1 [Process Desc Ref](#process-desc-ref), 1 [Dynamic View Field](#dynamic-view-field), 0 [Dynamic View Field1](#dynamic-view-field1), 0 [Dynamic View Field2](#dynamic-view-field2), 0 [Dynamic View Field3](#dynamic-view-field3), 1 [Entity Default Instance Verb](#entity-default-instance-verb), 1 [Agent Password](#agent-password), 1 [Ccadmin Version](#ccadmin-version), 1 [Verb Path](#verb-path), 1 [Verb Process Descriptor Reference](#verb-process-descriptor-reference), 1 [Verb User Visible Flag](#verb-user-visible-flag), 1 [Entity Entitlement](#entity-entitlement), 1 [Process Descriptor Ref](#process-descriptor-ref), 1 [Add Entity Def](#add-entity-def), 1 [Set Update Values](#set-update-values), 1 [Context Verb Entry](#context-verb-entry), 2 [Dynamic Verb List](#dynamic-verb-list), 1 [Dynamic Verb Parameter](#dynamic-verb-parameter), 1 [Idmap](#idmap), 6 [](#), 2 [Tenant Property](#tenant-property), 1 [And String Functions Tutorial](#and-string-functions-tutorial), 1 [Add content type](#add-content-type), 1 [Db](#db), 1 [And Prompts](#and-prompts), 1 [Ad Right Panel Tabs Verbs](#ad-right-panel-tabs-verbs), 1 [Agent Profile Background Vebs](#agent-profile-background-vebs), 1 [Channel State Manager Listeners](#channel-state-manager-listeners), 1 [Entitlements By System Name](#entitlements-by-system-name), 1 [Entity Displayed Verbs](#entity-displayed-verbs), 1 [Entity Verbs](#entity-verbs), 1 [Entity Verbs Keynames](#entity-verbs-keynames), 1 [Entitydef By Keyname](#entitydef-by-keyname), 1 [Keynames](#keynames), 1 [Process Descriptor Ref By Repo Path](#process-descriptor-ref-by-repo-path), 1 [Profile Entitlements](#profile-entitlements), 1 [Profile Verbs](#profile-verbs), 1 [User Profiles](#user-profiles), 1 [Verb By Keyname](#verb-by-keyname), 1 [Verb Entitlements](#verb-entitlements), 1 [Verbs](#verbs), 1 [Repo path](#repo-path), 1 [Table Name](#table-name)
+This  library has currently a total of 169 templates, divided in 103 sections; 4 [Activity](#activity), 1 [Pers demo](#pers-demo), 6 [Perspective](#perspective), 9 [Agent](#agent), 1 [Queue](#queue), 1 [All Background Verbs](#all-background-verbs), 1 [Another profile](#another-profile), 1 [Association Type](#association-type), 3 [Background Verb](#background-verb), 10 [Profile](#profile), 1 [Basic Entity Definition](#basic-entity-definition), 1 [Category](#category), 1 [Content Field Index Mapping](#content-field-index-mapping), 1 [Content Type](#content-type), 1 [Dynamic Content Verb](#dynamic-content-verb), 1 [Dynamic Entity](#dynamic-entity), 1 [Dynamic Entity Def](#dynamic-entity-def), 1 [Dynamic Entity String Field](#dynamic-entity-string-field), 1 [Dynamic Entity Tagset Field](#dynamic-entity-tagset-field), 1 [Dynamic Entity View](#dynamic-entity-view), 1 [Dynamic Entity View Field](#dynamic-entity-view-field), 10 [Entitlement](#entitlement), 1 [Dynamic entity field](#dynamic-entity-field), 4 [Team](#team), 7 [Verb](#verb), 3 [Entity Definition](#entity-definition), 1 [Feedback Notification Type](#feedback-notification-type), 2 [Localised Field](#localised-field), 2 [Menu Item](#menu-item), 1 [Migration Domain](#migration-domain), 1 [Process Descriptor](#process-descriptor), 2 [Reason Code](#reason-code), 1 [Report](#report), 1 [Static Menu](#static-menu), 2 [Tab](#tab), 2 [Ad right panel](#ad-right-panel), 1 [Tag](#tag), 1 [Team Position](#team-position), 2 [Team Role](#team-role), 2 [Team Role Type](#team-role-type), 3 [Url](#url), 3 [Entity](#entity), 2 [View Contact Tab](#view-contact-tab), 1 [Web Integration Host](#web-integration-host), 1 [Max Count Work Area](#max-count-work-area), 1 [New Content Type](#new-content-type), 1 [Customer](#customer), 2 [Channel State Manager Listener](#channel-state-manager-listener), 1 [Base Entity](#base-entity), 1 [Process Desc Ref](#process-desc-ref), 1 [All agents](#all-agents), 1 [Tagset And All Tags](#tagset-and-all-tags), 1 [Dynamic View Field](#dynamic-view-field), 0 [Dynamic View Field1](#dynamic-view-field1), 0 [Dynamic View Field2](#dynamic-view-field2), 0 [Dynamic View Field3](#dynamic-view-field3), 1 [Entity Default Instance Verb](#entity-default-instance-verb), 1 [Agent Password](#agent-password), 1 [Ccadmin Version](#ccadmin-version), 1 [Profile Perspective Seq No](#profile-perspective-seq-no), 1 [Verb Path](#verb-path), 1 [Verb Process Descriptor Reference](#verb-process-descriptor-reference), 1 [Verb User Visible Flag](#verb-user-visible-flag), 1 [Dynamic Entity Field](#dynamic-entity-field), 1 [Dynamic String Field Property](#dynamic-string-field-property), 1 [Dynamic Tagset Field Property](#dynamic-tagset-field-property), 1 [Entity Entitlement](#entity-entitlement), 1 [Process Descriptor Ref](#process-descriptor-ref), 1 [Add Entity Def](#add-entity-def), 1 [Set Update Values](#set-update-values), 1 [Context Verb Entry](#context-verb-entry), 2 [Dynamic Verb List](#dynamic-verb-list), 1 [Dynamic Verb Parameter](#dynamic-verb-parameter), 1 [Idmap](#idmap), 6 [](#), 1 [Agent Synchronizer Default Mapping](#agent-synchronizer-default-mapping), 1 [Agent Synchronizer Mapping](#agent-synchronizer-mapping), 3 [Tenant Property](#tenant-property), 1 [Tps Property](#tps-property), 1 [And String Functions Tutorial](#and-string-functions-tutorial), 1 [Add content type](#add-content-type), 1 [Db](#db), 1 [And Prompts](#and-prompts), 1 [Ad Right Panel Tabs Verbs](#ad-right-panel-tabs-verbs), 1 [Agent Profile Background Vebs](#agent-profile-background-vebs), 1 [Channel State Manager Listeners](#channel-state-manager-listeners), 1 [Entitlements By System Name](#entitlements-by-system-name), 1 [Entity Displayed Verbs](#entity-displayed-verbs), 1 [Entity Verbs](#entity-verbs), 1 [Entity Verbs Keynames](#entity-verbs-keynames), 1 [Entitydef By Keyname](#entitydef-by-keyname), 1 [Keynames](#keynames), 1 [Keynames By Id](#keynames-by-id), 1 [Process Descriptor Ref By Repo Path](#process-descriptor-ref-by-repo-path), 1 [Process Descriptor Reference](#process-descriptor-reference), 2 [Repo path](#repo-path), 1 [Profile Entitlements](#profile-entitlements), 1 [Profile Verbs](#profile-verbs), 1 [User Profiles](#user-profiles), 1 [Verb By Keyname](#verb-by-keyname), 1 [Verb Entitlements](#verb-entitlements), 1 [Verbs](#verbs), 1 [Table Name](#table-name)
 
 Tables of Contents
 ==================
 
 * [Activity](#activity)
+	* [Add Activity To Pers Demo](#add-activity-to-pers-demo)
 	* [Add Activity To Perspective](#add-activity-to-perspective)
 	* [Add Activity To Perspective With Seq No](#add-activity-to-perspective-with-seq-no)
 	* [Remove Activity From Perspective](#remove-activity-from-perspective)
+* [Pers demo](#pers-demo)
+	* [Add Activity To Pers Demo](#add-activity-to-pers-demo)
 * [Perspective](#perspective)
 	* [Add Activity To Perspective](#add-activity-to-perspective)
 	* [Add Activity To Perspective With Seq No](#add-activity-to-perspective-with-seq-no)
@@ -22,12 +25,15 @@ Tables of Contents
 * [Agent](#agent)
 	* [Add Agent For Commit](#add-agent-for-commit)
 	* [Add Agent For Dev](#add-agent-for-dev)
+	* [Add Agent To Queue](#add-agent-to-queue)
 	* [Add Entitlement To Agent](#add-entitlement-to-agent)
 	* [Add Profile To Agent](#add-profile-to-agent)
 	* [Remove Agent For Dev](#remove-agent-for-dev)
 	* [Remove Entitlement From Agent](#remove-entitlement-from-agent)
 	* [Remove Profile From Agent](#remove-profile-from-agent)
 	* [View Agent](#view-agent)
+* [Queue](#queue)
+	* [Add Agent To Queue](#add-agent-to-queue)
 * [All Background Verbs](#all-background-verbs)
 	* [Add All Background Verbs From Another Profile](#add-all-background-verbs-from-another-profile)
 * [Another profile](#another-profile)
@@ -48,10 +54,13 @@ Tables of Contents
 	* [Remove Entitlement From Profile](#remove-entitlement-from-profile)
 	* [Remove Perspective From Profile](#remove-perspective-from-profile)
 	* [Remove Profile From Agent](#remove-profile-from-agent)
+	* [Remove Profile From All Agents](#remove-profile-from-all-agents)
 * [Basic Entity Definition](#basic-entity-definition)
 	* [Add Basic Entity Definition](#add-basic-entity-definition)
 * [Category](#category)
 	* [Add Category](#add-category)
+* [Content Field Index Mapping](#content-field-index-mapping)
+	* [Add Content Field Index Mapping](#add-content-field-index-mapping)
 * [Content Type](#content-type)
 	* [Add Content Type](#add-content-type)
 * [Dynamic Content Verb](#dynamic-content-verb)
@@ -60,8 +69,10 @@ Tables of Contents
 	* [Add Dynamic Entity](#add-dynamic-entity)
 * [Dynamic Entity Def](#dynamic-entity-def)
 	* [Add Dynamic Entity Def](#add-dynamic-entity-def)
-* [Dynamic Entity Field](#dynamic-entity-field)
-	* [Add Dynamic Entity Field](#add-dynamic-entity-field)
+* [Dynamic Entity String Field](#dynamic-entity-string-field)
+	* [Add Dynamic Entity String Field](#add-dynamic-entity-string-field)
+* [Dynamic Entity Tagset Field](#dynamic-entity-tagset-field)
+	* [Add Dynamic Entity Tagset Field](#add-dynamic-entity-tagset-field)
 * [Dynamic Entity View](#dynamic-entity-view)
 	* [Add Dynamic Entity View](#add-dynamic-entity-view)
 * [Dynamic Entity View Field](#dynamic-entity-view-field)
@@ -69,6 +80,7 @@ Tables of Contents
 * [Entitlement](#entitlement)
 	* [Add Entitlement](#add-entitlement)
 	* [Add Entitlement To Agent](#add-entitlement-to-agent)
+	* [Add Entitlement To Dynamic Entity Field](#add-entitlement-to-dynamic-entity-field)
 	* [Add Entitlement To Profile](#add-entitlement-to-profile)
 	* [Add Entitlement To Team](#add-entitlement-to-team)
 	* [Add Entitlement To Verb](#add-entitlement-to-verb)
@@ -76,6 +88,8 @@ Tables of Contents
 	* [Remove Entitlement From Profile](#remove-entitlement-from-profile)
 	* [Remove Entitlement From Team](#remove-entitlement-from-team)
 	* [Remove Entitlement From Verb](#remove-entitlement-from-verb)
+* [Dynamic entity field](#dynamic-entity-field)
+	* [Add Entitlement To Dynamic Entity Field](#add-entitlement-to-dynamic-entity-field)
 * [Team](#team)
 	* [Add Entitlement To Team](#add-entitlement-to-team)
 	* [Add Team](#add-team)
@@ -93,6 +107,8 @@ Tables of Contents
 	* [Add Entity Definition](#add-entity-definition)
 	* [Remove Entity Definition](#remove-entity-definition)
 	* [View Entity Definition](#view-entity-definition)
+* [Feedback Notification Type](#feedback-notification-type)
+	* [Add Feedback Notification Type](#add-feedback-notification-type)
 * [Localised Field](#localised-field)
 	* [Add Localised Field](#add-localised-field)
 	* [Update Localised Field](#update-localised-field)
@@ -103,6 +119,11 @@ Tables of Contents
 	* [Add Migration Domain](#add-migration-domain)
 * [Process Descriptor](#process-descriptor)
 	* [Add Process Descriptor](#add-process-descriptor)
+* [Reason Code](#reason-code)
+	* [Add Reason Code](#add-reason-code)
+	* [Remove Reason Code](#remove-reason-code)
+* [Report](#report)
+	* [Add Report](#add-report)
 * [Static Menu](#static-menu)
 	* [Add Static Menu](#add-static-menu)
 * [Tab](#tab)
@@ -123,6 +144,8 @@ Tables of Contents
 	* [Remove Team Role Type](#remove-team-role-type)
 * [Url](#url)
 	* [Add Url With Smartmatch Purpose](#add-url-with-smartmatch-purpose)
+	* [Add Url With Smartmatch Purpose Rollback](#add-url-with-smartmatch-purpose-rollback)
+	* [Update Url With Smartmatch Purpose](#update-url-with-smartmatch-purpose)
 * [Entity](#entity)
 	* [Add Verb To Entity](#add-verb-to-entity)
 	* [Extend Entity](#extend-entity)
@@ -145,6 +168,10 @@ Tables of Contents
 	* [Remove Base Entity](#remove-base-entity)
 * [Process Desc Ref](#process-desc-ref)
 	* [Remove Process Desc Ref](#remove-process-desc-ref)
+* [All agents](#all-agents)
+	* [Remove Profile From All Agents](#remove-profile-from-all-agents)
+* [Tagset And All Tags](#tagset-and-all-tags)
+	* [Remove Tagset And All Tags](#remove-tagset-and-all-tags)
 * [Dynamic View Field](#dynamic-view-field)
 	* [Reorder Dynamic View Field](#reorder-dynamic-view-field)
 * [Dynamic View Field1](#dynamic-view-field1)
@@ -156,12 +183,20 @@ Tables of Contents
 	* [Update Agent Password](#update-agent-password)
 * [Ccadmin Version](#ccadmin-version)
 	* [Update Ccadmin Version](#update-ccadmin-version)
+* [Profile Perspective Seq No](#profile-perspective-seq-no)
+	* [Update Profile Perspective Seq No](#update-profile-perspective-seq-no)
 * [Verb Path](#verb-path)
 	* [Update Verb Path](#update-verb-path)
 * [Verb Process Descriptor Reference](#verb-process-descriptor-reference)
 	* [Update Verb Process Descriptor Reference](#update-verb-process-descriptor-reference)
 * [Verb User Visible Flag](#verb-user-visible-flag)
 	* [Update Verb User Visible Flag](#update-verb-user-visible-flag)
+* [Dynamic Entity Field](#dynamic-entity-field)
+	* [Add Dynamic Entity Field Without Specific Props](#add-dynamic-entity-field-without-specific-props)
+* [Dynamic String Field Property](#dynamic-string-field-property)
+	* [Add Dynamic String Field Property](#add-dynamic-string-field-property)
+* [Dynamic Tagset Field Property](#dynamic-tagset-field-property)
+	* [Add Dynamic Tagset Field Property](#add-dynamic-tagset-field-property)
 * [Entity Entitlement](#entity-entitlement)
 	* [Add Entity Entitlement](#add-entity-entitlement)
 * [Process Descriptor Ref](#process-descriptor-ref)
@@ -186,9 +221,16 @@ Tables of Contents
 	* [How To Add Content Type](#how-to-add-content-type)
 	* [Include](#include)
 	* [Keynames](#keynames)
+* [Agent Synchronizer Default Mapping](#agent-synchronizer-default-mapping)
+	* [Add Agent Synchronizer Default Mapping](#add-agent-synchronizer-default-mapping)
+* [Agent Synchronizer Mapping](#agent-synchronizer-mapping)
+	* [Add Agent Synchronizer Mapping](#add-agent-synchronizer-mapping)
 * [Tenant Property](#tenant-property)
 	* [Add Tenant Property](#add-tenant-property)
 	* [Remove Tenant Property](#remove-tenant-property)
+	* [Update Tenant Property](#update-tenant-property)
+* [Tps Property](#tps-property)
+	* [View Tps Property](#view-tps-property)
 * [And String Functions Tutorial](#and-string-functions-tutorial)
 	* [Globals And String Functions Tutorial](#globals-and-string-functions-tutorial)
 * [Add content type](#add-content-type)
@@ -215,8 +257,15 @@ Tables of Contents
 	* [View Entitydef By Keyname](#view-entitydef-by-keyname)
 * [Keynames](#keynames)
 	* [View Keynames](#view-keynames)
+* [Keynames By Id](#keynames-by-id)
+	* [View Keynames By Id](#view-keynames-by-id)
 * [Process Descriptor Ref By Repo Path](#process-descriptor-ref-by-repo-path)
 	* [View Process Descriptor Ref By Repo Path](#view-process-descriptor-ref-by-repo-path)
+* [Process Descriptor Reference](#process-descriptor-reference)
+	* [View Process Descriptor Reference From Repo Path](#view-process-descriptor-reference-from-repo-path)
+* [Repo path](#repo-path)
+	* [View Process Descriptor Reference From Repo Path](#view-process-descriptor-reference-from-repo-path)
+	* [View Verbs From Repo Path](#view-verbs-from-repo-path)
 * [Profile Entitlements](#profile-entitlements)
 	* [View Profile Entitlements](#view-profile-entitlements)
 * [Profile Verbs](#profile-verbs)
@@ -229,14 +278,20 @@ Tables of Contents
 	* [View Verb Entitlements](#view-verb-entitlements)
 * [Verbs](#verbs)
 	* [View Verbs From Repo Path](#view-verbs-from-repo-path)
-* [Repo path](#repo-path)
-	* [View Verbs From Repo Path](#view-verbs-from-repo-path)
 * [Table Name](#table-name)
 	* [View Table Name From Foreign Key Name](#view-table-name-from-foreign-key-name)
 
 # Activity
   
-There are currently 3 templates in this section
+There are currently 4 templates in this section
+## Add Activity To Pers Demo
+  
+*Template:* [add_activity_to_pers_demo.sql](../templates/add_activity_to_pers_demo.sql)
+
+
+
+  
+
 ## Add Activity To Perspective
   
 *Template:* [add_activity_to_perspective.sql](../templates/add_activity_to_perspective.sql)  
@@ -259,6 +314,17 @@ There are currently 3 templates in this section
 ## Remove Activity From Perspective
   
 *Template:* [remove_activity_from_perspective.sql](../templates/remove_activity_from_perspective.sql)
+
+
+
+  
+
+# Pers demo
+  
+There are currently 1 templates in this section
+## Add Activity To Pers Demo
+  
+*Template:* [add_activity_to_pers_demo.sql](../templates/add_activity_to_pers_demo.sql)
 
 
 
@@ -323,7 +389,7 @@ There are currently 6 templates in this section
 
 # Agent
   
-There are currently 8 templates in this section
+There are currently 9 templates in this section
 ## Add Agent For Commit
   
 *Template:* [add_agent_for_commit.sql](../templates/add_agent_for_commit.sql)
@@ -336,6 +402,15 @@ There are currently 8 templates in this section
   
 *Template:* [add_agent_for_dev.sql](../templates/add_agent_for_dev.sql)  
 *Test:* [test_add_agent_for_dev.sql](../test_templates/test_add_agent_for_dev.sql)
+
+
+
+  
+
+## Add Agent To Queue
+  
+*Template:* [add_agent_to_queue.sql](../templates/add_agent_to_queue.sql)  
+*Test:* [test_add_agent_to_queue.sql](../test_templates/test_add_agent_to_queue.sql)
 
 
 
@@ -388,6 +463,18 @@ There are currently 8 templates in this section
 ## View Agent
   
 *Template:* [view_agent.sql](../templates/views/view_agent.sql)
+
+
+
+  
+
+# Queue
+  
+There are currently 1 templates in this section
+## Add Agent To Queue
+  
+*Template:* [add_agent_to_queue.sql](../templates/add_agent_to_queue.sql)  
+*Test:* [test_add_agent_to_queue.sql](../test_templates/test_add_agent_to_queue.sql)
 
 
 
@@ -458,7 +545,7 @@ There are currently 3 templates in this section
 
 # Profile
   
-There are currently 9 templates in this section
+There are currently 10 templates in this section
 ## Add Background Verb To Profile
   
 *Template:* [add_background_verb_to_profile.sql](../templates/add_background_verb_to_profile.sql)  
@@ -538,6 +625,20 @@ There are currently 9 templates in this section
 
   
 
+## Remove Profile From All Agents
+  
+*Template:* [remove_profile_from_all_agents.sql](../templates/remove_profile_from_all_agents.sql)  
+*Test:* [test_remove_profile_from_all_agents.sql](../test_templates/test_remove_profile_from_all_agents.sql)  
+*Related Tasks:* [Remove Profile From Agent](#remove-profile-from-agent)
+
+Removes a profile from all the users that is currently assigned to
+
+
+
+It requires the profile keyname and it suggests a list with all the profile keynames
+
+  
+
 # Basic Entity Definition
   
 There are currently 1 templates in this section
@@ -556,6 +657,18 @@ There are currently 1 templates in this section
   
 *Template:* [add_category.sql](../templates/add_category.sql)  
 *Test:* [test_add_category.sql](../test_templates/test_add_category.sql)
+
+
+
+  
+
+# Content Field Index Mapping
+  
+There are currently 1 templates in this section
+## Add Content Field Index Mapping
+  
+*Template:* [add_content_field_index_mapping.groovy](../templates/add_content_field_index_mapping.groovy)  
+*Test:* [test_add_content_field_index_mapping.groovy](../test_templates/test_add_content_field_index_mapping.groovy)
 
 
 
@@ -608,13 +721,25 @@ There are currently 1 templates in this section
 
   
 
-# Dynamic Entity Field
+# Dynamic Entity String Field
   
 There are currently 1 templates in this section
-## Add Dynamic Entity Field
+## Add Dynamic Entity String Field
   
-*Template:* [add_dynamic_entity_field.sql](../templates/add_dynamic_entity_field.sql)  
-*Test:* [test_add_dynamic_entity_field.sql](../test_templates/test_add_dynamic_entity_field.sql)
+*Template:* [add_dynamic_entity_string_field.sql](../templates/add_dynamic_entity_string_field.sql)  
+*Test:* [test_add_dynamic_entity_string_field.sql](../test_templates/test_add_dynamic_entity_string_field.sql)
+
+
+
+  
+
+# Dynamic Entity Tagset Field
+  
+There are currently 1 templates in this section
+## Add Dynamic Entity Tagset Field
+  
+*Template:* [add_dynamic_entity_tagset_field.sql](../templates/add_dynamic_entity_tagset_field.sql)  
+*Test:* [test_add_dynamic_entity_tagset_field.sql](../test_templates/test_add_dynamic_entity_tagset_field.sql)
 
 
 
@@ -646,7 +771,7 @@ There are currently 1 templates in this section
 
 # Entitlement
   
-There are currently 9 templates in this section
+There are currently 10 templates in this section
 ## Add Entitlement
   
 *Template:* [add_entitlement.sql](../templates/add_entitlement.sql)  
@@ -660,6 +785,15 @@ There are currently 9 templates in this section
   
 *Template:* [add_entitlement_to_agent.sql](../templates/add_entitlement_to_agent.sql)  
 *Test:* [test_add_entitlement_to_agent.sql](../test_templates/test_add_entitlement_to_agent.sql)
+
+
+
+  
+
+## Add Entitlement To Dynamic Entity Field
+  
+*Template:* [add_entitlement_to_dynamic_entity_field.sql](../templates/add_entitlement_to_dynamic_entity_field.sql)  
+*Test:* [test_add_entitlement_to_dynamic_entity_field.sql](../test_templates/test_add_entitlement_to_dynamic_entity_field.sql)
 
 
 
@@ -723,6 +857,18 @@ There are currently 9 templates in this section
   
 *Template:* [remove_entitlement_from_verb.sql](../templates/remove_entitlement_from_verb.sql)  
 *Test:* [test_remove_entitlement_from_verb.sql](../test_templates/test_remove_entitlement_from_verb.sql)
+
+
+
+  
+
+# Dynamic entity field
+  
+There are currently 1 templates in this section
+## Add Entitlement To Dynamic Entity Field
+  
+*Template:* [add_entitlement_to_dynamic_entity_field.sql](../templates/add_entitlement_to_dynamic_entity_field.sql)  
+*Test:* [test_add_entitlement_to_dynamic_entity_field.sql](../test_templates/test_add_entitlement_to_dynamic_entity_field.sql)
 
 
 
@@ -861,6 +1007,18 @@ There are currently 3 templates in this section
 
   
 
+# Feedback Notification Type
+  
+There are currently 1 templates in this section
+## Add Feedback Notification Type
+  
+*Template:* [add_feedback_notification_type.sql](../templates/add_feedback_notification_type.sql)  
+*Test:* [test_add_feedback_notification_type.sql](../test_templates/test_add_feedback_notification_type.sql)
+
+
+
+  
+
 # Localised Field
   
 There are currently 2 templates in this section
@@ -920,6 +1078,54 @@ There are currently 1 templates in this section
   
 *Template:* [add_process_descriptor.sql](../templates/add_process_descriptor.sql)  
 *Test:* [test_add_process_descriptor.sql](../test_templates/test_add_process_descriptor.sql)
+
+
+
+  
+
+# Reason Code
+  
+There are currently 2 templates in this section
+## Add Reason Code
+  
+*Template:* [add_reason_code.sql](../templates/add_reason_code.sql)  
+*Test:* [test_add_reason_code.sql](../test_templates/test_add_reason_code.sql)  
+*Related Tasks:* [Remove Reason Code](#remove-reason-code)
+
+Adds reason code or avilable status codes
+
+
+
+
+
+*Template Design notes*
+Currently is using relatives IDs  for ID column, which is fine for this scenario.
+This template could be changed to allow entering the ID manually so it matches the code on a phone system.
+Ordering is computing following OTB code: CoreChannels.Implementation.ReasonCode.Integration.Adapters.ReasonCodeAdapter.getOrderingNumber
+
+  
+
+## Remove Reason Code
+  
+*Template:* [remove_reason_code.sql](../templates/remove_reason_code.sql)  
+*Test:* [test_remove_reason_code.sql](../test_templates/test_remove_reason_code.sql)  
+*Related Tasks:* [Add Reason Code](#add-reason-code)
+
+Removes reason code or avilable status codes
+
+
+
+It takes a range of reason codes IDs and it removes all the reason codes within that range including both ends.
+
+  
+
+# Report
+  
+There are currently 1 templates in this section
+## Add Report
+  
+*Template:* [add_report.sql](../templates/add_report.sql)  
+*Test:* [test_add_report.sql](../test_templates/test_add_report.sql)
 
 
 
@@ -1045,11 +1251,12 @@ There are currently 2 templates in this section
 
 # Url
   
-There are currently 1 templates in this section
+There are currently 3 templates in this section
 ## Add Url With Smartmatch Purpose
   
 *Template:* [add_url_with_smartmatch_purpose.sql](../templates/add_url_with_smartmatch_purpose.sql)  
-*Test:* [test_add_url_with_smartmatch_purpose.sql](../test_templates/test_add_url_with_smartmatch_purpose.sql)
+*Test:* [test_add_url_with_smartmatch_purpose.sql](../test_templates/test_add_url_with_smartmatch_purpose.sql)  
+*Related Tasks:* [Add Web Integration Host](#add-web-integration-host)
 
 Adds a URL and makes it available to be used in rules editor
 
@@ -1059,9 +1266,13 @@ Adds a URL and makes it available to be used in rules editor
 A use case is setting up an inbound rule, within the Rules Editor, which calls a URL when something happens.
 For example creating a customer when the customer is not identified. We could do that by making a request to create customer URL REST API. This URL needs to be previously configured and saved in the database. This is what this template does.
 
-Currently only saves to the URL table, it does not save to FWI_URL_HEADER or FWI_URL_PARAM table. Once we encounter a use case that needs to save to those tables this template should be modified to save to those tables as well.
+Currently only saves to the URL table, it does not save to FWI_URL_HEADER or FWI_URL_PARAM table. Once we encounter a use case that needs to save to those tables this template could be modified to save to those tables as well or, a additional templates could be created.
 
-Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL non migratable, we do this because we are scripting and any modification to the rule is expected to be done through script, not using migration.  
+Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL non migratable, we do this because we are scripting and any modification to the rule is expected to be done through script, not using migration.
+
+A URL is added to an existing host, which is an entry  on the `FWI_HOST` table. Use the template `add_web_integration_host.groovy` to create a host.
+
+  
   
 **Images**  
   
@@ -1070,6 +1281,24 @@ Note also that "EXPORT_LOCALE" is set "N", this is equivalent to make this URL n
   
 ![2](../templates/add_url_with_smartmatch_purpose2.PNG)  
 **<center>Image 2</center>**  
+
+## Add Url With Smartmatch Purpose Rollback
+  
+*Template:* [add_url_with_smartmatch_purpose_rollback.sql](../templates/add_url_with_smartmatch_purpose_rollback.sql)  
+*Test:* [test_add_url_with_smartmatch_purpose_rollback.sql](../test_templates/test_add_url_with_smartmatch_purpose_rollback.sql)
+
+
+
+  
+
+## Update Url With Smartmatch Purpose
+  
+*Template:* [update_url_with_smartmatch_purpose.sql](../templates/update_url_with_smartmatch_purpose.sql)  
+*Test:* [test_update_url_with_smartmatch_purpose.sql](../test_templates/test_update_url_with_smartmatch_purpose.sql)
+
+
+
+  
 
 # Entity
   
@@ -1214,6 +1443,34 @@ There are currently 1 templates in this section
 
   
 
+# All agents
+  
+There are currently 1 templates in this section
+## Remove Profile From All Agents
+  
+*Template:* [remove_profile_from_all_agents.sql](../templates/remove_profile_from_all_agents.sql)  
+*Test:* [test_remove_profile_from_all_agents.sql](../test_templates/test_remove_profile_from_all_agents.sql)  
+*Related Tasks:* [Remove Profile From Agent](#remove-profile-from-agent)
+
+Removes a profile from all the users that is currently assigned to
+
+
+
+It requires the profile keyname and it suggests a list with all the profile keynames
+
+  
+
+# Tagset And All Tags
+  
+There are currently 1 templates in this section
+## Remove Tagset And All Tags
+  
+*Template:* [remove_tagset_and_all_tags.sql](../templates/remove_tagset_and_all_tags.sql)
+
+
+
+  
+
 # Dynamic View Field
   
 There are currently 1 templates in this section
@@ -1322,6 +1579,18 @@ There are currently 1 templates in this section
 
   
 
+# Profile Perspective Seq No
+  
+There are currently 1 templates in this section
+## Update Profile Perspective Seq No
+  
+*Template:* [update_profile_perspective_seq_no.sql](../templates/update_profile_perspective_seq_no.sql)  
+*Test:* [test_update_profile_perspective_seq_no.sql](../test_templates/test_update_profile_perspective_seq_no.sql)
+
+
+
+  
+
 # Verb Path
   
 There are currently 1 templates in this section
@@ -1353,6 +1622,39 @@ There are currently 1 templates in this section
   
 *Template:* [update_verb_user_visible_flag.sql](../templates/update_verb_user_visible_flag.sql)  
 *Test:* [test_update_verb_user_visible_flag.sql](../test_templates/test_update_verb_user_visible_flag.sql)
+
+
+
+  
+
+# Dynamic Entity Field
+  
+There are currently 1 templates in this section
+## Add Dynamic Entity Field Without Specific Props
+  
+*Template:* [add_dynamic_entity_field_without_specific_props.sql](../templates/hidden_templates/add_dynamic_entity_field_without_specific_props.sql)
+
+
+
+  
+
+# Dynamic String Field Property
+  
+There are currently 1 templates in this section
+## Add Dynamic String Field Property
+  
+*Template:* [add_dynamic_string_field_property.sql](../templates/hidden_templates/add_dynamic_string_field_property.sql)
+
+
+
+  
+
+# Dynamic Tagset Field Property
+  
+There are currently 1 templates in this section
+## Add Dynamic Tagset Field Property
+  
+*Template:* [add_dynamic_tagset_field_property.sql](../templates/hidden_templates/add_dynamic_tagset_field_property.sql)
 
 
 
@@ -1505,9 +1807,33 @@ There are currently 6 templates in this section
 
   
 
+# Agent Synchronizer Default Mapping
+  
+There are currently 1 templates in this section
+## Add Agent Synchronizer Default Mapping
+  
+*Template:* [add_agent_synchronizer_default_mapping.sql](../templates/tenant_properties_service/add_agent_synchronizer_default_mapping.sql)  
+*Test:* [test_add_agent_synchronizer_default_mapping.sql](../test_templates/tenant_properties_service/test_add_agent_synchronizer_default_mapping.sql)
+
+
+
+  
+
+# Agent Synchronizer Mapping
+  
+There are currently 1 templates in this section
+## Add Agent Synchronizer Mapping
+  
+*Template:* [add_agent_synchronizer_mapping.sql](../templates/tenant_properties_service/add_agent_synchronizer_mapping.sql)  
+*Test:* [test_add_agent_synchronizer_mapping.sql](../test_templates/tenant_properties_service/test_add_agent_synchronizer_mapping.sql)
+
+
+
+  
+
 # Tenant Property
   
-There are currently 2 templates in this section
+There are currently 3 templates in this section
 ## Add Tenant Property
   
 *Template:* [add_tenant_property.sql](../templates/tenant_properties_service/add_tenant_property.sql)  
@@ -1521,6 +1847,26 @@ There are currently 2 templates in this section
   
 *Template:* [remove_tenant_property.sql](../templates/tenant_properties_service/remove_tenant_property.sql)  
 *Test:* [test_remove_tenant_property.sql](../test_templates/tenant_properties_service/test_remove_tenant_property.sql)
+
+
+
+  
+
+## Update Tenant Property
+  
+*Template:* [update_tenant_property.sql](../templates/tenant_properties_service/update_tenant_property.sql)  
+*Test:* [test_update_tenant_property.sql](../test_templates/tenant_properties_service/test_update_tenant_property.sql)
+
+
+
+  
+
+# Tps Property
+  
+There are currently 1 templates in this section
+## View Tps Property
+  
+*Template:* [view_tps_property.sql](../templates/tenant_properties_service/views/view_tps_property.sql)
 
 
 
@@ -1670,12 +2016,53 @@ There are currently 1 templates in this section
 
   
 
+# Keynames By Id
+  
+There are currently 1 templates in this section
+## View Keynames By Id
+  
+*Template:* [view_keynames_by_id.sql](../templates/views/view_keynames_by_id.sql)
+
+
+
+  
+
 # Process Descriptor Ref By Repo Path
   
 There are currently 1 templates in this section
 ## View Process Descriptor Ref By Repo Path
   
 *Template:* [view_process_descriptor_ref_by_repo_path.sql](../templates/views/view_process_descriptor_ref_by_repo_path.sql)
+
+
+
+  
+
+# Process Descriptor Reference
+  
+There are currently 1 templates in this section
+## View Process Descriptor Reference From Repo Path
+  
+*Template:* [view_process_descriptor_reference_from_repo_path.sql](../templates/views/view_process_descriptor_reference_from_repo_path.sql)
+
+
+
+  
+
+# Repo path
+  
+There are currently 2 templates in this section
+## View Process Descriptor Reference From Repo Path
+  
+*Template:* [view_process_descriptor_reference_from_repo_path.sql](../templates/views/view_process_descriptor_reference_from_repo_path.sql)
+
+
+
+  
+
+## View Verbs From Repo Path
+  
+*Template:* [view_verbs_from_repo_path.sql](../templates/views/view_verbs_from_repo_path.sql)
 
 
 
@@ -1738,17 +2125,6 @@ There are currently 1 templates in this section
   
 
 # Verbs
-  
-There are currently 1 templates in this section
-## View Verbs From Repo Path
-  
-*Template:* [view_verbs_from_repo_path.sql](../templates/views/view_verbs_from_repo_path.sql)
-
-
-
-  
-
-# Repo path
   
 There are currently 1 templates in this section
 ## View Verbs From Repo Path

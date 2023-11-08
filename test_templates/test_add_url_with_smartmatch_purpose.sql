@@ -1,6 +1,6 @@
 --{"display_name":"Create Customer5","host":"ExternalAgentDesktopHost123","path":"/customer-service/default/customers","request_type":"POST","content_type":"application/ld+json","body":"{number:1}"}
 --skip.run-on-db
---We are no testing against the db for this template because we need a host to exist and there is not teams OTB, so we will have to insert one host before running this test, and this is not supported on the tool at the moment
+--We are no testing against the db for this template because we need a host to exist and there is not hosts OTB, so we will have to insert one host before running this test, and this is not supported on the tool at the moment
 INSERT INTO EVA_MIGRATABLE (ENTITY_ID, ENTITY_ENV_ID, RELEASE_ID, TYPE_NAME, MIGRATABLE_REFERENCE, VERSION, IS_REMOTE, ENTITY_VERSION, IS_DELETED, INCLUDE_IN_EXPORT, EXPORT_LOCALE, ENTITY_MINOR_VERSION, TENANT_ID) VALUES (
     @WIU.CreateCustomer5, --ENTITY_ID 
 	@ENV.Dflt, --ENTITY_ENV_ID

@@ -100,3 +100,6 @@ ad_right_panel_verbs=SELECT ed.name as entity_def_name, v.name as verb_name, idm
 
 #LOCALE
 locale_by_name=SELECT * FROM EVA_LOCALE WHERE name = '{}'
+
+#URL
+host_urls=SELECT ci.KEYNAME AS URL_KEYNAME, fu.name, fu."PATH" ,fu.REQUEST_TYPE FROM FWI_URL fu INNER JOIN CCADMIN_IDMAP ci ON ci.ID =fu.id AND ci.KEYSET ='WIU' WHERE fu.HOST_ID = @FWIH.{}
