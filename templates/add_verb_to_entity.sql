@@ -25,7 +25,7 @@ they put the  rest of the letter to lower case, but we want to leave them as the
 
 
 {% set entity_ids = _keynames.ED %}
-INSERT INTO EVA_VERB (ID, NAME, PROCESS_DESC_REF_ID, ENTITY_DEF_ID, ENTITY_DEF_ENV_ID, IS_INSTANCE, IS_DEFAULT, IS_INSTANCE_DEFAULT, IS_USER_VISIBLE,RECORD_FOR_WRAPUP) VALUES (
+INSERT INTO EVA_VERB (ID, NAME, PROCESS_DESC_REF_ID, ENTITY_DEF_ID, ENTITY_DEF_ENV_ID, IS_INSTANCE, IS_DEFAULT, IS_INSTANCE_DEFAULT, IS_USER_VISIBLE,RECORD_FOR_WRAPUP,DISPLAY_AT_WRAPUP) VALUES (
 @V.{{__verb_id}}, --ID
 '{{verb_name}}', -- NAME
 @PDR.{{process_descriptor_ref_id}}, --PROCESS_DESC_REF_ID
@@ -36,7 +36,12 @@ INSERT INTO EVA_VERB (ID, NAME, PROCESS_DESC_REF_ID, ENTITY_DEF_ID, ENTITY_DEF_E
 {% if is_instance == 'N'%} {% set is_instance_default = 'N' %} {%endif%}
 '{{is_instance_default | description("is_instance_default (Y/N)")}}', -- IS_INSTANCE_DEFAULT
 '{{is_user_visible | description("is_user_visible (Y/N)")}}', -- IS_USER_VISIBLE
-'{{record_for_wrapup | description("record_for_wrappup (Y/N)")}}' -- RECORD_FOR_WRAPUP
+'{{record_for_wrapup | description("record_for_wrappup (Y/N)")}}', -- RECORD_FOR_WRAPUP
+{% if record_for_wrapup == 'Y' %}
+	'{{display_at_wrapup | description("display_at_wrapup (Y/N)")}}' -- DISPLAY_AT_WRAPUP
+{% else %}
+	'N' -- DISPLAY_AT_WRAPUP
+{% endif %}
 );
 
 {% set entity = _db.find.ed_by_keyname(__entity_def_id) %}
