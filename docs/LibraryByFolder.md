@@ -3,7 +3,7 @@ SQLTask Library
 ===============
 
 
-This  library has currently a total of 140 templates, divided in 8 sections; 92 [scripts](#scripts), 12 [hidden_templates](#hidden_templates), 1 [pepi-one](#pepi-one), 1 [pepi_one](#pepi_one), 5 [tenant_properties_service](#tenant_properties_service), 21 [views](#views), 7 [tutorials](#tutorials), 1 [oracle](#oracle)
+This  library has currently a total of 145 templates, divided in 8 sections; 96 [scripts](#scripts), 12 [hidden_templates](#hidden_templates), 1 [pepi-one](#pepi-one), 1 [pepi_one](#pepi_one), 5 [tenant_properties_service](#tenant_properties_service), 22 [views](#views), 7 [tutorials](#tutorials), 1 [oracle](#oracle)
 
 Tables of Contents
 ==================
@@ -92,15 +92,19 @@ Tables of Contents
 	* [Remove View Contact Tab](#remove-view-contact-tab)
 	* [Reorder Dynamic View Field](#reorder-dynamic-view-field)
 	* [Set Entity Default Instance Verb](#set-entity-default-instance-verb)
+	* [Swing Agent Blend](#swing-agent-blend)
 	* [Unregister Channel State Manager Listener](#unregister-channel-state-manager-listener)
 	* [Update Agent Password](#update-agent-password)
 	* [Update Ccadmin Version](#update-ccadmin-version)
+	* [Update Entity Definition Name And Path](#update-entity-definition-name-and-path)
+	* [Update Entity Definition Super Entity](#update-entity-definition-super-entity)
 	* [Update Localised Field](#update-localised-field)
 	* [Update Profile Perspective Seq No](#update-profile-perspective-seq-no)
 	* [Update Url With Smartmatch Purpose](#update-url-with-smartmatch-purpose)
 	* [Update Verb Path](#update-verb-path)
 	* [Update Verb Process Descriptor Reference](#update-verb-process-descriptor-reference)
 	* [Update Verb User Visible Flag](#update-verb-user-visible-flag)
+	* [Update Verb Wrapup Flags](#update-verb-wrapup-flags)
 * [hidden_templates](#hidden_templates)
 	* [Add Dynamic Entity Field Without Specific Props](#add-dynamic-entity-field-without-specific-props)
 	* [Add Dynamic String Field Property](#add-dynamic-string-field-property)
@@ -133,6 +137,7 @@ Tables of Contents
 	* [View Entitlements By System Name](#view-entitlements-by-system-name)
 	* [View Entity Definition](#view-entity-definition)
 	* [View Entity Displayed Verbs](#view-entity-displayed-verbs)
+	* [View Entity From Logical Object Path](#view-entity-from-logical-object-path)
 	* [View Entity Verbs](#view-entity-verbs)
 	* [View Entity Verbs Keynames](#view-entity-verbs-keynames)
 	* [View Entitydef By Keyname](#view-entitydef-by-keyname)
@@ -159,7 +164,7 @@ Tables of Contents
 
 # scripts
   
-There are currently 92 templates in this section
+There are currently 96 templates in this section
 ## Add Activity To Pers Demo
   
 *Template:* [add_activity_to_pers_demo.sql](../templates/add_activity_to_pers_demo.sql)
@@ -986,6 +991,15 @@ This template prompts to select an entity keyname and then it prompts the instan
 On agent desktop, when entity is added into context it displays on the left hand side activities panel showing as title the entities `toString()` result and underneath its "user visible" intance verbs.
 User can run each verb by clicking on the verb title. User can also click on the entities title and it will run the default instance verb.  
 
+## Swing Agent Blend
+  
+*Template:* [swing_agent_blend.sql](../templates/swing_agent_blend.sql)  
+*Test:* [test_swing_agent_blend.sql](../test_templates/test_swing_agent_blend.sql)
+
+
+
+  
+
 ## Unregister Channel State Manager Listener
   
 *Template:* [unregister_channel_state_manager_listener.sql](../templates/unregister_channel_state_manager_listener.sql)  
@@ -1008,6 +1022,24 @@ User can run each verb by clicking on the verb title. User can also click on the
   
 *Template:* [update_ccadmin_version.sql](../templates/update_ccadmin_version.sql)  
 *Test:* [test_update_ccadmin_version.sql](../test_templates/test_update_ccadmin_version.sql)
+
+
+
+  
+
+## Update Entity Definition Name And Path
+  
+*Template:* [update_entity_definition_name_and_path.sql](../templates/update_entity_definition_name_and_path.sql)  
+*Test:* [test_update_entity_definition_name_and_path.sql](../test_templates/test_update_entity_definition_name_and_path.sql)
+
+
+
+  
+
+## Update Entity Definition Super Entity
+  
+*Template:* [update_entity_definition_super_entity.sql](../templates/update_entity_definition_super_entity.sql)  
+*Test:* [test_update_entity_definition_super_entity.sql](../test_templates/test_update_entity_definition_super_entity.sql)
 
 
 
@@ -1062,6 +1094,15 @@ User can run each verb by clicking on the verb title. User can also click on the
   
 *Template:* [update_verb_user_visible_flag.sql](../templates/update_verb_user_visible_flag.sql)  
 *Test:* [test_update_verb_user_visible_flag.sql](../test_templates/test_update_verb_user_visible_flag.sql)
+
+
+
+  
+
+## Update Verb Wrapup Flags
+  
+*Template:* [update_verb_wrapup_flags.sql](../templates/update_verb_wrapup_flags.sql)  
+*Test:* [test_update_verb_wrapup_flags.sql](../test_templates/test_update_verb_wrapup_flags.sql)
 
 
 
@@ -1238,7 +1279,7 @@ There are currently 5 templates in this section
 
 # views
   
-There are currently 21 templates in this section
+There are currently 22 templates in this section
 ## View Tps Property
   
 *Template:* [view_tps_property.sql](../templates/tenant_properties_service/views/view_tps_property.sql)
@@ -1298,6 +1339,14 @@ There are currently 21 templates in this section
 ## View Entity Displayed Verbs
   
 *Template:* [view_entity_displayed_verbs.sql](../templates/views/view_entity_displayed_verbs.sql)
+
+
+
+  
+
+## View Entity From Logical Object Path
+  
+*Template:* [view_entity_from_logical_object_path.sql](../templates/views/view_entity_from_logical_object_path.sql)
 
 
 
